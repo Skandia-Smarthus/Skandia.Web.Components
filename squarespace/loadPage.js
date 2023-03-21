@@ -3,8 +3,9 @@ window.addEventListener('DOMContentLoaded', async () => {
 
     if (onboardingDiv) {
         const pageName = onboardingDiv.dataset.page;
-        const url = 'https://raw.githubusercontent.com/Skandia-Smarthus/Skandia.Web.Components/main/site/'
-        const response = await fetch(`${url}${pageName}.html`);
+        const url = `https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/site/${pageName}.html`
+        console.log(`Trying to load ${url}`)
+        const response = await fetch(url);
         const pageContent = await response.text();
 
         const parser = new DOMParser();

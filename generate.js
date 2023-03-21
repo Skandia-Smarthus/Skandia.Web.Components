@@ -19,7 +19,7 @@ const output = "site";
 
 
     // Load the Handlebars template
-    const templateSource = await fs.readFile('template.hbs', 'utf8');
+    const templateSource = await fs.readFile('./templates/template.hbs', 'utf8');
     const template = Handlebars.compile(templateSource);
 
     // Read all files in the pages directory

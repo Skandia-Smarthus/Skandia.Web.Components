@@ -351,7 +351,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     //step1 cell lookip validation
-    document.querySelector("#lookup").submit(function (event) {
+    $("#lookup").submit(function (event) {
         event.preventDefault();
 
         //var test = token;

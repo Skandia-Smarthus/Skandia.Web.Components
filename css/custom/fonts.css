@@ -1,0 +1,75 @@
+
+@layer base {
+    @font-face {
+        font-family: Roobert;
+        font-weight: 400;
+        src: url(../../fonts/Roobert-Regular.woff2) format('woff2'), url('../../fonts/Roobert-Regular.woff') format("woff");
+    }
+
+    @font-face {
+        font-family: "Roobert-Medium";
+        font-weight: 500;
+        src: url('../../fonts/Roobert-Medium.woff2') format('woff2'), url('../../fonts/Roobert-Medium.woff') format("woff");
+    }
+
+    @font-face {
+        font-family: "Roobert-Semibold";
+        font-weight: 600;
+        src: url('../../fonts/Roobert-Semibold.woff2') format('woff2'), url('../../fonts/Roobert-Semibold.woff') format("woff");
+    }
+
+    html, body {
+        font-family: Roobert, sans-serif;
+    }
+
+    h1, .h1 {
+        font-size: 64px;
+        /*font-family: "Roobert-Semibold", sans-serif;*/
+        @apply font-semibold;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+
+    h2, h2.h2, .h2 {
+        /*font-family: "Roobert-Semibold", sans-serif;*/
+        @apply mb-5 font-semibold;
+        font-size: 46px;
+        font-weight: 600;
+        line-height: 1.4;
+    }
+
+    h3, .h3 {
+        /*font-family: "Roobert-Semibold", sans-serif;*/
+        @apply mb-7 font-semibold;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 1.4;
+    }
+
+    h4, .h4 {
+        /*font-family: "Roobert-Semibold", sans-serif;*/
+        @apply mb-3 font-semibold SkandiaEnergi:font-black;
+        font-size: 22px;
+        line-height: 1.4;
+    }
+
+    h5, .h5 {
+        font-family: "Roobert-Semibold", sans-serif;
+        font-weight: 600;
+        line-height: 1.4;
+    }
+
+    p {
+        @apply mb-6 md:mb-9;
+    }
+
+    blockquote {
+        @apply md:text-2xl font-bold italic my-14 border-l border-black pl-8;
+    }
+
+    .container {
+        max-width: 1320px;
+    }
+}
+/*
+*/

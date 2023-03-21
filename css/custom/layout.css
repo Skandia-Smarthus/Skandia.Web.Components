@@ -1,0 +1,37 @@
+@layer base {
+    .e-hidden {
+        display: none;
+    }
+}
+
+.w-max {
+    max-width: 98%;
+}
+
+.w-200 {
+    min-width: 200px;
+    width: 96%;
+    max-width: 300px;
+}
+
+.w-250 {
+    min-width: 250px;
+    width: 96%;
+    max-width: 350px;
+}
+
+.w-600 {
+    min-width: 334px;
+    width: 96%;
+    max-width: 600px;
+}
+
+@media (max-width: 620px) {
+    *, div {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        hyphens: auto;
+    }
+}

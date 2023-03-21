@@ -1,0 +1,9 @@
+@import "./tailwind.css";
+
+@import "custom/base.css";
+@import "custom/layout.css";
+@import "custom/elements.css";
+@import "custom/icons.css";
+@import "custom/form.css";
+@import "custom/app.css";
+@import "custom/animations.css";

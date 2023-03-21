@@ -1,0 +1,100 @@
+.centerLeft { background-position-x: left; background-position-y: center;}
+.centerRight { background-position-x: right;  background-position-y: center; }
+.centerCenter { background-position-x: center;  background-position-y: center; }
+.topLeft { background-position-x: left;  background-position-y: top; }
+.topRight { background-position-x: right;  background-position-y: top; }
+
+.iconPencil { background-image: url('/images/icons/small/Pen.svg'); }
+.iconPlus { background-image: url('/images/icons/small/Plus.svg'); }
+.iconChevronDown {background-image: url('/images/icons/small/Chevron-down-24px.svg');}
+
+.iconChevronDown10{background-image: url('/images/icons/small/Chevron-down10.svg');}
+.iconChevronRight10 {background-image: url('/images/icons/small/Chevron-right10.svg');}
+.iconAgreement {background-image: url('/images/icons/small/Agreement.svg');}
+.iconHelp  { background-image: url('/images/icons/small/Help.svg'); }
+.iconHouse {background-image: url('/images/icons/small/House.svg');}
+.iconSmiley {background-image: url('/images/icons/small/Smiley.svg');}
+.iconDelete, .iconBin {background-image: url('/images/icons/small/Bin.svg');}
+.iconRequired {background-image: url('/images/onboardingv2/RequiredStar.svg');}
+.iconCalendar { background-image: url('/images/icons/small/Calendar.svg');}
+
+.lineDashed {background-image: url('/images/onboardingv2/Stiplet_linje.svg'); height: 2px; width: 172px;}
+
+.iconWarning {background-image: url('/images/icons/small/warning.svg');}
+.img-btn-vipps{background-image: url('/images/logo/Vipps_registrer.png');}
+.iconClose { background-image: url('/images/icons/small/Close.svg');}
+
+.iconVipps { background-image: url('/images/logo/vipps-rgb-orange-neg.svg'); background-size: 70px; background-position: 87% center; }
+
+.size1 { @apply w-6 h-6;}
+[class^='icon'], [class*='icon'] { background-repeat: no-repeat !important; }
+
+.img-vert, .flip {
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+}
+
+
+
+
+.iconSpinner {
+    background-image: url('/images/icons/small/Spinner.svg');
+}
+.iconSpinner2 {
+    background-image: url('/images/icons/small/Spinner2.svg');
+}
+
+.animate-spin {
+    display: none;
+}
+.spinner .animate-spin {
+    display: inline-flex;
+}
+/*
+#onboarding-container input[type="date"]::-webkit-calendar-picker-indicator::after {
+    background: url('/images/icons/small/Calendar.svg') no-repeat;
+    width: 24px;
+    height: 24px;
+    content: '';
+    display: block;
+    background-size: 11%;
+    position: absolute;
+    transform: translateX(-3%);
+}
+*/
+/*.datepicker-toggle {
+    position: relative;
+    width: 200px;
+}*/
+
+.k-mobile .form-date {
+    background-image: url('/images/icons/small/Calendar.svg');
+    background-repeat: no-repeat;
+    background-position-x: 10%;
+    background-position-y: center;
+    padding-left: 20px;
+    text-align: left;
+}
+
+/*.datepicker-toggle-button {
+    position: absolute;*/
+/*right: 0;
+top: 0;*/
+/*width: 100%;
+height: 100%;
+background-image: url('/images/icons/small/Calendar.svg');
+background-repeat: no-repeat;
+background-position-x: 90%;
+background-position-y: center;
+}*/
+
+.k-mobile #onboardingformV2 input[type="date"]::-webkit-inner-spin-button,
+.k-mobile #onboardingformV2 input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+    opacity: 0;
+}

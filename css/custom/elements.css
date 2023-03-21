@@ -1,0 +1,47 @@
+
+.e-box {
+    @apply w-full max-w-full rounded-lg px-4 px-4 py-3 sm:px-8 sm:py-6 shadow mb-3 lg:mb-6 xl:mb-8;
+    /*w-full max-w-full*/
+}
+
+.e-box.done, .e-box.active {
+    @apply bg-primary-gray-10;
+}
+
+.e-box.error {
+    @apply bg-warning-20 text-warning-vivid;
+}
+
+
+.e-box:not(.active) .step {
+    display: none;
+}
+
+.e-box-small {
+    @apply w-full shadow border border-primary-gray-10 rounded-lg hover:bg-primary-gray-10;
+}
+
+
+.e-box-basic {
+    @apply rounded-lg border border-primary-gray-10 shadow;
+}
+
+.checkbox-container {
+    @apply mt-1 sm:mt-0 w-8 mr-1 sm:w-12 sm:mr-2;
+}
+
+.checkbox-container input {
+    @apply w-6 h-6 sm:w-8 sm:h-8;
+}
+
+.e-box h3 {
+    @apply mb-4;
+}
+
+.e-box p {
+    @apply mb-2;
+}
+
+.e-box .my-0 p {
+    @apply mb-0;
+}

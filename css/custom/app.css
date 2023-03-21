@@ -1,0 +1,163 @@
+/* Nav */
+.page-header ul {
+    @apply md:space-x-7;
+}
+
+.page-header a {
+    @apply text-brand-blue no-underline text-xl;
+}
+
+.maxWidthSmall {
+    @apply max-w-screen-sm;
+}
+.maxWidthMedium {
+    @apply max-w-screen-md;
+}
+.maxWidthLarge {
+    @apply max-w-screen-lg;
+}
+
+.marginBottom {
+    @apply mb-14 lg:mb-24;
+}
+.marginTop {
+    @apply mt-14 lg:mt-24;
+}
+.btn.btn-primary {
+    @apply cursor-pointer;
+}
+.btnBasic, .btn.btn-primary {
+    @apply inline-block transition-colors px-8 md:px-14 pt-3 pb-4 md:pt-4 md:pb-5;
+    @apply md:text-lg no-underline text-center text-white font-bold rounded-full;
+}
+.btnBasic-no-logic {
+    @apply transition-colors px-8 md:px-14 pt-3 pb-4 md:pt-4 md:pb-5;
+    @apply md:text-lg no-underline text-center text-white font-bold;
+}
+.btnPink, .btn.btn-primary {
+    @apply bg-brand-pink hover:bg-brand-pink-dark text-white;
+}
+.btnBlue {
+    @apply bg-brand-blue hover:bg-brand-pink-dark text-white;
+}
+.btnWhite {
+    @apply bg-white hover:bg-brand-white-dark text-brand-blue;
+}
+
+.btnGreen {
+    @apply bg-white hover:bg-brand-white-dark text-brand-green;
+}
+
+.btnYellow {
+    @apply bg-white hover:bg-brand-white-dark text-brand-yellow;
+}
+
+.btnBlack{
+    @apply bg-white hover:bg-brand-white-dark text-brand-black;
+}
+
+.menuIcon a {
+    @apply xl:inline-block xl:transition-colors xl:text-lg xl:no-underline xl:text-center xl:bg-transparent xl:hover:text-brand-blue-dark xl:text-brand-blue items-center content-center justify-center;
+}
+.menuBtnTrans a {
+    @apply xl:inline-block xl:transition-colors xl:px-6 xl:pt-1.5 xl:pb-2 xl:text-lg xl:no-underline xl:text-center xl:rounded-full xl:bg-transparent xl:hover:text-brand-blue-dark xl:text-brand-blue xl:hover:border-brand-blue-dark xl:border-brand-blue xl:border-2;
+}
+.menuBtn a {
+    @apply xl:inline-block xl:transition-colors xl:px-6 xl:pt-1.5 xl:pb-2 xl:text-lg xl:no-underline xl:text-center;
+    @apply xl:rounded-full xl:bg-brand-blue xl:hover:bg-brand-blue-dark xl:text-white;
+}
+
+.menuBtnTrans input[type=submit] {
+    @apply xl:inline-block xl:transition-colors xl:px-6 xl:pt-1.5 xl:pb-2 xl:text-lg xl:no-underline xl:text-center xl:rounded-full xl:bg-transparent xl:hover:text-brand-blue-dark xl:text-brand-blue xl:hover:border-brand-blue-dark xl:border-brand-blue xl:border-2;
+}
+.menuBtn input[type=submit] {
+    @apply xl:inline-block xl:transition-colors xl:px-6 xl:pt-1.5 xl:pb-2 xl:text-lg xl:no-underline xl:text-center;
+    @apply xl:rounded-full xl:bg-brand-blue xl:hover:bg-brand-blue-dark xl:text-white;
+}
+
+.brand-button {
+    @apply flex sm:w-full w-4/5 justify-center mx-4 my-2 items-center;
+}
+.brand-button a {
+    @apply cursor-pointer px-8 py-4;
+    @apply rounded-full bg-brand-blue hover:bg-brand-blue-dark text-white no-underline text-base;
+    @apply text-center;
+}
+.page-header .headerBtn {
+    @apply inline-block transition-colors no-underline text-center rounded-full bg-brand-blue hover:bg-brand-blue-dark text-white;
+    @apply font-normal text-base leading-none;
+    padding: 8px 24px 10px;
+    margin-right: 3px;
+}
+
+.page-header .hamburger-items {
+    @apply space-y-1;
+}
+.page-header .hamburger-items span {
+    @apply block w-6 h-0.5 bg-brand-blue;
+}
+
+.page-header hamburger-container {
+    @apply opacity-70 translate-y-0 translate-x-0 rotate-45 bg-brand-blue
+}
+
+.button_container:hover {
+    opacity: .7; }
+.button_container.active .top {
+    transform: translateY(11px) translateX(0) rotate(45deg);
+    background: #FF0098; }
+.button_container.active .middle {
+    opacity: 0;
+    background: #FF0098; }
+.button_container.active .bottom {
+    transform: translateY(-11px) translateX(0) rotate(-45deg);
+    background: #FF0098; }
+.button_container span {
+    background: #FF0098;
+    border: none;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .35s ease; }
+.button_container span:nth-of-type(2) {
+    top: 7px; }
+.button_container span:nth-of-type(3) {
+    top: 14px; }
+
+.link-with-arrow {
+    @apply font-bold no-underline;
+}
+.link-with-arrow img {
+    @apply ml-1 inline-block transition -mt-0.5;
+}
+.link-with-arrow span {
+    @apply border-b border-brand-blue;
+}
+.link-with-arrow:hover img {
+    transform: translateX(7px);
+}
+
+img.aligncenter {
+    margin: 0 auto;
+}
+
+.hero-top-wrapper:not(.hero-simple) h1 {
+    @apply mb-7;
+}
+.hero-top-wrapper:not(.hero-simple) p {
+    @apply hidden md:block mb-10;
+}
+
+.campaign-block-fullwidth h2 {
+    @apply mb-16 md:text-5xl;
+}
+
+.block-image-text h3 {
+    @apply mb-5;
+}
+
+.word-wrap-childs {
+
+}

@@ -1,0 +1,282 @@
+
+.flex-center {
+    @apply flex justify-center items-center;
+}
+
+.is-invalid {
+    @apply border-form-error;
+}
+
+#onboardingformV2 {
+    @apply text-oform-body;
+}
+
+.form-box {
+    @apply bg-form-blue-10 text-center border-form-blue-20 border-2 rounded-lg py-8 ;
+    /*p-8*/
+}
+
+.form-box .inner {
+    @apply w-[300px] mx-auto;
+}
+
+.form-box-border {
+
+    @apply border-dashed border-form-blue-20 w-3/5 my-4 ;
+}
+/* .form-box .inner label:not(.text-oform-body) {
+     @apply text-oform-body2 em;
+ }*/
+
+#onboardingformV2 div a {
+    @apply underline hover:font-bold;
+}
+
+#onboardingformV2 label.error-text {
+    vertical-align: top;
+    @apply text-oform-body1 text-form-error mt-0;
+}
+
+label.error-text {
+    display: none;
+}
+
+input.is-invalid + label.error-text {
+    display: block;
+}
+
+.form-bullet.lg {
+    height: 56px;
+    width: 56px;
+    font-size: 24px;
+}
+
+.form-bullet.md {
+    height: 36px;
+    width: 36px;
+    font-size: 16px;
+}
+
+.form-bullet {
+    @apply flex-center bg-form-blue SkandiaEnergi:bg-brand-green text-white rounded-full;
+}
+
+.form-bullet.pos-left {
+    /*@apply ;*/
+}
+.form-bullet.pos-center {
+    @apply absolute top-0 left-1/2;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+
+.form-link-help {
+    background: no-repeat url('/images/icons/small/Help.svg') left center;
+    @apply pl-6;
+}
+
+.form-popup {
+    background: #FFFFFF;
+    border: 0.5px solid #DBDDE0;
+    box-shadow: 0px 0px 15px rgba(16, 0, 114, 0.05);
+    border-radius: 12px;
+    transform: translateY(-50%) translateX(-50%);
+    @apply p-4 top-0 left-1/2 absolute text-left w-[94%] md:w-full;
+    max-width: 320px;
+    /*
+        transform: matrix(1, 0, 0, -1, 0, 0);*/
+}
+.form-popup p {
+    margin-bottom: 0;
+}
+
+
+/*steg 3*/
+.showOrderDetails .onHide {
+    display: none;
+}
+.hideOrderDetails .onShow {
+    display: none;
+}
+
+#onboarding-container .active h4 {
+    @apply font-semiBold;
+}
+
+
+
+label {
+    @apply mb-2;
+}
+
+input[type='text'].control, input[type='number'].control, input[type='date'].control, input[type='email'].control, input[type='tel'].control {
+    @apply border-solid rounded border-primary h-12;
+}
+
+
+[type='text'], [type='email'], [type='url'], [type='password'], [type='number'], [type='date'], [type='datetime-local'],
+[type='month'], [type='search'], [type='tel'], [type='time'], [type='week'], [multiple], textarea, select:not(.no-arrow):not(.custom) {
+    @apply focus:outline-none focus:border-primary focus:ring-primary focus:ring-1 w-full;
+    @apply text-body1 leading-body1 font-regular;
+    @apply rounded border border-primary bg-white read-only:bg-primary-gray-10;
+}
+
+[type='text'], [type='email'], [type='url'], [type='password'], [type='number'], [type='date'], [type='datetime-local'],
+[type='month'], [type='search'], [type='tel'], [type='time'], [type='week'], [multiple], textarea {
+}
+
+form-control:read-only {
+    @apply border-0 focus:border-0 focus:ring-0 read-only:bg-gray-light border-gray-light cursor-default;
+}
+
+div:not(#onboardingformV2) .form-control:read-only {
+    @apply read-only:border-form-blue border-form-blue text-form-blue;
+}
+
+#onboardingformV2 .form-control:read-only {
+    @apply opacity-20;
+}
+
+#onboardingformV2 .form-control.is-invalid:focus {
+    @apply read-only:border-form-error border-form-error shadow-form-error ring-form-error;
+}
+
+#onboardingformV2 .form-control.is-invalid:read-only {
+    @apply read-only:border-form-error border-form-error text-form-error opacity-70;
+}
+
+
+select.custom {
+    background-size: auto;
+    background-position: center right 1rem;
+    background-image: url('/images/icons/dropdown/chevron.svg');
+    @apply text-body1 cursor-pointer focus:outline-none focus:border-none focus:ring-offset-primary;
+    @apply ring-offset-0 ring-0 bg-secondary;
+    outline: 0;
+}
+
+select.custom option {
+    @apply bg-white text-primary cursor-pointer;
+}
+
+
+input.custom-form::placeholder {
+    @apply text-white;
+}
+
+.custom-form {
+    @apply bg-secondary rounded-full;
+    background-size: auto;
+    background-position: center left 1rem;
+    background-image: url('/images/icons/dropdown/Map.svg');
+    background-repeat: no-repeat;
+    /*background: no-repeat url('/images/icons/dropdown/chevron.svg') left center;*/
+}
+/*select.custom:active {
+        background: blue;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }*/
+[type='checkbox'].control,
+[type='radio'].control,
+[type='checkbox'].eChoice,
+[type='radio'].eChoice {
+    @apply border text-primary-dark ring-inset cursor-pointer block border-primary bg-white;
+    @apply focus:ring-primary focus:outline-none focus:border-primary focus:ring-primary focus:ring-0 focus:ring-offset-0;
+    @apply checked:bg-primary checked:border-primary disabled:bg-primary-gray-10 disabled:border-gray-300;
+}
+
+[type='checkbox'].eChoice {
+    @apply rounded-sm;
+}
+
+[type='radio'].eChoice {
+    @apply rounded-full;
+}
+
+
+
+
+
+.e-btn-basic, .k-button {
+    @apply no-underline text-center rounded-full;
+}
+
+.e-btn-sm {
+    width: min-content;
+    @apply e-btn-basic text-white;
+}
+
+.e-btn-md, .k-button-md {
+    width: min-content;
+    @apply e-btn-basic text-white e-text-body2;
+}
+
+.e-btn-responsive {
+    @apply e-btn-basic py-1 px-3 sm:py-2 sm:px-4 md:py-3 md:px-10 lg:py-4 lg:px-16;
+}
+
+
+.e-btn-lg {
+    @apply e-btn-basic py-2 px-3;
+}
+
+.e-btn {
+    @apply e-btn-basic py-4 px-7 sm:px-12;
+}
+
+
+.e-btn-primary {
+    @apply bg-primary hover:bg-brand-blue-dark SkandiaEnergi:bg-brand-green hover:SkandiaEnergi:bg-brand-green-main-dark;
+}
+.e-btn-primary:hover {
+    @apply SkandiaEnergi:bg-brand-green-main-dark;
+}
+
+.e-btn-primary-gray {
+    @apply bg-primary-gray hover:bg-primary mt-6 text-primary-dark hover:text-white;
+}
+
+.e-btn-primary-gray.active {
+    @apply text-white;
+}
+
+
+.e-btn-secondary {
+    @apply bg-secondary hover:bg-secondary-dark SkandiaEnergi:bg-brand-green text-white disabled:bg-secondary-disabled disabled:opacity-70;
+}
+
+
+.e-btn-secondary:hover {
+    @apply SkandiaEnergi:bg-brand-green-main-dark;
+}
+
+.e-btn-link {
+    @apply inline-block border-0 bg-transparent;
+}
+
+
+
+.error-text {
+    @apply text-danger mt-2 e-text-caption;
+}
+
+label p, div.check p {
+    @apply m-0;
+}
+
+
+
+
+
+/* Firefox */
+input[type=number], input.control[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Chrome */
+b, strong {
+    -webkit-font-smoothing: antialiased;
+    font-weight: bolder;
+}
+

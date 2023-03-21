@@ -1,0 +1,98 @@
+/*@import "../tailwind/_base.css";*/
+
+@layer base {
+    /*    body.mobile h1, body.mobile .h1 {
+        @apply text-h3 font-semiBold;
+    }
+
+    body.mobile h1, body.mobile .h1 {
+        @apply text-h3 font-semiBold;
+    }*/
+
+
+    .e-text-h1 {
+        @apply text-h1_sm font-semiBold;
+    }
+
+    .e-text-h2 {
+        @apply text-h2_sm font-semiBold;
+    }
+
+    .e-text-h3 {
+        @apply text-h3_sm font-semiBold;
+    }
+
+    .e-text-h4 {
+        @apply text-h4_sm font-semiBold;
+    }
+
+    .e-text-lead {
+        @apply text-lead_sm font-regular;
+    }
+
+    .e-text-body1 {
+        @apply text-body1_sm font-regular;
+    }
+
+    .e-text-body2 {
+        @apply text-body2_sm font-regular;
+    }
+
+    .e-text-body3 {
+        @apply text-body3_sm font-regular;
+    }
+
+    .e-text-caption, label {
+        @apply text-caption_sm font-regular;
+    }
+
+    .e-btn-responsive {
+        @apply text-body1_sm;
+    }
+
+    @screen lg {
+        .e-btn-responsive {
+            @apply text-body1;
+        }
+
+        .e-text-h1 {
+            @apply text-h1 font-semiBold;
+        }
+
+        .e-text-h2 {
+            @apply text-h2 font-semiBold;
+        }
+
+        .e-text-h3 {
+            @apply text-h3 font-semiBold;
+        }
+
+        .e-text-h4 {
+            @apply text-h4 font-semiBold;
+        }
+
+        .e-text-lead {
+            @apply text-lead font-regular;
+        }
+
+        .e-text-body1 {
+            @apply text-body1 font-regular;
+        }
+
+        .e-text-body2 {
+            @apply text-body2 font-regular;
+        }
+
+        .e-text-body3 {
+            @apply text-body3 font-regular;
+        }
+
+        .e-text-caption, label {
+            @apply text-caption font-regular;
+        }
+    }
+
+    .e-text-caption.em, .e-text-em, html .em {
+        @apply font-semiBold;
+    }
+}

@@ -684,10 +684,12 @@ $(window).on("load", function () {
         let retrievedObject = sessionStorage.getItem('trackingObj');
         let trackingObj = JSON.parse(retrievedObject);
         //debugger;
+        var targetElement = $("#onboardingformV2");
+        var offsetTop = targetElement.length && targetElement.offset() ? targetElement.offset().top : 0;
 
         OnboardingLookupV2(null, null, sessionVippsAuthCode, obj.vippsState, redirectUrl, trackingObj);
         $('html, body').animate({
-            scrollTop: $("#onboardingformV2").offset().top - 250
+            scrollTop: offsetTop - 250
         }, 1);
         removePulse("#step1-intro");
     }

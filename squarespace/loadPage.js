@@ -1,4 +1,5 @@
 window.addEventListener('DOMContentLoaded', async () => {
+    debug;
     const onboardingDiv = document.getElementById('onboarding');
 
     if (onboardingDiv) {

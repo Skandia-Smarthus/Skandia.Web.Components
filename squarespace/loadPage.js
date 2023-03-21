@@ -1,4 +1,5 @@
 window.addEventListener('DOMContentLoaded', async () => {
+    console.log("DOMCONTENTLoaded for onboarding monitoring")
     debug;
     const onboardingDiv = document.getElementById('onboarding');
 

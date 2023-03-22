@@ -16,11 +16,6 @@ function HidePopup(element) {
         hideElement(element);
 }
 
-Array.from(document.querySelectorAll(".form-popup-close"))
-    .forEach(e => e.addEventListener("click", function (e) {
-        e.preventDefault();
-        e.closest(".form-popup").addClass("hidden");
-}));
 
 function getJsonContent() {
     let retrievedObject = sessionStorage.getItem('onboardingObj');
@@ -545,19 +540,6 @@ function OnboardingCell(cell, email) {
     OnboardingLookupV2(cell, email, null, null, null, trackingObj);
 }
 
-$(document).ready(function () {
-    //$('[id*=supply_]').click(function () {
-    $('[name="takover"]').click(function () {
-        var checked = $(this).is(':checked')
-        if (checked) {
-            $("#takeover-date").removeClass('hidden');
-        }
-        else {
-            $("#takeover-date").addClass('hidden');
-        }
-    });
-});
-
 function showOrderDetails() {
     //debugger;
     let obj = getJsonContent();
@@ -608,47 +590,61 @@ function showOrderDetails() {
     gotoStep(3, 'orderdetails');
 }
 
+function OnboardingSetup(){
+    $('[name="takover"]').click(function () {
+        var checked = $(this).is(':checked')
+        if (checked) {
+            $("#takeover-date").removeClass('hidden');
+        }
+        else {
+            $("#takeover-date").addClass('hidden');
+        }
+    });
+
+
 //OnChange -----------------
-$('#onboardingZipEdit').change(function () {
-    //debugger;
-    let zip = $(this).val();
-    $('#onboardingPlaceEdit').val('');
-    validateZip(zip);
-});
+    $('#onboardingZipEdit').change(function () {
+        //debugger;
+        let zip = $(this).val();
+        $('#onboardingPlaceEdit').val('');
+        validateZip(zip);
+    });
 
-$("#onboardingZipEdit").on("keyup change", function (e) {
-    //debugger;
-    let zip = $(this).val();
-    $('#onboardingPlaceEdit').val('');
-    validateZip(zip);
-});
-
-
-
-$('#acceptedTerms').change(function () {
-    if (this.checked) {
-        $("#onboardingSaleButton").prop("disabled", false);
-    }
-    else {
-        $("#onboardingSaleButton").prop("disabled", true);
-    }
-});
-
-$("#onboardingSaleButton").click(function () {
-    if (isLoading()) {
-        return;
-    }
-    //debugger;
-    showPulse("#step3-confirm");
-    showSpinner("#onboardingSaleButton");
-    OnboardingSaleV2("@_profileService.GetProfile()");
-
-});
+    $("#onboardingZipEdit").on("keyup change", function (e) {
+        //debugger;
+        let zip = $(this).val();
+        $('#onboardingPlaceEdit').val('');
+        validateZip(zip);
+    });
 
 
-$(window).on("load", function () {
-    //debugger;
-    //scrollToElementOnboarding('#onboardingformV2');
+
+    $('#acceptedTerms').change(function () {
+        if (this.checked) {
+            $("#onboardingSaleButton").prop("disabled", false);
+        }
+        else {
+            $("#onboardingSaleButton").prop("disabled", true);
+        }
+    });
+
+    $("#onboardingSaleButton").click(function () {
+        if (isLoading()) {
+            return;
+        }
+        //debugger;
+        showPulse("#step3-confirm");
+        showSpinner("#onboardingSaleButton");
+        OnboardingSaleV2("@_profileService.GetProfile()");
+
+    });
+
+    Array.from(document.querySelectorAll(".form-popup-close"))
+        .forEach(e => e.addEventListener("click", function (e) {
+            e.preventDefault();
+            e.closest(".form-popup").addClass("hidden");
+        }));
+
     if (window.location.href.indexOf("#onboarding") > -1 ||
         window.location.href.indexOf("#error_description") > -1) {
 
@@ -694,4 +690,4 @@ $(window).on("load", function () {
         removePulse("#step1-intro");
     }
 
-});
+}

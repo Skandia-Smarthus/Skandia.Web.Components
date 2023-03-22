@@ -30,20 +30,9 @@ function loadOnboardingForm(targetElement){
         .then((html) => {
             const parser = new DOMParser();
             const document = parser.parseFromString(html, 'text/html');
-            const scripts = document.getElementsByTagName('script');
 
-            document.querySelectorAll('script').forEach((script) => script.remove());
             targetElement.innerHTML = document.body.innerHTML;
-
-            for(let i = 0; i < scripts.length; i++){
-                const script = document.createElement('script');
-                if(scripts[i].src){
-                    script.src = scripts[i].src;
-                } else {
-                    script.textContent = scripts[i].textContent;
-                }
-                document.body.appendChild(script);
-            }
+            OnboardingSetup();
         })
         .catch((error) => {
             console.error('Could not fetch onboarding template with error: ', error);

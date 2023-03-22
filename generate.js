@@ -19,7 +19,8 @@ const output = "site";
 
 
     // Load the Handlebars template
-    const templateSource = await fs.readFile('./templates/template.hbs', 'utf8');
+    const templateSource = await fs.readFile('./templates/onboarding-template.hbs', 'utf8');
+    const scriptSource = await fs.readFile('./templates/onboarding-scripts.html', 'utf8');
     const template = Handlebars.compile(templateSource);
 
     // Read all files in the pages directory
@@ -35,7 +36,7 @@ const output = "site";
         const filePath = path.join(output, `${jsonData.filename}.html`)
         console.log(`Writing to file ${jsonData.filename}.html`)
         // Generate the HTML content using the Handlebars template and JSON data
-        const htmlContent = template(jsonData);
+        const htmlContent = `${template(jsonData)} ${scriptSource}`;
 
         // Write the generated HTML content to a file
         await fs.writeFile(filePath, htmlContent);
@@ -44,7 +45,7 @@ const output = "site";
     }
 
     // // Load the Handlebars template
-    // const templateSource = await fs.readFile('template.hbs', 'utf8');
+    // const templateSource = await fs.readFile('onboarding-template.hbs', 'utf8');
     // const template = Handlebars.compile(templateSource);
     //
     // // Load the JSON data

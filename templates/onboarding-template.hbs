@@ -505,34 +505,3 @@
     </div>
 </div>
 </div>
-
-<div id="scriptcontainer" class="hidden">
-    <script id="orderDetailsCustomer" type="template">
-        <div class="em">{{Firstname}} {{Lastname}}</div>
-        <div class="leading-8">Tlf. {{Cell}}</div>
-        <div>{{Email}}</div>
-    </script>
-    <script id="orderDetailsDeliveries" type="template">
-        <div class="my-2">
-            <div class="{{andClass}} em mb-2">og</div>
-            <div>{{Address}} {{HouseNumber}}</div>
-            <div>{{ZipCode}} {{Place}}</div>
-        </div>
-    </script>
-    <script id="deliveryNew" type="template">
-        <div class="rounded-xl shadow hover:shadow mt-4 border bg-white mb-2" id="delivery-{{index}}">
-            <input type="hidden" class="deliveryIndex" value="{{index}}"/>
-            <div class="p-3 sm:p-6 flex deliveryData">
-                <div class="checkbox-container hidden"><input type="checkbox" {{checked}} class="delivery-selector rounded-sm control "></div>
-                <div class="w-8 h-8"><button class="btn iconDelete w-full h-full centerLeft hideonskandiasale" onclick="DeleteDelivery({{index}})"></button></div>
-                <div class="grow data overflow-hidden" id="data-{{index}}">
-                    <div class="e-text-body1 em"><span class="address">{{Address}}</span> <span class="houseno">{{HouseNo}}</span></div>
-                    <div class="e-text-body1">{{Firstname}} {{Lastname}}</div>
-                    <div class="e-hidden"><span class="zipcode">{{ZipCode}}</span> <span class="place">{{Place}}</span></div>
-                    <div class="flex e-text-body2 mt-3 text-ellipsis {{meterNumberClass}}"><div class="mr-2">Målernr</div><div class="meternumber">{{meterNumber}}</div></div>
-                </div>
-                <div class="text-right place-content-end w-6"><button class="btn align-start place-content-end iconPencil size1 topRight" onclick="EditDeliveryV2('#data-{{index}}', {{index}})"></button></div>
-            </div>
-        </div>
-    </script>
-</div>

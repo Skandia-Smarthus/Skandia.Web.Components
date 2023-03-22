@@ -33,10 +33,11 @@ function OnboardingLookupV2(cell = null, email = null, authCode = null, state = 
     let apiUrl = apiUrlSaleV2;
 
     if (cell != null) {
-        apiUrl = apiUrl + "lookup?cell=" + cell;
+        apiUrl = apiUrl + "lookup/" + cell;
     }
     else {
-        apiUrl = apiUrl + "lookup?state=" + state + "&code=" + authCode + "&redirectUrl=" + redirectUrl;
+        apiUrl = apiUrl + "lookupvipps?state=" + state + "&code=" + authCode + "&redirectUrl=" + redirectUrl;
+
         if (!authCode) {
             return
         }

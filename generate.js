@@ -11,10 +11,12 @@ const output = "site";
             : options.inverse(this);
     });
     Handlebars.registerHelper('not-empty', function (value, options) {
-        if (!value) { return options.fn(this); }
-        return !(value.replace(/\s*/g, '').length === 0
-            ? options.fn(this)
-            : options.inverse(this));
+        // Return true if value is not null, undefined, or a string with only whitespace characters
+        if (value && value.trim().length > 0) {
+            return options.fn(this);
+        } else {
+            return options.inverse(this);
+        }
     });
 
 

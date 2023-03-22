@@ -240,7 +240,11 @@ Du trenger ikke å finne målenummeret ditt før du bestiller. Vi kontakter deg 
                             </div>
                             <div class="flex h-[25px]">
                                 <label class="grow text-oform-body2 em">Målernummer</label>
-true
+<!--                                    @if (!string.IsNullOrEmpty(step2MeternumberInfoText.ToString()))-->
+                                    {
+                                    <div class="e-btn-link em underline cursor-pointer iconHelp centerRight w-4 h-4" data-popup="#step1InfoTekst" onclick="ShowPopup('#meternumberPopup')"></div>
+<!--                                    }-->
+
                             </div>
                             <input id="meterNumberAdd" type="text" class="form-control" placeholder="Dersom tilgjengelig">
                         </div>
@@ -310,10 +314,6 @@ true
                     Bestill og len deg tilbake mens vi fikser alt det praktiske. 🚀 
                     <div class="text-left mt-6">
                         <div class="flex mb-4">
-                                <div class="w-20 flex-none">
-                                    <!-- @step3SecuringImageUrl-->
-                                    <img src="" />
-                                </div>
 
                             <div class="grow">
                                 <div class="em">
@@ -357,7 +357,23 @@ true
                                 </div>
                             </div>
                         </div>
-true
+<!--                            @if (!string.IsNullOrEmpty(step3ProductHeader.ToString()))-->
+<!--                            {-->
+                            <div class="flex mb-4">
+                                <div class="w-12 flex-none"><img src="/images/icons/small/Agreement.svg" alt="Avtale" /></div>
+                                <div class="grow leading-8">
+                                    <div class="em">
+<!--                                        @step3ProductHeader-->
+                                        Abonnementsdetaljer
+                                    </div>
+<!--                                    @step3ProductText-->
+                                    Avtaletype: Hyttestrøm
+Månedsbeløp: 0 kr
+Påslag: 5,6 øre/kilowattime
+                                </div>
+                            </div>
+<!--                            }-->
+
                         <div class="flex mb-4">
                             <div class="w-12 flex-none"><img src="/images/icons/small/Pen.svg" alt="Endre" /></div>
                             <div class="grow">
@@ -384,40 +400,9 @@ true
                                 </div>
                             </div>
                         </div>
-<!--                            @if (!string.IsNullOrEmpty(step3ConfirmFastStartup.ToString()))-->
-<!--                            {-->
-                            <div class="mb-2">
-                                <div class="flex items-start">
-                                    <input id="confirm-faststartup" name="faststartup" type="checkbox" class="control w-6 h-6 rounded-sm mt-2 btn-t-faststartup">
-                                    <label for="confirm-faststartup" class="ml-4 block text-oform-body1 my-0 cursor-pointer">
-<!--                                        @step3ConfirmFastStartup-->
-                                        
-                                    </label>
-                                </div>
-                            </div>
-<!--                            }-->
-
-<!--                            @if (!string.IsNullOrEmpty(step3ConfirmInfoText.ToString()))-->
-<!--                            {-->
-                            <div class="mb-2">
-                                <div class="flex items-start">
-                                    <input id="confirm-news" name="news" type="checkbox" class="control w-6 h-6 rounded-sm mt-2 btn-t-newsletter">
-                                    <label for="confirm-news" class="ml-4 block text-oform-body1 my-0 cursor-pointer">
-<!--                                        @step3ConfirmInformation-->
-                                        
-                                    </label>
-                                </div>
-                            </div>
-<!--                            }-->
 
 
-<!--                            @if (!string.IsNullOrEmpty(step3ConfirmInfoText.ToString()))-->
-<!--                            {-->
-                            <div class="mb-2">
-<!--                                @step3ConfirmInfoText-->
-                                
-                            </div>
-<!--                            }-->
+
 
 
                         <!--Bestill knapp-->

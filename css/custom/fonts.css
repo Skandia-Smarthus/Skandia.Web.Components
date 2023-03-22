@@ -3,19 +3,21 @@
     @font-face {
         font-family: Roobert;
         font-weight: 400;
-        src: url(../../fonts/Roobert-Regular.woff2) format('woff2'), url('../../fonts/Roobert-Regular.woff') format("woff");
+        src: url("https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/fonts/Roobert-Regular.woff2")
+            format('woff2'), url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/fonts/Roobert-Regular.woff') format("woff");
     }
 
     @font-face {
         font-family: "Roobert-Medium";
         font-weight: 500;
-        src: url('../../fonts/Roobert-Medium.woff2') format('woff2'), url('../../fonts/Roobert-Medium.woff') format("woff");
+        src: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/fonts/Roobert-Medium.woff2') format('woff2'), url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/fonts/Roobert-Medium.woff') format("woff");
     }
 
     @font-face {
         font-family: "Roobert-Semibold";
         font-weight: 600;
-        src: url('../../fonts/Roobert-Semibold.woff2') format('woff2'), url('../../fonts/Roobert-Semibold.woff') format("woff");
+        src: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/fonts/Roobert-Semibold.woff2')
+            format('woff2'), url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/fonts/Roobert-Semibold.woff') format("woff");
     }
 
     html, body {

@@ -1521,73 +1521,73 @@ select {
 }
 
 .iconPencil {
-  background-image: url('/images/icons/small/Pen.svg');
+  background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/icons/Pen.svg');
 }
 
 .iconPlus {
-  background-image: url('/images/icons/small/Plus.svg');
+  background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/icons/Plus.svg');
 }
 
 .iconChevronDown {
-  background-image: url('/images/icons/small/Chevron-down-24px.svg');
+  background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/icons/Chevron-down-24px.svg');
 }
 
 .iconChevronDown10{
-  background-image: url('/images/icons/small/Chevron-down10.svg');
+  background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/icons/Chevron-down10.svg');
 }
 
 .iconChevronRight10 {
-  background-image: url('/images/icons/small/Chevron-right10.svg');
+  background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/icons/Chevron-right10.svg');
 }
 
 .iconAgreement {
-  background-image: url('/images/icons/small/Agreement.svg');
+  background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/icons/Agreement.svg');
 }
 
 .iconHelp  {
-  background-image: url('/images/icons/small/Help.svg');
+  background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/icons/Help.svg');
 }
 
 .iconHouse {
-  background-image: url('/images/icons/small/House.svg');
+  background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/icons/House.svg');
 }
 
 .iconSmiley {
-  background-image: url('/images/icons/small/Smiley.svg');
+  background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/icons/Smiley.svg');
 }
 
 .iconDelete, .iconBin {
-  background-image: url('/images/icons/small/Bin.svg');
+  background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/icons/Bin.svg');
 }
 
 .iconRequired {
-  background-image: url('/images/onboardingv2/RequiredStar.svg');
+  background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/images/RequiredStar.svg');
 }
 
 .iconCalendar {
-  background-image: url('/images/icons/small/Calendar.svg');
+  background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/icons/Calendar.svg');
 }
 
 .lineDashed {
-  background-image: url('/images/onboardingv2/Stiplet_linje.svg');
+  background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/images/Stiplet_linje.svg');
   height: 2px;
   width: 172px;
 }
 
 .iconWarning {
-  background-image: url('/images/icons/small/warning.svg');
+  background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/icons/warning.svg');
 }
 
 .img-btn-vipps{
-  background-image: url('/images/logo/Vipps_registrer.png');
+  background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/images/Vipps_registrer.png');
 }
 
 .iconClose {
-  background-image: url('/images/icons/small/Close.svg');
+  background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/icons/Close.svg');
 }
 
 .iconVipps {
-  background-image: url('/images/logo/vipps-rgb-orange-neg.svg');
+  background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/images/vipps-rgb-orange-neg.svg');
   background-size: 70px;
   background-position: 87% center;
 }
@@ -1608,11 +1608,11 @@ select {
 }
 
 .iconSpinner {
-  background-image: url('/images/icons/small/Spinner.svg');
+  background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/icons/Spinner.svg');
 }
 
 .iconSpinner2 {
-  background-image: url('/images/icons/small/Spinner2.svg');
+  background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/icons/Spinner2.svg');
 }
 
 .animate-spin {
@@ -1642,7 +1642,7 @@ select {
 }*/
 
 .k-mobile .form-date {
-  background-image: url('/images/icons/small/Calendar.svg');
+  background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/icons/Calendar.svg');
   background-repeat: no-repeat;
   background-position-x: 10%;
   background-position-y: center;

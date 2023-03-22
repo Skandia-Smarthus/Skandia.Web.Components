@@ -690,4 +690,5 @@ function OnboardingSetup(){
         removePulse("#step1-intro");
     }
 
+    OnboardingValidationSetup();
 }

@@ -1,0 +1,86 @@
+{
+  "profile": "SkandiaEnergi",
+  "name": "skandiaspot",
+  "filename" : "skandiaspot",
+  "global" : {
+    "buttons" : {
+      "back" : "Tilbake",
+      "next" : "Gå videre",
+      "edit" : "Rediger",
+      "order" : "Bestill nå",
+      "order-waiting" : "Vent litt mens vi registrerer din bestilling",
+      "add-delivery" : ""
+    },
+    "text" : {
+      "add-delivery" : "",
+      "move-date" : "Jeg overtar hytten",
+      "reset-user" : "Ikke deg?"
+    }
+  },
+  "step1": {
+    "title" : " Start din bestilling her",
+    "vipps": {
+      "enabled": true,
+      "button-text": "Finn dine opplysninger med vipps",
+      "url": "https://api.vipps.no/access-management-1.0/access/oauth2/auth?client_id=a4ced04c-7d7b-46d7-a663-f16f6dab6786&response_type=code&scope=openid+address+email+name+phoneNumber+nin&state=58dcc19c-f18b-4363-8617-f7e92be513dd&redirect_uri=",
+      "return-to": "https://skandiaenergi.no/stromavtale/hytte"
+      },
+    "cell": {
+      "button-text": "Manuell registrering",
+      "header" : {
+        "text" : "Da er du i gang!",
+        "sub-text" : "Fyll ut mobilnummer og epost, så vi finner dine opplysninger."
+      }
+    },
+    "header": {
+      "text" : "1. Hei, så hyggelig at du vil bli kunde i SkandiaEnergi!",
+      "sub-text" : "Avtalen Hyttestrøm koster kun 0 kr/mnd og 5,6 øre/kWh. Det er gratis å bytte, og vi avslutter din gamle strømavtale for deg."
+    },
+    "info-popup" : {
+      "header": {
+        "text" : "Slik bruker vi informasjonen din",
+        "sub-text" : "Vi finner opplysninger om deg og din hytte i adresseregistere, og om din strømmåler i Elhub. Ingen informasjon blir lagret før du bekrefter og sender inn bestillingen."
+      }
+    }
+  },
+  "step2": {
+    "title" : "Navn og adresse",
+    "sub-title" : "Fyll ut din informasjon så vi kan levere strøm til deg",
+    "header" : {
+      "text" : "Navn og adresse",
+      "sub-text" : "Du trenger ikke å finne målenummeret ditt før du bestiller. Vi kontakter deg senere for å legge det inn. Har du en partner står nummeret gjerne på dem, og det overføres til deg."
+    },
+    "info-popup" : {
+      "text" : "Målernummer",
+      "sub-text" : "\nDu trenger ikke å finne målenummeret ditt før du bestiller. Vi kontakter deg senere for å legge det inn. Har du en partner står nummeret gjerne på dem, og det overføres til deg.\n"
+    }
+  },
+  "step3": {
+    "title" : "Bekreft og bestill",
+    "header" : {
+      "text": "Bestill, vi fikser resten",
+      "sub-text" : "Bestill og len deg tilbake mens vi fikser alt det praktiske. \uD83D\uDE80 "
+    },
+    "securing" : {
+      "image-url": "",
+      "text" : "Hyttestrøm til kun 0 kr/mnd og 5,6 øre/kWh",
+      "sub-text" : ""
+    },
+    "order-details" : {
+      "address" : {
+        "text" : "Du får strøm levert til",
+        "sub-text" : "Vi kontakter deg for å skaffe målernummeret ditt"
+      },
+      "product": {
+        "text" : "Abonnementsdetaljer",
+        "sub-text" : "Avtaletype: Hyttestrøm\nMånedsbeløp: 0 kr\nPåslag: 5,6 øre/kilowattime"
+      }
+    },
+    "confirm" : {
+      "accept" : "Jeg bekrefter at jeg har lest og forstått vilkårene. Jeg har også sett/er kjent med standard angreskjema og standard skjema for opplysning om angrerett.",
+      "expedited" : "",
+      "offer-and-newsletter" : "",
+      "text" : ""
+    }
+  }
+}

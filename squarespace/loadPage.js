@@ -31,9 +31,9 @@ function loadOnboardingForm(targetElement){
             const parser = new DOMParser();
             const document = parser.parseFromString(html, 'text/html');
             const scripts = document.getElementsByTagName('script');
-            const target = document.getElementById('onboarding');
+
             document.querySelectorAll('script').forEach((script) => script.remove());
-            target.innerHTML = document.body.innerHTML;
+            targetElement.innerHTML = document.body.innerHTML;
 
             for(let i = 0; i < scripts.length; i++){
                 const script = document.createElement('script');

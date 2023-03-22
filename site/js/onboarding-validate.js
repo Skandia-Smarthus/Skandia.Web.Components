@@ -209,7 +209,7 @@ function validate(type, part) {
             var validEmail = obj.email;
             if (!validEmail) {
                 let emailField = document.getElementById("onboarding_email_edit");
-                var validEmail = validateEmail(emailField);
+                const validEmail = validateEmail(emailField);
                 if (!validEmail)
                     allValid = false;
                 else {
@@ -219,10 +219,10 @@ function validate(type, part) {
                 }
             }
 
-            document.querySelector('#step2-edit .required').each(function () {
+            $('#step2-edit .required').each(function () {
                 //debugger;
-                var el = document.querySelector(this);
-                var val = el.value;
+                const el = $(this);
+                const val = el.val();
                 if (val) {
                     removeInvalid(el);
                 }
@@ -232,10 +232,11 @@ function validate(type, part) {
                 }
             });
 
+
             //debugger;
-            var zip = document.querySelector("#onboardingZipEdit").value;
-            var validZip = false;
-            if (zip.length == 4) {
+            const zip = $("#onboardingZipEdit").val();
+            let validZip = false;
+            if (zip.length === 4) {
                 var elementPlace = document.querySelector('#onboardingPlaceEdit').value;
                 if (elementPlace != 'Ugyldig postnummer') {
                     validZip = true;
@@ -265,7 +266,7 @@ function validate(type, part) {
 
 function validateZip(zip) {
     if (zip) {
-        if (zip.length == 4) {
+        if (zip.length === 4) {
             return OnboardingPlaceFromZipV2(zip);
         }
         else if ((zip.length > 4)) {
@@ -312,11 +313,11 @@ function OnboardingValidationSetup(){
             return false;
         });
 
-        document.querySelector('#firstNameEdit').addEventListener('blur', function () {
+        $('#firstNameEdit').on('blur', function () {
             clearPnr('firstname', document.querySelector("#firstNameEdit").value);
         });
 
-        document.querySelector("#lastNameEdit").blur(function () {
+        $("#lastNameEdit").on('blur', function () {
             clearPnr('lastname', document.querySelector("#lastNameEdit").value);
         });
 }

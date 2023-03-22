@@ -24,7 +24,7 @@ function loadOnboardingForm(targetElement){
         console.log("Could not find correct tag on onboarding div. Need data-page=<id>");
         return;
     }
-    const url = `https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/site/${formId}.html`
+    const url = `https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/site/${pageName}.html`
     fetch(url)
         .then((response) => response.text())
         .then((html) => {

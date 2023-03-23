@@ -34,7 +34,8 @@ function OnboardingLookupV2(cell = null, email = null, authCode = null, state = 
         apiUrl = `${window.saleApi.basePath}${window.saleApi.phoneLookupPath}/${cell}`
     }
     else {
-        apiUrl = window.saleApi.basePath + window.saleApi.phoneLookupVippsPath + state + "&code=" + authCode + "&redirectUrl=" + redirectUrl;
+        apiUrl = `${window.saleApi.basePath}${window.saleApi.phoneLookupVippsPath}?state=${state}&code=${authCode}&redirectUrl=${redirectUrl}`;
+        //apiUrl = window.saleApi.basePath + window.saleApi.phoneLookupVippsPath + state + "&code=" + authCode + "&redirectUrl=" + redirectUrl;
 
         if (!authCode) {
             return

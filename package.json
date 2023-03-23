@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build-pages": "node generate.js",
-    "build-css": "npx tailwindcss --postcss postcss.config.js --config tailwind.config.js -i ./css/input.css -o ./site/output.css",
+    "build-css": "npx tailwindcss --postcss postcss.config.js --config tailwind.config.js -i ./css/input.css -o ./site/assets/output.css",
     "build" : "npm run build-pages && npm run build-css",
     "debug" : "node server.js"
   },

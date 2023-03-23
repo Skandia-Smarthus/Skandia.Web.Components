@@ -61,31 +61,6 @@ const output = "site";
         console.log(`Generated ${filePath}`);
     }
 
-    // // Load the Handlebars template
-    // const templateSource = await fs.readFile('onboarding-template.hbs', 'utf8');
-    // const template = Handlebars.compile(templateSource);
-    //
-    // // Load the JSON data
-    // const files = await fs.readdir(pagesDirectory);
-    // const validFiles = files.filter(file => path.extname(file) === '.json');
-    // console.log("Valid files " + validFiles )
-    // const jsonFiles = validFiles.map(async file =>{
-    //     console.log("Reading json for file " + file)
-    //     return await fs.readJson(path.join(pagesDirectory, file));
-    // } );
-    //
-    // fs.ensureDir(output)
-    //     .then(async () => {
-    //         console.log("Writing new files to " + output);
-    //       //  const configurations = await fs.readJson(path.join(pagesDirectory, jsonFile));
-    //         // Loop through the configurations and generate the HTML files
-    //         for (const config of jsonFiles) {
-    //             const renderedHtml = template(config);
-    //             await fs.writeFile(path.join(output, config.filename), renderedHtml);
-    //             console.log(`Generated ${config.filename}`);
-    //         }
-    //     })
-    //     .catch(err => {
-    //         console.log("Could not create or ensure ./site. ", err);
-    //     })
+    // Move static assets
+    fs.mov
 })();

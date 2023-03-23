@@ -19,13 +19,6 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
-- task: AzureFileCopy@5
-  inputs:
-    SourcePath: 'site'
-    azureSubscription: 'SkandiaEnergi AzurePlan (4210c3d4-8d11-400c-adda-582e27357bb8)'
-    Destination: 'AzureBlob'
-    storage: 'elkompissquarespace'
-    ContainerName: 'assets'
 
 - task: AzureFileCopy@5
   inputs:

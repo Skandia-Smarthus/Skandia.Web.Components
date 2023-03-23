@@ -708,7 +708,7 @@ function getVippsAuthCode(){
 }
 
 function getRedirectURL() {
-    const currentUrl = window.location.href;
+    const currentUrl = window.vippsRedirectUrl ? window.vippsRedirectUrl : window.location.href;
 
     if (!currentUrl) {
         return '';

@@ -160,10 +160,8 @@
                 <div class="form-bullet pos-center lg em">2</div>
                 <div class="inner">
                     <div class="text-oform-h1 em mt-2">
-<!--                        @content.Value("step2Header")-->
                         Navn og adresse
                     </div>
-<!--                    @content.Value("step2LeadText")-->
                     Du trenger ikke å finne målenummeret ditt før du bestiller. Vi kontakter deg senere for å legge det inn. Har du en partner står nummeret gjerne på dem, og det overføres til deg.
                     <div class="text-left mt-6">
                         <div id="onboarding-manual-name" class="">
@@ -216,21 +214,16 @@
                             <div id="meternumberPopup" class="form-popup hidden">
                                 <div class="flex justify-between mb-2">
                                     <div class="em">
-<!--                                        @step2MeternumberInfoHeader-->
                                         Målernummer
                                     </div>
                                     <div class="form-popup-close iconClose btnIcon m-0 w-6 h-6 topRight cursor-pointer" onclick="HidePopup('#meternumberPopup')"></div>
                                 </div>
-<!--                                @step2MeternumberInfoText-->
                                 Du trenger ikke å finne målenummeret ditt før du bestiller. Vi kontakter deg senere for å legge det inn. Har du en partner står nummeret gjerne på dem, og det overføres til deg.
 
                             </div>
                             <div class="flex h-[25px]">
                                 <label class="grow text-oform-body2 em">Målernummer</label>
-<!--                                    @if (!string.IsNullOrEmpty(step2MeternumberInfoText.ToString()))-->
-                                    {
                                     <div class="e-btn-link em underline cursor-pointer iconHelp centerRight w-4 h-4" data-popup="#step1InfoTekst" onclick="ShowPopup('#meternumberPopup')"></div>
-<!--                                    }-->
 
                             </div>
                             <input id="meterNumberAdd" type="text" class="form-control" placeholder="Dersom tilgjengelig">
@@ -247,7 +240,7 @@
                             <div class="flex items-center">
                                 <input id="supply-takover" name="takover" type="checkbox" class="control w-6 h-6 rounded-sm">
                                 <label for="supply-takover" class="ml-4 block text-oform-body em my-0 cursor-pointer">
-<!--                                    @textMoveDate-->
+
                                     Jeg overtar hytten
                                 </label>
                             </div>
@@ -259,15 +252,15 @@
                         </div>
                         <div class="flex justify-between">
                             <button class="e-btn-link underline btn-t-back" onclick="gotoStep(2, 'back')">
-<!--                                @textBack-->
+
                                 Tilbake
                             </button>
                             <button id="step2EditButton" class="e-btn-lg e-btn-secondary text-white hidden btn-t-editdelivery" onclick="validate('step2')">
-<!--                                @textNext-->
+
                                 Gå videre
                             </button>
                             <button id="step2AddButton" class="e-btn-lg e-btn-secondary text-white btn-t-addelivery" onclick="validate('step2', 'add')">
-<!--                                @textNext-->
+
                                 Gå videre
                             </button>
                         </div>
@@ -281,7 +274,7 @@
         <div id="step3-sum" class="form-box relative h-[55px] flex items-center">
             <div class="form-bullet pos-left md em mx-4">3</div>
             <div class="text-oform-h1 em">
-<!--                @content.Value("step3BoxHeader")-->
+
                 Bekreft og bestill
             </div>
         </div>
@@ -294,21 +287,21 @@
                 <div class="form-bullet pos-center lg em">3</div>
                 <div class="inner">
                     <div class="text-oform-h1 em mt-2">
-<!--                        @content.Value("step3Header")-->
+
                         Bestill, vi fikser resten
                     </div>
-<!--                    @content.Value("step3LeadText")-->
+
                     Bestill og len deg tilbake mens vi fikser alt det praktiske. 🚀 
                     <div class="text-left mt-6">
                         <div class="flex mb-4">
 
                             <div class="grow">
                                 <div class="em">
-<!--                                    @step3SecuringHeader-->
+
                                     
                                 </div>
                                 <div class="">
-<!--                                    @step3SecuringText-->
+
                                     
                                 </div>
                             </div>
@@ -325,47 +318,45 @@
                     <!--Ordredetaljer-->
                     <div class="inner text-left">
                         <div class="flex mb-4">
-                            <div class="w-12 flex-none"><img src="/site/assets/icons/Smiley.svg" alt="Person" /></div>
+                            <div class="w-12 flex-none"><img src="/css/icons/Smiley.svg" alt="Person" /></div>
                             <div class="grow" id="step3CustomerDataContainer">
                             </div>
                         </div>
                         <div class="flex mb-4">
-                            <div class="w-12 flex-none"><img src="/site/assets/icons//House.svg" alt="Adresse" /></div>
+                            <div class="w-12 flex-none"><img src="/css/icons//House.svg" alt="Adresse" /></div>
                             <div class="grow leading-6">
                                 <div class="em">
-<!--                                    @step3OrderDetailAddressHeader-->
+
                                     Du får strøm levert til
                                 </div>
                                 <div id="step3CustomerDeliveriesContainer">
                                 </div>
                                 <div id="step3CustomerText" class="hidden">
-<!--                                    @step3OrderDetailAddressInfoText-->
+
                                     Vi kontakter deg for å skaffe målernummeret ditt
                                 </div>
                             </div>
                         </div>
-<!--                            @if (!string.IsNullOrEmpty(step3ProductHeader.ToString()))-->
-<!--                            {-->
                             <div class="flex mb-4">
-                                <div class="w-12 flex-none"><img src="/site/assets/icons/Agreement.svg" alt="Avtale" /></div>
+                                <div class="w-12 flex-none"><img src="/css/icons/Agreement.svg" alt="Avtale" /></div>
                                 <div class="grow leading-8">
                                     <div class="em">
-<!--                                        @step3ProductHeader-->
+
                                         Abonnementsdetaljer
                                     </div>
-<!--                                    @step3ProductText-->
+
                                     Avtaletype: Spotpris
 Månedsbeløp: 34 kr
 Påslag: 1 øre/kilowattime
                                 </div>
                             </div>
-<!--                            }-->
+
 
                         <div class="flex mb-4">
-                            <div class="w-12 flex-none"><img src="/site/assets/icons/Pen.svg" alt="Endre" /></div>
+                            <div class="w-12 flex-none"><img src="/css/icons/Pen.svg" alt="Endre" /></div>
                             <div class="grow">
                                 <button class="e-btn-link em btn-t-editdelivery" onclick="gotoStep(2)">
-<!--                                    @textEdit-->
+
                                     Rediger
                                 </button>
                             </div>
@@ -382,23 +373,18 @@ Påslag: 1 øre/kilowattime
                             <div class="flex items-start">
                                 <input id="acceptedTerms" name="acceptedTerms" type="checkbox" class="control w-6 h-6 rounded-sm mt-2 btn-t-acceptedterms">
                                 <div class="ml-4 block text-oform-body1 my-0 cursor-pointer topLeft">
-<!--                                    @Html.Raw(@acceptText)-->
                                     Jeg bekrefter at jeg har lest og forstått vilkårene. Jeg har også sett/er kjent med standard angreskjema og standard skjema for opplysning om angrerett.
                                 </div>
                             </div>
                         </div>
-<!--                            @if (!string.IsNullOrEmpty(step3ConfirmFastStartup.ToString()))-->
-<!--                            {-->
                             <div class="mb-2">
                                 <div class="flex items-start">
                                     <input id="confirm-faststartup" name="faststartup" type="checkbox" class="control w-6 h-6 rounded-sm mt-2 btn-t-faststartup">
                                     <label for="confirm-faststartup" class="ml-4 block text-oform-body1 my-0 cursor-pointer">
-<!--                                        @step3ConfirmFastStartup-->
                                         Jeg ønsker oppstart så raskt som mulig og ønsker at leveringen av strøm kan påbegynnes før utløpet av angrefristen. Jeg aksepterer at jeg skal betale for leveringen av strøm i henhold til disse vilkårene dersom angreretten benyttes.
                                     </label>
                                 </div>
                             </div>
-<!--                            }-->
 
 
 
@@ -411,10 +397,8 @@ Påslag: 1 øre/kilowattime
                                     <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                                     <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                                 </svg>
-<!--                                @textOrder-->
                                 Bestill nå
                             </button>
-                            <!--<button id="onboardingSaleButtonPending" class="e-btn-lg e-btn-secondary text-white hidden" disabled="disabled">@textOrderPending</button>-->
                         </div>
                     </div>
                 </div>
@@ -474,10 +458,3 @@ Påslag: 1 øre/kilowattime
         </div>
     </script>
 </div>
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/site/js/common.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@d5a3e99/site/js/onboarding-validate.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/site/js/onboarding-api.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@76fdbe0/site/js/onboarding.js"></script>

@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: windows-latest
 
 steps:
 - task: NodeTool@0
@@ -27,9 +27,10 @@ steps:
     storage: 'elkompissquarespace'
     ContainerName: 'assets'
 
-- task: AzureBlobStorageUpload@1
+- task: AzureFileCopy@5
   inputs:
-    ConnectionString: 'BlobEndpoint=https://elkompissquarespace.blob.core.windows.net/;QueueEndpoint=https://elkompissquarespace.queue.core.windows.net/;FileEndpoint=https://elkompissquarespace.file.core.windows.net/;TableEndpoint=https://elkompissquarespace.table.core.windows.net/;SharedAccessSignature=sv=2021-12-02&ss=b&srt=co&sp=rwdlaciytfx&se=2023-03-23T21:09:16Z&st=2023-03-23T13:09:16Z&spr=https&sig=ctb4K%2BosE3%2B8847qaCG49oEUuu4r%2Bxk7uuDsqrgqcI4%3D'
     SourcePath: 'site'
-    DestinationContainer: 'assets'
-  displayName: 'Upload to Azure Blob Storage'
+    azureSubscription: 'SkandiaEnergi AzurePlan(4210c3d4-8d11-400c-adda-582e27357bb8)'
+    Destination: 'AzureBlob'
+    storage: 'elkompissquarespace'
+    ContainerName: 'assets'

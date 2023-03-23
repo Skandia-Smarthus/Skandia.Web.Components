@@ -3,7 +3,6 @@
 
 <div class="hidden opacity-70 opacity-50 animate-pulse skandiaenergi ">
     <div class="SkandiaEnergi:hidden">
-<!--        @companyType-->
         {{profile}}
     </div>
     <input type="hidden" id="linkWelcome1" value="@linkWelcome1Url" />
@@ -14,7 +13,6 @@
             <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
             <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
         </svg>
-<!--        @textNext-->
         {{global.buttons.next}}
     </button>
     <div class="bg-brand-pink">TEST2</div>
@@ -26,14 +24,14 @@
 
 
 <div id="step1-scrollto"></div>
-<div id="onboardingformV2" class="w-600 mx-auto relative mt-10 mb-20 {{profile}}"><!--@companyType.ToString().ToLower()-->
+<div id="onboardingformV2" class="w-600 mx-auto relative mt-10 mb-20 {{profile}}">
     <div id="onboarding-container" class="">
         <!--Steg1 start-->
         <div id="step1-sum" class="hidden">
             <div class="form-box relative h-[55px] flex items-center ">
                 <div class="form-bullet pos-left md em mx-4">1</div>
                 <div class="text-oform-h1 em">
-                    <!--@content.Value("step1BoxHeader")-->
+
                     {{step1.title}}
                     </div>
             </div>
@@ -44,14 +42,13 @@
                 <div class="form-bullet pos-center lg em">1</div>
                 <div id="step1-intro" class="">
                     <div class="inner">
-                        <div class="text-oform-h1 em mt-2 font-bold">{{step1.header.text}}<!--@content.Value("step1Header")--></div>
-                        {{step1.header.sub-text}} <!--@content.Value("step1LeadText")-->
+                        <div class="text-oform-h1 em mt-2 font-bold">{{step1.header.text}}</div>
+                        {{step1.header.sub-text}}
                     </div>
                     <div class="text-center mt-6">
                         {{#if step1.vipps.enabled}}
 
                         <div class="mb-2">
-                            <!--<a href="@vippsUrl" class="e-btn bg-warning-vipps inline-block whitespace-nowrap text-white em btn-t-vipps">-->
                             <a id="vipps-button" class="e-btn bg-warning-vipps inline-block whitespace-nowrap text-white em btn-t-vipps">
                                 {{step1.vipps.button-text}}
                             </a>
@@ -84,12 +81,9 @@
 
                 <div id="step1-cell" class="inner hidden">
                     <div class="text-oform-h1 em mt-2">
-<!--                        @content.Value("step1CellHeader")-->
                         {{step1.cell.header.text}}
                     </div>
                     {{step1.cell.header.sub-text}}
-<!--                    @content.Value("step1CellLeadText")-->
-                    <!--<form action="" method="get"></form>-->
                     <form action="#" id="lookup">
                         <div class="text-left mt-4 mb-8">
                             <div class="flex flex-col gap-4">
@@ -107,9 +101,8 @@
                         </div>
 
                         <div class="flex justify-between">
-                            <!--min="40000000" maxlength="99999999"> <a class="underline" href="@redirectURL">@textBack</a> -->
+
                             <button class="e-btn-link underline btn-t-back" onclick="gotoStep(1,'intro')" type="button">
-<!--                                @textBack-->
                                 {{global.buttons.back}}
                             </button>
                             <button class="e-btn-lg e-btn-secondary text-white inline-flex items-center px-4 py-2 btn-t-cellsearch" type="submit" id="btnSubmitCellSearch">
@@ -117,11 +110,10 @@
                                     <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                                     <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                                 </svg>
-<!--                                @textNext-->
+
                                 {{global.buttons.next}}
                             </button>
                         </div>
-                        <!-- onclick="validate('step1')" -->
                     </form>
                 </div>
             </div>
@@ -134,7 +126,6 @@
             <div class="form-bullet pos-left md em mx-4">2</div>
             <div class="grow text-oform-h1 em flex flex-row gap-x-4 mr-4">
                 <div class="grow text-left">
-<!--                    @content.Value("step2BoxHeader")-->
                     {{step2.title}}
                 </div>
                 <div id="step2-editpen" class="hidden text-right place-content-end w-6 flex-none btn-t-deliverybackedit">
@@ -155,32 +146,23 @@
                 <div class="form-bullet pos-center lg em">2</div>
                 <div class="inner">
                     <div class="text-oform-h1 em mt-2">
-<!--                        @content.Value("step2Header")-->
                         {{step2.header.text}}
                     </div>
                     <div class="text-left mt-6">
                         <div id="deliveriesContainer">
                         </div>
                         {{#if step2.buttons.add-delivery}}
-
                           <button class="my-4 ml-3 iconPlus btnIcon hover:underline centerLeft pl-12 em text-left" onclick="gotoStep(2,'add')">
-<!--                              @textAddDelivery-->
                               {{step2.buttons.add-delivery}}
                           </button>
 
                         {{/if}}
 
-                        <!--<button class="my-4 ml-3 hover:underline centerLeft pl-12 em text-left" onclick="gotoStep(2,'reset')">@textResetUser</button>-->
-
                         <div class="flex justify-between mt-4">
-                            <!--<button class="e-btn-link underline" onclick="gotoStep(1,'intro')">@textBack</button>
-                            <a class="underline" href="@redirectURL">@textBack</a>-->
                             <button class="e-btn-link underline btn-t-back" onclick="gotoStep(1,'intro')" type="button">
-<!--                                @textBack-->
                                 {{global.buttons.back}}
                             </button>
                             <button id="step2Next" class="e-btn-lg e-btn-secondary text-white btn-t-deliveries" onclick="validate('step2', 'overview')">
-<!--                                @textNext-->
                                 {{global.buttons.next}}
                             </button>
                         </div>

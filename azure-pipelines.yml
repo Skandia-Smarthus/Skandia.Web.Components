@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: windows-latest
+  vmImage: ubuntu-latest
 
 steps:
 - task: NodeTool@0
@@ -26,3 +26,10 @@ steps:
     Destination: 'AzureBlob'
     storage: 'elkompissquarespace'
     ContainerName: 'assets'
+
+- task: AzureBlobStorageUpload@1
+  inputs:
+    ConnectionString: 'BlobEndpoint=https://elkompissquarespace.blob.core.windows.net/;QueueEndpoint=https://elkompissquarespace.queue.core.windows.net/;FileEndpoint=https://elkompissquarespace.file.core.windows.net/;TableEndpoint=https://elkompissquarespace.table.core.windows.net/;SharedAccessSignature=sv=2021-12-02&ss=b&srt=co&sp=rwdlaciytfx&se=2023-03-23T21:09:16Z&st=2023-03-23T13:09:16Z&spr=https&sig=ctb4K%2BosE3%2B8847qaCG49oEUuu4r%2Bxk7uuDsqrgqcI4%3D'
+    SourcePath: 'site'
+    DestinationContainer: 'assets'
+  displayName: 'Upload to Azure Blob Storage'

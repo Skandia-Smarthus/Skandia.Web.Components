@@ -180,10 +180,8 @@
                 <div class="form-bullet pos-center lg em">2</div>
                 <div class="inner">
                     <div class="text-oform-h1 em mt-2">
-<!--                        @content.Value("step2Header")-->
                         {{step2.header.text}}
                     </div>
-<!--                    @content.Value("step2LeadText")-->
                     {{step2.header.sub-text}}
                     <div class="text-left mt-6">
                         <div id="onboarding-manual-name" class="">
@@ -236,21 +234,16 @@
                             <div id="meternumberPopup" class="form-popup hidden">
                                 <div class="flex justify-between mb-2">
                                     <div class="em">
-<!--                                        @step2MeternumberInfoHeader-->
                                         {{step2.info-popup.text}}
                                     </div>
                                     <div class="form-popup-close iconClose btnIcon m-0 w-6 h-6 topRight cursor-pointer" onclick="HidePopup('#meternumberPopup')"></div>
                                 </div>
-<!--                                @step2MeternumberInfoText-->
                                 {{step2.info-popup.sub-text}}
                             </div>
                             <div class="flex h-[25px]">
                                 <label class="grow text-oform-body2 em">Målernummer</label>
                                 {{#not-empty step2.info-popup.sub-text}}
-<!--                                    @if (!string.IsNullOrEmpty(step2MeternumberInfoText.ToString()))-->
-                                    {
                                     <div class="e-btn-link em underline cursor-pointer iconHelp centerRight w-4 h-4" data-popup="#step1InfoTekst" onclick="ShowPopup('#meternumberPopup')"></div>
-<!--                                    }-->
                                 {{/not-empty}}
 
                             </div>
@@ -268,7 +261,7 @@
                             <div class="flex items-center">
                                 <input id="supply-takover" name="takover" type="checkbox" class="control w-6 h-6 rounded-sm">
                                 <label for="supply-takover" class="ml-4 block text-oform-body em my-0 cursor-pointer">
-<!--                                    @textMoveDate-->
+
                                     {{global.text.move-date}}
                                 </label>
                             </div>
@@ -280,15 +273,15 @@
                         </div>
                         <div class="flex justify-between">
                             <button class="e-btn-link underline btn-t-back" onclick="gotoStep(2, 'back')">
-<!--                                @textBack-->
+
                                 {{global.buttons.back}}
                             </button>
                             <button id="step2EditButton" class="e-btn-lg e-btn-secondary text-white hidden btn-t-editdelivery" onclick="validate('step2')">
-<!--                                @textNext-->
+
                                 {{global.buttons.next}}
                             </button>
                             <button id="step2AddButton" class="e-btn-lg e-btn-secondary text-white btn-t-addelivery" onclick="validate('step2', 'add')">
-<!--                                @textNext-->
+
                                 {{global.buttons.next}}
                             </button>
                         </div>
@@ -302,7 +295,7 @@
         <div id="step3-sum" class="form-box relative h-[55px] flex items-center">
             <div class="form-bullet pos-left md em mx-4">3</div>
             <div class="text-oform-h1 em">
-<!--                @content.Value("step3BoxHeader")-->
+
                 {{step3.title}}
             </div>
         </div>
@@ -315,27 +308,27 @@
                 <div class="form-bullet pos-center lg em">3</div>
                 <div class="inner">
                     <div class="text-oform-h1 em mt-2">
-<!--                        @content.Value("step3Header")-->
+
                         {{step3.header.text}}
                     </div>
-<!--                    @content.Value("step3LeadText")-->
+
                     {{step3.header.sub-text}}
                     <div class="text-left mt-6">
                         <div class="flex mb-4">
                             {{#not-empty step3.securing.image-url}}
                                 <div class="w-20 flex-none">
-                                    <!-- @step3SecuringImageUrl-->
+
                                     <img src="{{step3.securing.image-url}}" />
                                 </div>
                             {{/not-empty}}
 
                             <div class="grow">
                                 <div class="em">
-<!--                                    @step3SecuringHeader-->
+
                                     {{step3.securing.header.text}}
                                 </div>
                                 <div class="">
-<!--                                    @step3SecuringText-->
+
                                     {{step3.securing.header.sub-text}}
                                 </div>
                             </div>
@@ -360,39 +353,37 @@
                             <div class="w-12 flex-none"><img src="{{imagePath}}/css/icons//House.svg" alt="Adresse" /></div>
                             <div class="grow leading-6">
                                 <div class="em">
-<!--                                    @step3OrderDetailAddressHeader-->
+
                                     {{step3.order-details.address.text}}
                                 </div>
                                 <div id="step3CustomerDeliveriesContainer">
                                 </div>
                                 <div id="step3CustomerText" class="hidden">
-<!--                                    @step3OrderDetailAddressInfoText-->
+
                                     {{step3.order-details.address.sub-text}}
                                 </div>
                             </div>
                         </div>
                         {{#not-empty step3.order-details.product.text}}
-<!--                            @if (!string.IsNullOrEmpty(step3ProductHeader.ToString()))-->
-<!--                            {-->
                             <div class="flex mb-4">
                                 <div class="w-12 flex-none"><img src="{{imagePath}}/css/icons/Agreement.svg" alt="Avtale" /></div>
                                 <div class="grow leading-8">
                                     <div class="em">
-<!--                                        @step3ProductHeader-->
+
                                         {{step3.order-details.product.text}}
                                     </div>
-<!--                                    @step3ProductText-->
+
                                     {{step3.order-details.product.sub-text}}
                                 </div>
                             </div>
-<!--                            }-->
+
                         {{/not-empty}}
 
                         <div class="flex mb-4">
                             <div class="w-12 flex-none"><img src="{{imagePath}}/css/icons/Pen.svg" alt="Endre" /></div>
                             <div class="grow">
                                 <button class="e-btn-link em btn-t-editdelivery" onclick="gotoStep(2)">
-<!--                                    @textEdit-->
+
                                     {{global.buttons.edit}}
                                 </button>
                             </div>
@@ -409,50 +400,37 @@
                             <div class="flex items-start">
                                 <input id="acceptedTerms" name="acceptedTerms" type="checkbox" class="control w-6 h-6 rounded-sm mt-2 btn-t-acceptedterms">
                                 <div class="ml-4 block text-oform-body1 my-0 cursor-pointer topLeft">
-<!--                                    @Html.Raw(@acceptText)-->
                                     {{step3.confirm.accept}}
                                 </div>
                             </div>
                         </div>
                         {{#not-empty step3.confirm.expedited}}
-<!--                            @if (!string.IsNullOrEmpty(step3ConfirmFastStartup.ToString()))-->
-<!--                            {-->
                             <div class="mb-2">
                                 <div class="flex items-start">
                                     <input id="confirm-faststartup" name="faststartup" type="checkbox" class="control w-6 h-6 rounded-sm mt-2 btn-t-faststartup">
                                     <label for="confirm-faststartup" class="ml-4 block text-oform-body1 my-0 cursor-pointer">
-<!--                                        @step3ConfirmFastStartup-->
                                         {{step3.confirm.expedited}}
                                     </label>
                                 </div>
                             </div>
-<!--                            }-->
                         {{/not-empty}}
 
                         {{#not-empty step3.confirm.text}}
-<!--                            @if (!string.IsNullOrEmpty(step3ConfirmInfoText.ToString()))-->
-<!--                            {-->
                             <div class="mb-2">
                                 <div class="flex items-start">
                                     <input id="confirm-news" name="news" type="checkbox" class="control w-6 h-6 rounded-sm mt-2 btn-t-newsletter">
                                     <label for="confirm-news" class="ml-4 block text-oform-body1 my-0 cursor-pointer">
-<!--                                        @step3ConfirmInformation-->
                                         {{step3.confirm.text}}
                                     </label>
                                 </div>
                             </div>
-<!--                            }-->
                         {{/not-empty}}
 
 
                         {{#not-empty step3.confirm.offer-and-newsletter}}
-<!--                            @if (!string.IsNullOrEmpty(step3ConfirmInfoText.ToString()))-->
-<!--                            {-->
                             <div class="mb-2">
-<!--                                @step3ConfirmInfoText-->
                                 {{step3.confirm.offer-and-newsletter}}
                             </div>
-<!--                            }-->
                         {{/not-empty}}
 
 
@@ -463,10 +441,8 @@
                                     <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                                     <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                                 </svg>
-<!--                                @textOrder-->
                                 {{global.buttons.order}}
                             </button>
-                            <!--<button id="onboardingSaleButtonPending" class="e-btn-lg e-btn-secondary text-white hidden" disabled="disabled">@textOrderPending</button>-->
                         </div>
                     </div>
                 </div>

@@ -20,9 +20,10 @@
   "step1": {
     "title" : " Start din bestilling her",
     "vipps": {
+      "redirectUrl" : "https://elkompis.no/bli-kunde",
       "button-text": "Start med Vipps",
       "enabled" : true
-      },
+    },
     "cell": {
       "button-text": "Manuell registrering",
       "header" : {

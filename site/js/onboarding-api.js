@@ -399,7 +399,7 @@ function CustomerLookupV2(obj = null, index = null) {
 
 function getVippsUrl() {
     const vippsState = generateUUID();
-    const redirectUrl = getRedirectURL(); // You need to implement the getRedirectURL function
+    const redirectUrl = getRedirectURL();
     const urlEncoded = encodeURIComponent(redirectUrl);
 
     return fetch(`${window.saleApi.basePath}${window.saleApi.vippsUrlLookupPath}?state=${vippsState}&redirectUrl=${urlEncoded}`)

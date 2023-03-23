@@ -1,0 +1,14 @@
+{
+
+  "saleApi" : {
+    "basePath" : "https://app-elkompis-service-dev.azurewebsites.net/",
+    "phoneLookupPath" : "sale/lookup",
+    "phoneLookupVippsPath" : "sale/lookupvipps",
+    "placeLookupPath" : "sale/place",
+    "customerLookupPath" : "sale/customerlookup",
+    "vippsUrlLookupPath" : "sale/vippsurl",
+    "saleLeadPath" : "sale/salelead",
+    "saleRegisterPath" : "sale",
+    "saleRegisterSkandiaPath" : "sale/skandiaEnergiSale"
+  }
+}

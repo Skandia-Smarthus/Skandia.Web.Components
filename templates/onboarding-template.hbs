@@ -52,7 +52,7 @@
 
                         <div class="mb-2">
                             <!--<a href="@vippsUrl" class="e-btn bg-warning-vipps inline-block whitespace-nowrap text-white em btn-t-vipps">-->
-                            <a href="{{step1.vipps.url}}{{step1.vipps.return-to}}" class="e-btn bg-warning-vipps inline-block whitespace-nowrap text-white em btn-t-vipps">
+                            <a id="vipps-button" class="e-btn bg-warning-vipps inline-block whitespace-nowrap text-white em btn-t-vipps">
                                 {{step1.vipps.button-text}}
                             </a>
                         </div>
@@ -161,11 +161,11 @@
                     <div class="text-left mt-6">
                         <div id="deliveriesContainer">
                         </div>
-                        {{#if global.buttons.add-delivery}}
+                        {{#if step2.buttons.add-delivery}}
 
                           <button class="my-4 ml-3 iconPlus btnIcon hover:underline centerLeft pl-12 em text-left" onclick="gotoStep(2,'add')">
 <!--                              @textAddDelivery-->
-                              {{global.buttons.add-delivery}}
+                              {{step2.buttons.add-delivery}}
                           </button>
 
                         {{/if}}
@@ -370,12 +370,12 @@
                     <!--Ordredetaljer-->
                     <div class="inner text-left">
                         <div class="flex mb-4">
-                            <div class="w-12 flex-none"><img src="/images/icons/small/Smiley.svg" alt="Person" /></div>
+                            <div class="w-12 flex-none"><img src="{{imagePath}}/css/icons/Smiley.svg" alt="Person" /></div>
                             <div class="grow" id="step3CustomerDataContainer">
                             </div>
                         </div>
                         <div class="flex mb-4">
-                            <div class="w-12 flex-none"><img src="/images/icons/small/House.svg" alt="Adresse" /></div>
+                            <div class="w-12 flex-none"><img src="{{imagePath}}/css/icons//House.svg" alt="Adresse" /></div>
                             <div class="grow leading-6">
                                 <div class="em">
 <!--                                    @step3OrderDetailAddressHeader-->
@@ -393,7 +393,7 @@
 <!--                            @if (!string.IsNullOrEmpty(step3ProductHeader.ToString()))-->
 <!--                            {-->
                             <div class="flex mb-4">
-                                <div class="w-12 flex-none"><img src="/images/icons/small/Agreement.svg" alt="Avtale" /></div>
+                                <div class="w-12 flex-none"><img src="{{imagePath}}/css/icons/Agreement.svg" alt="Avtale" /></div>
                                 <div class="grow leading-8">
                                     <div class="em">
 <!--                                        @step3ProductHeader-->
@@ -407,7 +407,7 @@
                         {{/not-empty}}
 
                         <div class="flex mb-4">
-                            <div class="w-12 flex-none"><img src="/images/icons/small/Pen.svg" alt="Endre" /></div>
+                            <div class="w-12 flex-none"><img src="{{imagePath}}/css/icons/Pen.svg" alt="Endre" /></div>
                             <div class="grow">
                                 <button class="e-btn-link em btn-t-editdelivery" onclick="gotoStep(2)">
 <!--                                    @textEdit-->
@@ -496,7 +496,7 @@
         <div id="step-createorder" class="hidden">
             <div class="min-h-[300px]">
                 <div class="mx-auto mb-12">
-                    <lottie-player src="/images/anim/elkompis.json" background="transparent" speed="1" class="h-20 w-20 mx-auto" loop autoplay></lottie-player>
+                    <lottie-player src="{{imagePath}}/css/animation.json" background="transparent" speed="1" class="h-20 w-20 mx-auto" loop autoplay></lottie-player>
                 </div>
 
             </div>
@@ -505,3 +505,14 @@
     </div>
 </div>
 </div>
+
+<script>
+    (function(){
+        console.log("Setting up component settings");
+        window.saleApi = {{{json saleApi}}}
+        var vippsRedirectUrl = '{{step1.vipps.redirectUrl}}';
+        var vippsAuthCode = '{{step1.vipps.auth-code}}';
+        window.profile = '{{profile}}';
+    })();
+
+</script>

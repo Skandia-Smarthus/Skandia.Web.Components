@@ -601,6 +601,11 @@ function OnboardingSetup(){
         }
     });
 
+    $("#vipps-button").on('click', function(){
+        getVippsUrl().then(url => {
+            window.location.href = url;
+        });
+    });
 
 //OnChange -----------------
     $('#onboardingZipEdit').change(function () {
@@ -653,10 +658,12 @@ function OnboardingSetup(){
         //}, 500);
         scrollToElementOnboarding('#onboardingformV2');
     }
-    let redirectUrl = "@redirectURL";
-    let vippsAuthCode = "@vippsAuthCode";
+
+    vippsAuthCode = getVippsAuthCode();
+
     var obj = getJsonContent();
     let sessionVippsAuthCode = vippsAuthCode;
+    const redirectUrl = getRedirectURL()
 
     if (vippsAuthCode) {
         if (!obj) {
@@ -664,24 +671,22 @@ function OnboardingSetup(){
         }
         obj.authMethod = "Vipps";
         obj.vippsAuthCode = vippsAuthCode;
-        obj.vippsState = "get query param"
+        obj.vippsState = getVippsState()
         setJsonContent(obj);
         window.history.pushState(null, null, redirectUrl);
     }
-
 
     if (obj && obj.vippsAuthCode)
         sessionVippsAuthCode = obj.vippsAuthCode;
 
     if (obj && obj.authMethod == "Vipps" && sessionVippsAuthCode) {
         showPulse("#step1-intro");
-        let vippsState = "@vippsState";
 
         let retrievedObject = sessionStorage.getItem('trackingObj');
         let trackingObj = JSON.parse(retrievedObject);
         //debugger;
-        var targetElement = $("#onboardingformV2");
-        var offsetTop = targetElement.length && targetElement.offset() ? targetElement.offset().top : 0;
+        const targetElement = $("#onboardingformV2");
+        const offsetTop = targetElement.length && targetElement.offset() ? targetElement.offset().top : 0;
 
         OnboardingLookupV2(null, null, sessionVippsAuthCode, obj.vippsState, redirectUrl, trackingObj);
         $('html, body').animate({
@@ -691,4 +696,63 @@ function OnboardingSetup(){
     }
 
     OnboardingValidationSetup();
+}
+
+
+function getVippsState(){
+    return getQueryParamValue('state')
+}
+
+function getVippsAuthCode(){
+    return getQueryParamValue('code')
+}
+
+function getRedirectURL() {
+    const currentUrl = window.location.href;
+
+    if (!currentUrl) {
+        return '';
+    }
+
+    let redirectUrl = currentUrl;
+    const queryStringIndex = redirectUrl.indexOf('?');
+
+    if (queryStringIndex !== -1) {
+        redirectUrl = redirectUrl.substring(0, queryStringIndex);
+    }
+
+    return redirectUrl
+}
+
+async function getVippsUrl() {
+    const vippsState = generateUUID();
+    const redirectUrl = getRedirectURL(); // Assuming you've already implemented this function
+    const urlEncoded = encodeURIComponent(redirectUrl);
+    const vippsUrlLookupPath = saleApi.basePath + saleApi.vippsUrlLookupPath; // Replace this with your actual Vipps URL lookup path
+
+    const response = await fetch(`${vippsUrlLookupPath}?state=${vippsState}&redirectUrl=${urlEncoded}`);
+    const url = await response.text();
+    return url;
+}
+
+function generateUUID() {
+    const randomValues = new Uint8Array(16);
+    crypto.getRandomValues(randomValues);
+    randomValues[6] = (randomValues[6] & 0x0f) | 0x40;
+    randomValues[8] = (randomValues[8] & 0x3f) | 0x80;
+
+    const byteToHex = [];
+    for (let i = 0; i < 256; ++i) {
+        byteToHex[i] = (i + 0x100).toString(16).substr(1);
+    }
+
+    const bytes = randomValues;
+    return byteToHex[bytes[0]] + byteToHex[bytes[1]] +
+        byteToHex[bytes[2]] + byteToHex[bytes[3]] + '-' +
+        byteToHex[bytes[4]] + byteToHex[bytes[5]] + '-' +
+        byteToHex[bytes[6]] + byteToHex[bytes[7]] + '-' +
+        byteToHex[bytes[8]] + byteToHex[bytes[9]] + '-' +
+        byteToHex[bytes[10]] + byteToHex[bytes[11]] +
+        byteToHex[bytes[12]] + byteToHex[bytes[13]] +
+        byteToHex[bytes[14]] + byteToHex[bytes[15]];
 }

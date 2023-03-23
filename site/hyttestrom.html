@@ -51,7 +51,7 @@
 
                         <div class="mb-2">
                             <!--<a href="@vippsUrl" class="e-btn bg-warning-vipps inline-block whitespace-nowrap text-white em btn-t-vipps">-->
-                            <a href="https://api.vipps.no/access-management-1.0/access/oauth2/auth?client_id&#x3D;a4ced04c-7d7b-46d7-a663-f16f6dab6786&amp;response_type&#x3D;code&amp;scope&#x3D;openid+address+email+name+phoneNumber+nin&amp;state&#x3D;58dcc19c-f18b-4363-8617-f7e92be513dd&amp;redirect_uri&#x3D;https://skandiaenergi.no/stromavtale/hytte" class="e-btn bg-warning-vipps inline-block whitespace-nowrap text-white em btn-t-vipps">
+                            <a id="vipps-button" class="e-btn bg-warning-vipps inline-block whitespace-nowrap text-white em btn-t-vipps">
                                 Finn dine opplysninger med vipps
                             </a>
                         </div>
@@ -338,12 +338,12 @@ Du trenger ikke å finne målenummeret ditt før du bestiller. Vi kontakter deg 
                     <!--Ordredetaljer-->
                     <div class="inner text-left">
                         <div class="flex mb-4">
-                            <div class="w-12 flex-none"><img src="/images/icons/small/Smiley.svg" alt="Person" /></div>
+                            <div class="w-12 flex-none"><img src="/css/icons/Smiley.svg" alt="Person" /></div>
                             <div class="grow" id="step3CustomerDataContainer">
                             </div>
                         </div>
                         <div class="flex mb-4">
-                            <div class="w-12 flex-none"><img src="/images/icons/small/House.svg" alt="Adresse" /></div>
+                            <div class="w-12 flex-none"><img src="/css/icons//House.svg" alt="Adresse" /></div>
                             <div class="grow leading-6">
                                 <div class="em">
 <!--                                    @step3OrderDetailAddressHeader-->
@@ -360,7 +360,7 @@ Du trenger ikke å finne målenummeret ditt før du bestiller. Vi kontakter deg 
 <!--                            @if (!string.IsNullOrEmpty(step3ProductHeader.ToString()))-->
 <!--                            {-->
                             <div class="flex mb-4">
-                                <div class="w-12 flex-none"><img src="/images/icons/small/Agreement.svg" alt="Avtale" /></div>
+                                <div class="w-12 flex-none"><img src="/css/icons/Agreement.svg" alt="Avtale" /></div>
                                 <div class="grow leading-8">
                                     <div class="em">
 <!--                                        @step3ProductHeader-->
@@ -375,7 +375,7 @@ Påslag: 5,6 øre/kilowattime
 <!--                            }-->
 
                         <div class="flex mb-4">
-                            <div class="w-12 flex-none"><img src="/images/icons/small/Pen.svg" alt="Endre" /></div>
+                            <div class="w-12 flex-none"><img src="/css/icons/Pen.svg" alt="Endre" /></div>
                             <div class="grow">
                                 <button class="e-btn-link em btn-t-editdelivery" onclick="gotoStep(2)">
 <!--                                    @textEdit-->
@@ -427,7 +427,7 @@ Påslag: 5,6 øre/kilowattime
         <div id="step-createorder" class="hidden">
             <div class="min-h-[300px]">
                 <div class="mx-auto mb-12">
-                    <lottie-player src="/images/anim/elkompis.json" background="transparent" speed="1" class="h-20 w-20 mx-auto" loop autoplay></lottie-player>
+                    <lottie-player src="/css/animation.json" background="transparent" speed="1" class="h-20 w-20 mx-auto" loop autoplay></lottie-player>
                 </div>
 
             </div>
@@ -435,7 +435,18 @@ Påslag: 5,6 øre/kilowattime
 
     </div>
 </div>
-</div> <div id="scriptcontainer" class="hidden">
+</div>
+
+<script>
+    (function(){
+        console.log("Setting up component settings");
+        window.saleApi = {"basePath":"https://app-elkompis-service-dev.azurewebsites.net/","phoneLookupPath":"sale/lookup","phoneLookupVippsPath":"sale/lookupvipps","placeLookupPath":"sale/place","customerLookupPath":"sale/customerlookup","vippsUrlLookupPath":"sale/vippsurl","saleLeadPath":"sale/salelead","saleRegisterPath":"sale","saleRegisterSkandiaPath":"sale/skandiaEnergiSale"}
+        var vippsRedirectUrl = '';
+        var vippsAuthCode = '';
+        window.profile = 'SkandiaEnergi';
+    })();
+
+</script> <div id="scriptcontainer" class="hidden">
     <script id="orderDetailsCustomer" type="template">
         <div class="em">{{Firstname}} {{Lastname}}</div>
         <div class="leading-8">Tlf. {{Cell}}</div>

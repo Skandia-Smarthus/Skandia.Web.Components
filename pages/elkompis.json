@@ -8,13 +8,18 @@
       "next" : "Gå videre",
       "edit" : "Rediger",
       "order" : "Bestill nå",
-      "order-waiting" : "Vent litt mens vi registrerer din bestilling",
-      "add-delivery" : "Legg til flere anlegg"
+      "order-waiting" : "Vent litt mens vi registrerer din bestilling"
+
     },
     "text" : {
       "add-delivery" : "",
       "move-date" : "Jeg overtar hytten",
       "reset-user" : "Ikke deg?"
+    },
+    "vipps": {
+      "url" : "https://api.vipps.no/access-management-1.0/access/oauth2/auth",
+      "client-id" : "a4ced04c-7d7b-46d7-a663-f16f6dab6786",
+      "scope" : "openid+address+email+name+phoneNumber+nin"
     }
   },
   "step1": {
@@ -23,7 +28,7 @@
       "enabled": true,
       "button-text": "Finn dine opplysninger med vipps",
       "url": "https://api.vipps.no/access-management-1.0/access/oauth2/auth?client_id=a4ced04c-7d7b-46d7-a663-f16f6dab6786&response_type=code&scope=openid+address+email+name+phoneNumber+nin&state=58dcc19c-f18b-4363-8617-f7e92be513dd&redirect_uri=",
-      "return-to": "https://elkompis.no/blikunde"
+      "return-to": "https://elkompis.no/bli-kunde"
       },
     "cell": {
       "button-text": "Manuell registrering",
@@ -52,7 +57,10 @@
     },
     "info-popup" : {
       "text" : "Målernummer",
-      "sub-text" : "\nDu trenger ikke å finne målenummeret ditt før du bestiller. Vi kontakter deg senere for å legge det inn. Har du en partner står nummeret gjerne på dem, og det overføres til deg.\n"
+      "sub-text" : "Du trenger ikke å finne målenummeret ditt før du bestiller. Vi kontakter deg senere for å legge det inn. Har du en partner står nummeret gjerne på dem, og det overføres til deg.\n"
+    },
+    "buttons" : {
+      "add-delivery" : "Legg til flere anlegg"
     }
   },
   "step3": {
@@ -73,12 +81,12 @@
       },
       "product": {
         "text" : "Abonnementsdetaljer",
-        "sub-text" : "Avtaletype: Hyttestrøm\nMånedsbeløp: 0 kr\nPåslag: 5,6 øre/kilowattime"
+        "sub-text" : "Avtaletype: Spotpris\nMånedsbeløp: 34 kr\nPåslag: 1 øre/kilowattime"
       }
     },
     "confirm" : {
       "accept" : "Jeg bekrefter at jeg har lest og forstått vilkårene. Jeg har også sett/er kjent med standard angreskjema og standard skjema for opplysning om angrerett.",
-      "expedited" : "",
+      "expedited" : "Jeg ønsker oppstart så raskt som mulig og ønsker at leveringen av strøm kan påbegynnes før utløpet av angrefristen. Jeg aksepterer at jeg skal betale for leveringen av strøm i henhold til disse vilkårene dersom angreretten benyttes.",
       "offer-and-newsletter" : "",
       "text" : ""
     }

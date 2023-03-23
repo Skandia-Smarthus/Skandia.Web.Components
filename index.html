@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Onboarding</title>
+    <link href="site/output.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        (function() {
+            const urlSearchParams = new URLSearchParams(window.location.search);
+            const formQueryParam = urlSearchParams.get('page');
+
+            if (formQueryParam) {
+                const divElement = document.createElement('div');
+                divElement.id = 'onboarding';
+                divElement.setAttribute('data-page', formQueryParam);
+                document.head.appendChild(divElement);
+            }
+        })();
+        document.addEventListener('DOMContentLoaded', function (){
+            const divElement = document.getElementById("onboarding");
+            if(divElement){
+                document.body.appendChild(divElement);
+            }
+        })
+    </script>
+</head>
+<body>
+</body>
+</html>
+<script src="squarespace/loadPage.js"></script>
+<script src="site/js/common.js"></script>
+<script src="site/js/onboarding-validate.js"></script>
+<script src="site/js/onboarding-api.js"></script>
+<script src="site/js/onboarding.js"></script>
+<!--<script async>-->
+<!--    document.addEventListener('DOMContentLoaded',-->
+<!--        function() {-->
+
+<!--            const urlSearchParams = new URLSearchParams(window.location.search);-->
+<!--            const formQueryParam = urlSearchParams.get('form');-->
+
+<!--            if (formQueryParam) {-->
+<!--                const firstDiv = document.querySelector('body div:first-child');-->
+<!--                if (firstDiv) {-->
+<!--                    firstDiv.id = formQueryParam;-->
+<!--                }-->
+<!--            }-->
+
+<!--            const script = document.createElement('script');-->
+<!--            script.src = 'squarespace/loadPage.js';-->
+<!--            script.onload = function() {-->
+<!--                console.log('loadPage.js loaded');-->
+<!--            };-->
+<!--            document.body.appendChild(script);-->
+<!--        })-->
+<!--</script>-->

@@ -1,6 +1,7 @@
 const fs = require('fs-extra');
 const path = require('path');
 const Handlebars = require('handlebars');
+const _ = require('lodash');
 const pagesDirectory = "pages";
 const output = "site";
 (async () => {
@@ -18,7 +19,20 @@ const output = "site";
             return options.inverse(this);
         }
     });
+    Handlebars.registerHelper('json', function(context) {
+        return JSON.stringify(context);
+    });
 
+    // Global settings
+    const globalJsonPath = path.join(pagesDirectory, 'global.json')
+    let globalJson = {};
+    if(await fs.pathExists(globalJsonPath)){
+        console.log("Reading global configuration in " + globalJsonPath);
+        globalJson = await fs.readJson(globalJsonPath);
+        console.log("Appending global json with settings: ", globalJson);
+    } else {
+        console.log("No global data found. Using page configuration only");
+    }
 
     // Load the Handlebars template
     const templateSource = await fs.readFile('./templates/onboarding-template.hbs', 'utf8');
@@ -29,12 +43,12 @@ const output = "site";
     const files = await fs.readdir(pagesDirectory);
 
     // Filter JSON files
-    const jsonFiles = files.filter(file => path.extname(file) === '.json');
+    const jsonFiles = files.filter(file => path.extname(file) === '.json' && file !== 'global.json');
 
     // Loop through the JSON files and generate the HTML files
     for (const jsonFile of jsonFiles) {
         console.log(`trying to read ${pagesDirectory}/${jsonFile}, ${path.join(pagesDirectory, jsonFile)}`)
-        const jsonData = await fs.readJson(path.join(pagesDirectory, jsonFile));
+        const jsonData = _.merge({}, globalJson, await fs.readJson(path.join(pagesDirectory, jsonFile)));
         const filePath = path.join(output, `${jsonData.filename}.html`)
         console.log(`Writing to file ${jsonData.filename}.html`)
         // Generate the HTML content using the Handlebars template and JSON data

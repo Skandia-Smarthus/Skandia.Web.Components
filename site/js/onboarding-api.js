@@ -1,12 +1,10 @@
 
 
 var customerData;
-let apiUrlSaleV2 = "https://app-elkompis-service-dev.azurewebsites.net/sale/";
-//let apiUrlSaleV2 = "/api/sale/";
 
 //registrer mobil og epost
 function CustomerSaleLead(cell = null, email = null) {
-    let apiUrl = apiUrlSaleV2 + "saleLead";
+    let apiUrl = window.window.saleApi.basePath+ window.window.saleApi.saleLeadPath;
     //debugger;
     let obj = {
         cell: cell,
@@ -18,8 +16,8 @@ function CustomerSaleLead(cell = null, email = null) {
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhr.send(JSON.stringify(obj));
     xhr.onreadystatechange = function () {
-        if (this.readyState == 4) {
-            if (this.status == 200) {
+        if (this.readyState === 4) {
+            if (this.status === 200) {
                 //debugger;
             }
         }
@@ -30,13 +28,13 @@ function OnboardingLookupV2(cell = null, email = null, authCode = null, state = 
     //debugger;
     showSpinner("#btnSubmitCellSearch");
     showPulse("#step1-cell");
-    let apiUrl = apiUrlSaleV2;
+    let apiUrl;
 
     if (cell != null) {
-        apiUrl = apiUrl + "lookup/" + cell;
+        apiUrl = `${window.saleApi.basePath}${window.saleApi.phoneLookupPath}/${cell}`
     }
     else {
-        apiUrl = apiUrl + "lookupvipps?state=" + state + "&code=" + authCode + "&redirectUrl=" + redirectUrl;
+        apiUrl = window.saleApi.basePath + window.saleApi.phoneLookupVippsPath + state + "&code=" + authCode + "&redirectUrl=" + redirectUrl;
 
         if (!authCode) {
             return
@@ -46,8 +44,8 @@ function OnboardingLookupV2(cell = null, email = null, authCode = null, state = 
     let xhr = new XMLHttpRequest();
     xhr.open('GET', apiUrl, true);
     xhr.onreadystatechange = function () {
-        if (this.readyState == 4) {
-            if (this.status == 200 || this.status == 204) {
+        if (this.readyState === 4) {
+            if (this.status === 200 || this.status === 204) {
                 let jsonContent = JSON.parse(this.responseText);
 
                 //debugger;
@@ -261,7 +259,8 @@ function OnboardingSaleV2(profile) {
     obj.profile = profile;
 
     let xhr = new XMLHttpRequest();
-    xhr.open('POST', apiUrlSaleV2, true);
+    xhr.open('POST', window.saleApi.basePath + profile === 'SkandiaEnergi' ?
+        window.saleApi.saleRegisterSkandiaPath : window.saleApi.saleRegisterPath, true);
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhr.send(JSON.stringify(obj));
 
@@ -329,16 +328,16 @@ function getUrlParamsV2(path) {
 function OnboardingPlaceFromZipV2(zip = null) {
     showElement("#city-loader");
 
-    let apiUrl = apiUrlSaleV2 + "place/" + zip;;
+    const apiUrl = `${window.saleApi.basePath}${window.saleApi.placeLookupPath}/${zip}`;
     let xhr = new XMLHttpRequest();
     xhr.open('GET', apiUrl, true);
     xhr.onreadystatechange = function () {
         if (this.readyState == 4) {
             if (this.status == 200) {
-                let jsonContent = JSON.parse(this.responseText);
-                let zipPlace = jsonContent.postalArea;
+                const jsonContent = JSON.parse(this.responseText);
+                const zipPlace = jsonContent.postalArea;
 
-                var elementPlace = $('#onboardingPlaceEdit');
+                const elementPlace = $('#onboardingPlaceEdit');
                 elementPlace.val('Ugyldig postnummer');
                 removeInvalid(elementPlace);
 
@@ -371,16 +370,14 @@ function InvalidZip() {
 
 
 function CustomerLookupV2(obj = null, index = null) {
-    //debugger;
-    let apiUrl = apiUrlSaleV2 + "customerLookup";
-    //showLoader();
+    let apiUrl = window.saleApi.basePath + window.saleApi.customerLookupPath;
     let xhr = new XMLHttpRequest();
     xhr.open('POST', apiUrl, true);
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhr.send(JSON.stringify(obj));
     xhr.onreadystatechange = function () {
-        if (this.readyState == 4) {
-            if (this.status == 200) {
+        if (this.readyState === 4) {
+            if (this.status === 200) {
                 let jsonContent = JSON.parse(this.responseText);
                 //debugger;
                 if (jsonContent) {
@@ -394,11 +391,30 @@ function CustomerLookupV2(obj = null, index = null) {
                         SaveEditDelivery();
                     }
                 }
-                //hideLoader();
-            }
-            else {
-                //hideLoader();
+
             }
         }
     }
+}
+
+function getVippsUrl() {
+    const vippsState = generateUUID();
+    const redirectUrl = getRedirectURL(); // You need to implement the getRedirectURL function
+    const urlEncoded = encodeURIComponent(redirectUrl);
+
+    return fetch(`${window.saleApi.basePath}${window.saleApi.vippsUrlLookupPath}?state=${vippsState}&redirectUrl=${urlEncoded}`)
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error("Network response was not ok");
+            }
+            return response.text();
+        })
+        .then((url) => {
+            console.log("Vipps URL:", url);
+            // Use the URL as needed
+            return url;
+        })
+        .catch((error) => {
+            console.error("Error fetching Vipps URL:", error);
+        });
 }

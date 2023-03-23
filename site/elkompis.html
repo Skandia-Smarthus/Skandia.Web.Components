@@ -51,7 +51,7 @@
 
                         <div class="mb-2">
                             <!--<a href="@vippsUrl" class="e-btn bg-warning-vipps inline-block whitespace-nowrap text-white em btn-t-vipps">-->
-                            <a href="https://api.vipps.no/access-management-1.0/access/oauth2/auth?client_id&#x3D;a4ced04c-7d7b-46d7-a663-f16f6dab6786&amp;response_type&#x3D;code&amp;scope&#x3D;openid+address+email+name+phoneNumber+nin&amp;state&#x3D;58dcc19c-f18b-4363-8617-f7e92be513dd&amp;redirect_uri&#x3D;https://elkompis.no/blikunde" class="e-btn bg-warning-vipps inline-block whitespace-nowrap text-white em btn-t-vipps">
+                            <a id="vipps-button" class="e-btn bg-warning-vipps inline-block whitespace-nowrap text-white em btn-t-vipps">
                                 Finn dine opplysninger med vipps
                             </a>
                         </div>
@@ -240,8 +240,7 @@
                                     <div class="form-popup-close iconClose btnIcon m-0 w-6 h-6 topRight cursor-pointer" onclick="HidePopup('#meternumberPopup')"></div>
                                 </div>
 <!--                                @step2MeternumberInfoText-->
-                                
-Du trenger ikke å finne målenummeret ditt før du bestiller. Vi kontakter deg senere for å legge det inn. Har du en partner står nummeret gjerne på dem, og det overføres til deg.
+                                Du trenger ikke å finne målenummeret ditt før du bestiller. Vi kontakter deg senere for å legge det inn. Har du en partner står nummeret gjerne på dem, og det overføres til deg.
 
                             </div>
                             <div class="flex h-[25px]">
@@ -344,12 +343,12 @@ Du trenger ikke å finne målenummeret ditt før du bestiller. Vi kontakter deg 
                     <!--Ordredetaljer-->
                     <div class="inner text-left">
                         <div class="flex mb-4">
-                            <div class="w-12 flex-none"><img src="/images/icons/small/Smiley.svg" alt="Person" /></div>
+                            <div class="w-12 flex-none"><img src="/css/icons/Smiley.svg" alt="Person" /></div>
                             <div class="grow" id="step3CustomerDataContainer">
                             </div>
                         </div>
                         <div class="flex mb-4">
-                            <div class="w-12 flex-none"><img src="/images/icons/small/House.svg" alt="Adresse" /></div>
+                            <div class="w-12 flex-none"><img src="/css/icons//House.svg" alt="Adresse" /></div>
                             <div class="grow leading-6">
                                 <div class="em">
 <!--                                    @step3OrderDetailAddressHeader-->
@@ -366,22 +365,22 @@ Du trenger ikke å finne målenummeret ditt før du bestiller. Vi kontakter deg 
 <!--                            @if (!string.IsNullOrEmpty(step3ProductHeader.ToString()))-->
 <!--                            {-->
                             <div class="flex mb-4">
-                                <div class="w-12 flex-none"><img src="/images/icons/small/Agreement.svg" alt="Avtale" /></div>
+                                <div class="w-12 flex-none"><img src="/css/icons/Agreement.svg" alt="Avtale" /></div>
                                 <div class="grow leading-8">
                                     <div class="em">
 <!--                                        @step3ProductHeader-->
                                         Abonnementsdetaljer
                                     </div>
 <!--                                    @step3ProductText-->
-                                    Avtaletype: Hyttestrøm
-Månedsbeløp: 0 kr
-Påslag: 5,6 øre/kilowattime
+                                    Avtaletype: Spotpris
+Månedsbeløp: 34 kr
+Påslag: 1 øre/kilowattime
                                 </div>
                             </div>
 <!--                            }-->
 
                         <div class="flex mb-4">
-                            <div class="w-12 flex-none"><img src="/images/icons/small/Pen.svg" alt="Endre" /></div>
+                            <div class="w-12 flex-none"><img src="/css/icons/Pen.svg" alt="Endre" /></div>
                             <div class="grow">
                                 <button class="e-btn-link em btn-t-editdelivery" onclick="gotoStep(2)">
 <!--                                    @textEdit-->
@@ -406,6 +405,18 @@ Påslag: 5,6 øre/kilowattime
                                 </div>
                             </div>
                         </div>
+<!--                            @if (!string.IsNullOrEmpty(step3ConfirmFastStartup.ToString()))-->
+<!--                            {-->
+                            <div class="mb-2">
+                                <div class="flex items-start">
+                                    <input id="confirm-faststartup" name="faststartup" type="checkbox" class="control w-6 h-6 rounded-sm mt-2 btn-t-faststartup">
+                                    <label for="confirm-faststartup" class="ml-4 block text-oform-body1 my-0 cursor-pointer">
+<!--                                        @step3ConfirmFastStartup-->
+                                        Jeg ønsker oppstart så raskt som mulig og ønsker at leveringen av strøm kan påbegynnes før utløpet av angrefristen. Jeg aksepterer at jeg skal betale for leveringen av strøm i henhold til disse vilkårene dersom angreretten benyttes.
+                                    </label>
+                                </div>
+                            </div>
+<!--                            }-->
 
 
 
@@ -433,7 +444,7 @@ Påslag: 5,6 øre/kilowattime
         <div id="step-createorder" class="hidden">
             <div class="min-h-[300px]">
                 <div class="mx-auto mb-12">
-                    <lottie-player src="/images/anim/elkompis.json" background="transparent" speed="1" class="h-20 w-20 mx-auto" loop autoplay></lottie-player>
+                    <lottie-player src="/css/animation.json" background="transparent" speed="1" class="h-20 w-20 mx-auto" loop autoplay></lottie-player>
                 </div>
 
             </div>
@@ -441,7 +452,18 @@ Påslag: 5,6 øre/kilowattime
 
     </div>
 </div>
-</div> <div id="scriptcontainer" class="hidden">
+</div>
+
+<script>
+    (function(){
+        console.log("Setting up component settings");
+        window.saleApi = {"basePath":"https://app-elkompis-service-dev.azurewebsites.net/","phoneLookupPath":"sale/lookup","phoneLookupVippsPath":"sale/lookupvipps","placeLookupPath":"sale/place","customerLookupPath":"sale/customerlookup","vippsUrlLookupPath":"sale/vippsurl","saleLeadPath":"sale/salelead","saleRegisterPath":"sale","saleRegisterSkandiaPath":"sale/skandiaEnergiSale"}
+        var vippsRedirectUrl = '';
+        var vippsAuthCode = '';
+        window.profile = 'ElKompis';
+    })();
+
+</script> <div id="scriptcontainer" class="hidden">
     <script id="orderDetailsCustomer" type="template">
         <div class="em">{{Firstname}} {{Lastname}}</div>
         <div class="leading-8">Tlf. {{Cell}}</div>

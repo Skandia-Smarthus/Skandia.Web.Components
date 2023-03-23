@@ -3,7 +3,8 @@
     "build-pages": "node generate.js",
     "build-css": "npx tailwindcss --postcss postcss.config.js --config tailwind.config.js -i ./css/input.css -o ./site/output.css",
     "build-js": "webpack",
-    "build" : "npm run build-pages && npm run build-css && npm run build-js"
+    "build" : "npm run build-pages && npm run build-css && npm run build-js",
+    "debug" : "node server.js"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.3",
@@ -11,15 +12,17 @@
     "handlebars": "^4.7.7",
     "tailwindcss": "^3.2.7",
     "tailwindcss-themer": "^3.0.1",
-    "webpack": "^5.76.2",
-    "webpack-cli": "^5.0.1",
-    "expose-loader": "^4.1.0"
+    "expose-loader": "^4.1.0",
+    "http-server": "^14.1.1",
+    "express": "^4.18.2",
+    "selfsigned": "^2.1.1"
   },
   "dependencies": {
     "autoprefixer": "^10.4.14",
     "cash-dom": "^8.1.4",
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
-    "postcss-import": "^15.1.0"
+    "postcss-import": "^15.1.0",
+    "lodash": "^4.17.21"
   }
 }

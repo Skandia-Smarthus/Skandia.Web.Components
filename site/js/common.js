@@ -66,3 +66,13 @@ function removeReadonly(el) {
     $(el).prop("readonly", false);
 }
 
+function getQueryParamValue(paramName) {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
+    if (urlParams.has(paramName)) {
+        return urlParams.get(paramName);
+    }
+
+    return null;
+}

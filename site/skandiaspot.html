@@ -3,7 +3,6 @@
 
 <div class="hidden opacity-70 opacity-50 animate-pulse skandiaenergi ">
     <div class="SkandiaEnergi:hidden">
-<!--        @companyType-->
         SkandiaEnergi
     </div>
     <input type="hidden" id="linkWelcome1" value="@linkWelcome1Url" />
@@ -14,7 +13,6 @@
             <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
             <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
         </svg>
-<!--        @textNext-->
         Gå videre
     </button>
     <div class="bg-brand-pink">TEST2</div>
@@ -26,14 +24,14 @@
 
 
 <div id="step1-scrollto"></div>
-<div id="onboardingformV2" class="w-600 mx-auto relative mt-10 mb-20 SkandiaEnergi"><!--@companyType.ToString().ToLower()-->
+<div id="onboardingformV2" class="w-600 mx-auto relative mt-10 mb-20 SkandiaEnergi">
     <div id="onboarding-container" class="">
         <!--Steg1 start-->
         <div id="step1-sum" class="hidden">
             <div class="form-box relative h-[55px] flex items-center ">
                 <div class="form-bullet pos-left md em mx-4">1</div>
                 <div class="text-oform-h1 em">
-                    <!--@content.Value("step1BoxHeader")-->
+
                      Start din bestilling her
                     </div>
             </div>
@@ -44,13 +42,12 @@
                 <div class="form-bullet pos-center lg em">1</div>
                 <div id="step1-intro" class="">
                     <div class="inner">
-                        <div class="text-oform-h1 em mt-2 font-bold">1. Hei, så hyggelig at du vil bli kunde i SkandiaEnergi!<!--@content.Value("step1Header")--></div>
-                        Avtalen Hyttestrøm koster kun 0 kr/mnd og 5,6 øre/kWh. Det er gratis å bytte, og vi avslutter din gamle strømavtale for deg. <!--@content.Value("step1LeadText")-->
+                        <div class="text-oform-h1 em mt-2 font-bold">1. Hei, så hyggelig at du vil bli kunde i SkandiaEnergi!</div>
+                        Avtalen Hyttestrøm koster kun 0 kr/mnd og 5,6 øre/kWh. Det er gratis å bytte, og vi avslutter din gamle strømavtale for deg.
                     </div>
                     <div class="text-center mt-6">
 
                         <div class="mb-2">
-                            <!--<a href="@vippsUrl" class="e-btn bg-warning-vipps inline-block whitespace-nowrap text-white em btn-t-vipps">-->
                             <a id="vipps-button" class="e-btn bg-warning-vipps inline-block whitespace-nowrap text-white em btn-t-vipps">
                                 Finn dine opplysninger med vipps
                             </a>
@@ -66,12 +63,9 @@
 
                 <div id="step1-cell" class="inner hidden">
                     <div class="text-oform-h1 em mt-2">
-<!--                        @content.Value("step1CellHeader")-->
                         Da er du i gang!
                     </div>
                     Fyll ut mobilnummer og epost, så vi finner dine opplysninger.
-<!--                    @content.Value("step1CellLeadText")-->
-                    <!--<form action="" method="get"></form>-->
                     <form action="#" id="lookup">
                         <div class="text-left mt-4 mb-8">
                             <div class="flex flex-col gap-4">
@@ -89,9 +83,8 @@
                         </div>
 
                         <div class="flex justify-between">
-                            <!--min="40000000" maxlength="99999999"> <a class="underline" href="@redirectURL">@textBack</a> -->
+
                             <button class="e-btn-link underline btn-t-back" onclick="gotoStep(1,'intro')" type="button">
-<!--                                @textBack-->
                                 Tilbake
                             </button>
                             <button class="e-btn-lg e-btn-secondary text-white inline-flex items-center px-4 py-2 btn-t-cellsearch" type="submit" id="btnSubmitCellSearch">
@@ -99,11 +92,10 @@
                                     <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                                     <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                                 </svg>
-<!--                                @textNext-->
+
                                 Gå videre
                             </button>
                         </div>
-                        <!-- onclick="validate('step1')" -->
                     </form>
                 </div>
             </div>
@@ -116,7 +108,6 @@
             <div class="form-bullet pos-left md em mx-4">2</div>
             <div class="grow text-oform-h1 em flex flex-row gap-x-4 mr-4">
                 <div class="grow text-left">
-<!--                    @content.Value("step2BoxHeader")-->
                     Navn og adresse
                 </div>
                 <div id="step2-editpen" class="hidden text-right place-content-end w-6 flex-none btn-t-deliverybackedit">
@@ -137,24 +128,17 @@
                 <div class="form-bullet pos-center lg em">2</div>
                 <div class="inner">
                     <div class="text-oform-h1 em mt-2">
-<!--                        @content.Value("step2Header")-->
                         Navn og adresse
                     </div>
                     <div class="text-left mt-6">
                         <div id="deliveriesContainer">
                         </div>
 
-                        <!--<button class="my-4 ml-3 hover:underline centerLeft pl-12 em text-left" onclick="gotoStep(2,'reset')">@textResetUser</button>-->
-
                         <div class="flex justify-between mt-4">
-                            <!--<button class="e-btn-link underline" onclick="gotoStep(1,'intro')">@textBack</button>
-                            <a class="underline" href="@redirectURL">@textBack</a>-->
                             <button class="e-btn-link underline btn-t-back" onclick="gotoStep(1,'intro')" type="button">
-<!--                                @textBack-->
                                 Tilbake
                             </button>
                             <button id="step2Next" class="e-btn-lg e-btn-secondary text-white btn-t-deliveries" onclick="validate('step2', 'overview')">
-<!--                                @textNext-->
                                 Gå videre
                             </button>
                         </div>
@@ -441,9 +425,6 @@ Påslag: 5,6 øre/kilowattime
     (function(){
         console.log("Setting up component settings");
         window.saleApi = {"basePath":"https://app-elkompis-service-dev.azurewebsites.net/","phoneLookupPath":"sale/lookup","phoneLookupVippsPath":"sale/lookupvipps","placeLookupPath":"sale/place","customerLookupPath":"sale/customerlookup","vippsUrlLookupPath":"sale/vippsurl","saleLeadPath":"sale/salelead","saleRegisterPath":"sale","saleRegisterSkandiaPath":"sale/skandiaEnergiSale"};
-        window.step1Config = {"title":" Start din bestilling her","vipps":{"enabled":true,"button-text":"Finn dine opplysninger med vipps","url":"https://api.vipps.no/access-management-1.0/access/oauth2/auth?client_id=a4ced04c-7d7b-46d7-a663-f16f6dab6786&response_type=code&scope=openid+address+email+name+phoneNumber+nin&state=58dcc19c-f18b-4363-8617-f7e92be513dd&redirect_uri=","return-to":"https://skandiaenergi.no/stromavtale/hytte"},"cell":{"button-text":"Manuell registrering","header":{"text":"Da er du i gang!","sub-text":"Fyll ut mobilnummer og epost, så vi finner dine opplysninger."}},"header":{"text":"1. Hei, så hyggelig at du vil bli kunde i SkandiaEnergi!","sub-text":"Avtalen Hyttestrøm koster kun 0 kr/mnd og 5,6 øre/kWh. Det er gratis å bytte, og vi avslutter din gamle strømavtale for deg."},"info-popup":{"header":{"text":"Slik bruker vi informasjonen din","sub-text":"Vi finner opplysninger om deg og din hytte i adresseregistere, og om din strømmåler i Elhub. Ingen informasjon blir lagret før du bekrefter og sender inn bestillingen."}}};
-        window.step2Config = {"title":"Navn og adresse","sub-title":"Fyll ut din informasjon så vi kan levere strøm til deg","header":{"text":"Navn og adresse","sub-text":"Du trenger ikke å finne målenummeret ditt før du bestiller. Vi kontakter deg senere for å legge det inn. Har du en partner står nummeret gjerne på dem, og det overføres til deg."},"info-popup":{"text":"Målernummer","sub-text":"\nDu trenger ikke å finne målenummeret ditt før du bestiller. Vi kontakter deg senere for å legge det inn. Har du en partner står nummeret gjerne på dem, og det overføres til deg.\n"}};
-        window.step3Config = {"title":"Bekreft og bestill","header":{"text":"Bestill, vi fikser resten","sub-text":"Bestill og len deg tilbake mens vi fikser alt det praktiske. 🚀 "},"securing":{"image-url":"","text":"Hyttestrøm til kun 0 kr/mnd og 5,6 øre/kWh","sub-text":""},"order-details":{"address":{"text":"Du får strøm levert til","sub-text":"Vi kontakter deg for å skaffe målernummeret ditt"},"product":{"text":"Abonnementsdetaljer","sub-text":"Avtaletype: Hyttestrøm\nMånedsbeløp: 0 kr\nPåslag: 5,6 øre/kilowattime"}},"confirm":{"accept":"Jeg bekrefter at jeg har lest og forstått vilkårene. Jeg har også sett/er kjent med standard angreskjema og standard skjema for opplysning om angrerett.","expedited":"","offer-and-newsletter":"","text":""}};
         window.vippsRedirectUrl = '';
         window.profile = 'SkandiaEnergi';
     })();

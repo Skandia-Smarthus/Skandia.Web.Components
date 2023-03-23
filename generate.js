@@ -50,10 +50,7 @@ const output = "site";
         console.log(`trying to read ${pagesDirectory}/${jsonFile}, ${path.join(pagesDirectory, jsonFile)}`)
         const jsonData = _.merge({}, globalJson, await fs.readJson(path.join(pagesDirectory, jsonFile)));
         const filePath = path.join(output, `${jsonData.filename}.html`)
-        if(await fs.exists(filePath)){
-            console.log(`File exist. Deleting ${filePath}`);
-            await fs.remove(filePath)
-        }
+
         console.log(`Writing to file ${jsonData.filename}.html`)
         // Generate the HTML content using the Handlebars template and JSON data
         const htmlContent = `${template(jsonData)} ${scriptSource}`;

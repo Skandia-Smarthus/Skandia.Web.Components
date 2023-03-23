@@ -3,22 +3,23 @@
     @font-face {
         font-family: Roobert;
         font-weight: 400;
-        src: url("https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/fonts/Roobert-Regular.woff2")
-            format('woff2'), url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/fonts/Roobert-Regular.woff') format("woff");
+        src: url("https://elkompissquarespace.blob.core.windows.net/assets/site/assets/fonts/Roobert-Regular.woff2")
+            format('woff2'), url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/fonts/Roobert-Regular.woff') format("woff");
     }
 
     @font-face {
         font-family: "Roobert-Medium";
         font-weight: 500;
-        src: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/fonts/Roobert-Medium.woff2') format('woff2'), url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/fonts/Roobert-Medium.woff') format("woff");
+        src: url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/fonts/Roobert-Medium.woff2') format('woff2'),
+        url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/fonts/Roobert-Medium.woff') format("woff");
 
     }
 
     @font-face {
         font-family: "Roobert-SemiBold";
         font-weight: 600;
-        src: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/fonts/Roobert-SemiBold.woff2')
-            format('woff2'), url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/fonts/Roobert-SemiBold.woff') format("woff");
+        src: url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/fonts/Roobert-SemiBold.woff2')
+            format('woff2'), url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/fonts/Roobert-SemiBold.woff') format("woff");
     }
 
     #onboarding h1, #onboarding .h1 {

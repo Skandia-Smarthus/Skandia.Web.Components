@@ -4,27 +4,27 @@
 .topLeft { background-position-x: left;  background-position-y: top; }
 .topRight { background-position-x: right;  background-position-y: top; }
 
-.iconPencil { background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/icons/Pen.svg'); }
-.iconPlus { background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/icons/Plus.svg'); }
-.iconChevronDown {background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/icons/Chevron-down-24px.svg');}
+.iconPencil { background-image: url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/icons/Pen.svg'); }
+.iconPlus { background-image: url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/icons/Plus.svg'); }
+.iconChevronDown {background-image: url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/icons/Chevron-down-24px.svg');}
 
-.iconChevronDown10{background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/icons/Chevron-down10.svg');}
-.iconChevronRight10 {background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/icons/Chevron-right10.svg');}
-.iconAgreement {background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/icons/Agreement.svg');}
-.iconHelp  { background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/icons/Help.svg'); }
-.iconHouse {background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/icons/House.svg');}
-.iconSmiley {background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/icons/Smiley.svg');}
-.iconDelete, .iconBin {background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/icons/Bin.svg');}
-.iconRequired {background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/images/RequiredStar.svg');}
-.iconCalendar { background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/icons/Calendar.svg');}
+.iconChevronDown10{background-image: url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/icons/Chevron-down10.svg');}
+.iconChevronRight10 {background-image: url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/icons/Chevron-right10.svg');}
+.iconAgreement {background-image: url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/icons/Agreement.svg');}
+.iconHelp  { background-image: url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/icons/Help.svg'); }
+.iconHouse {background-image: url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/icons/House.svg');}
+.iconSmiley {background-image: url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/icons/Smiley.svg');}
+.iconDelete, .iconBin {background-image: url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/icons//Bin.svg');}
+.iconRequired {background-image: url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/images/RequiredStar.svg');}
+.iconCalendar { background-image: url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/icons//Calendar.svg');}
 
-.lineDashed {background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/images/Stiplet_linje.svg'); height: 2px; width: 172px;}
+.lineDashed {background-image: url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/images/Stiplet_linje.svg'); height: 2px; width: 172px;}
 
-.iconWarning {background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/icons/warning.svg');}
-.img-btn-vipps{background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/images/Vipps_registrer.png');}
-.iconClose { background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/icons/Close.svg');}
+.iconWarning {background-image: url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/icons/warning.svg');}
+.img-btn-vipps{background-image: url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/images/Vipps_registrer.png');}
+.iconClose { background-image: url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/icons/Close.svg');}
 
-.iconVipps { background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/images/vipps-rgb-orange-neg.svg'); background-size: 70px; background-position: 87% center; }
+.iconVipps { background-image: url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/images/vipps-rgb-orange-neg.svg'); background-size: 70px; background-position: 87% center; }
 
 .size1 { @apply w-6 h-6;}
 [class^='icon'], [class*='icon'] { background-repeat: no-repeat !important; }
@@ -42,10 +42,10 @@
 
 
 .iconSpinner {
-    background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/icons/Spinner.svg');
+    background-image: url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/icons/Spinner.svg');
 }
 .iconSpinner2 {
-    background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/css/icons/Spinner2.svg');
+    background-image: url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/icons/Spinner2.svg');
 }
 
 .animate-spin {
@@ -72,7 +72,7 @@
 }*/
 
 .k-mobile .form-date {
-    background-image: url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/icons/Calendar.svg');
+    background-image: url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/icons/Calendar.svg');
     background-repeat: no-repeat;
     background-position-x: 10%;
     background-position-y: center;

@@ -798,20 +798,16 @@ select {
             format('woff2'), url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/fonts/Roobert-SemiBold.woff') format("woff");
 }
 
-html, body {
-  font-family: Roobert, sans-serif;
-}
-
-h1, .h1 {
+#onboarding h1, #onboarding .h1 {
   font-size: 64px;
-  /*font-family: "Roobert-Semibold", sans-serif;*/
+  font-family: "Roobert-Semibold", sans-serif;
   font-family: var(--fontFamily-semibold-0), var(--fontFamily-semibold-1);
   font-weight: 600;
   line-height: 1.2;
 }
 
-h2, h2.h2, .h2 {
-  /*font-family: "Roobert-Semibold", sans-serif;*/
+#onboarding h2, #onboarding h2.h2, #onboarding .h2 {
+  font-family: "Roobert-Semibold", sans-serif;
   margin-bottom: 1.25rem;
   font-family: var(--fontFamily-semibold-0), var(--fontFamily-semibold-1);
   font-size: 46px;
@@ -819,8 +815,8 @@ h2, h2.h2, .h2 {
   line-height: 1.4;
 }
 
-h3, .h3 {
-  /*font-family: "Roobert-Semibold", sans-serif;*/
+#onboarding h3, #onboarding .h3 {
+  font-family: "Roobert-Semibold", sans-serif;
   margin-bottom: 1.75rem;
   font-family: var(--fontFamily-semibold-0), var(--fontFamily-semibold-1);
   font-size: 32px;
@@ -828,39 +824,39 @@ h3, .h3 {
   line-height: 1.4;
 }
 
-h4, .h4 {
-  /*font-family: "Roobert-Semibold", sans-serif;*/
+#onboarding h4, #onboarding .h4 {
+  font-family: "Roobert-Semibold", sans-serif;
   margin-bottom: 0.75rem;
   font-family: var(--fontFamily-semibold-0), var(--fontFamily-semibold-1);
   font-weight: 600;
 }
 
-.SkandiaEnergi h4,.SkandiaEnergi  .h4 {
+.SkandiaEnergi #onboarding h4,.SkandiaEnergi  #onboarding .h4 {
   font-weight: 900;
 }
 
-h4, .h4 {
+#onboarding h4, #onboarding .h4 {
   font-size: 22px;
   line-height: 1.4;
 }
 
-h5, .h5 {
+#onboarding h5, #onboarding .h5 {
   font-family: "Roobert-SemiBold", sans-serif;
   font-weight: 600;
   line-height: 1.4;
 }
 
-p {
+#onboarding p {
   margin-bottom: 1.5rem;
 }
 
 @media (min-width: 768px) {
-  p {
+  #onboarding p {
     margin-bottom: 2.25rem;
   }
 }
 
-blockquote {
+#onboarding blockquote {
   margin-top: 3.5rem;
   margin-bottom: 3.5rem;
   border-left-width: 1px;
@@ -872,7 +868,7 @@ blockquote {
 }
 
 @media (min-width: 768px) {
-  blockquote {
+  #onboarding blockquote {
     font-size: 1.5rem;
     line-height: 2rem;
   }

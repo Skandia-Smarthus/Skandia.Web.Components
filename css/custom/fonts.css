@@ -21,56 +21,52 @@
             format('woff2'), url('https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/fonts/Roobert-SemiBold.woff') format("woff");
     }
 
-    html, body {
-        font-family: Roobert, sans-serif;
-    }
-
-    h1, .h1 {
+    #onboarding h1, #onboarding .h1 {
         font-size: 64px;
-        /*font-family: "Roobert-Semibold", sans-serif;*/
+        font-family: "Roobert-Semibold", sans-serif;
         @apply font-semibold;
         font-weight: 600;
         line-height: 1.2;
     }
 
-    h2, h2.h2, .h2 {
-        /*font-family: "Roobert-Semibold", sans-serif;*/
+    #onboarding h2, #onboarding h2.h2, #onboarding .h2 {
+        font-family: "Roobert-Semibold", sans-serif;
         @apply mb-5 font-semibold;
         font-size: 46px;
         font-weight: 600;
         line-height: 1.4;
     }
 
-    h3, .h3 {
-        /*font-family: "Roobert-Semibold", sans-serif;*/
+    #onboarding h3, #onboarding .h3 {
+        font-family: "Roobert-Semibold", sans-serif;
         @apply mb-7 font-semibold;
         font-size: 32px;
         font-weight: 600;
         line-height: 1.4;
     }
 
-    h4, .h4 {
-        /*font-family: "Roobert-Semibold", sans-serif;*/
+    #onboarding h4, #onboarding .h4 {
+        font-family: "Roobert-Semibold", sans-serif;
         @apply mb-3 font-semibold SkandiaEnergi:font-black;
         font-size: 22px;
         line-height: 1.4;
     }
 
-    h5, .h5 {
+    #onboarding h5, #onboarding .h5 {
         font-family: "Roobert-SemiBold", sans-serif;
         font-weight: 600;
         line-height: 1.4;
     }
 
-    p {
+    #onboarding p {
         @apply mb-6 md:mb-9;
     }
 
-    blockquote {
+    #onboarding blockquote {
         @apply md:text-2xl font-bold italic my-14 border-l border-black pl-8;
     }
 
-    .container {
+   #onboarding .container {
         max-width: 1320px;
     }
 }

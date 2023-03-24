@@ -35,8 +35,9 @@ function OnboardingLookupV2(cell = null, email = null, authCode = null, state = 
     }
     else {
         apiUrl = `${window.saleApi.basePath}${window.saleApi.phoneLookupVippsPath}?state=${state}&code=${authCode}&redirectUrl=${redirectUrl}`;
+        console.log("Vipps check url: ", apiUrl);
         //apiUrl = window.saleApi.basePath + window.saleApi.phoneLookupVippsPath + state + "&code=" + authCode + "&redirectUrl=" + redirectUrl;
-
+return;
         if (!authCode) {
             return
         }
@@ -398,24 +399,30 @@ function CustomerLookupV2(obj = null, index = null) {
     }
 }
 
-function getVippsUrl() {
+async function getVippsUrl() {
     const vippsState = generateUUID();
-    const redirectUrl = getRedirectURL();
+    const redirectUrl = getRedirectURL(); // Assuming you've already implemented this function
     const urlEncoded = encodeURIComponent(redirectUrl);
+    const vippsUrlLookupPath = saleApi.basePath + saleApi.vippsUrlLookupPath; // Replace this with your actual Vipps URL lookup path
 
-    return fetch(`${window.saleApi.basePath}${window.saleApi.vippsUrlLookupPath}?state=${vippsState}&redirectUrl=${urlEncoded}`)
-        .then((response) => {
-            if (!response.ok) {
-                throw new Error("Network response was not ok");
-            }
-            return response.text();
-        })
-        .then((url) => {
-            console.log("Vipps URL:", url);
-            // Use the URL as needed
-            return url;
-        })
-        .catch((error) => {
-            console.error("Error fetching Vipps URL:", error);
-        });
+    const response = await fetch(`${vippsUrlLookupPath}?state=${vippsState}&redirectUrl=${urlEncoded}`);
+    const url = await response.text();
+    return url;
+}
+
+function getRedirectURL() {
+    const currentUrl = window.vippsRedirectUrl ? window.vippsRedirectUrl : window.location.href;
+
+    if (!currentUrl) {
+        return '';
+    }
+
+    let redirectUrl = currentUrl;
+    const queryStringIndex = redirectUrl.indexOf('?');
+
+    if (queryStringIndex !== -1) {
+        redirectUrl = redirectUrl.substring(0, queryStringIndex);
+    }
+
+    return redirectUrl
 }

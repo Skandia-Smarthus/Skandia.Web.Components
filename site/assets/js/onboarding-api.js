@@ -23,37 +23,30 @@ function CustomerSaleLead(cell = null, email = null) {
         }
     }
 }
-
+function getLookupApiUrl(cell, authCode, state, redirectUrl){
+    if(authCode){
+        return `${window.saleApi.basePath}${window.saleApi.phoneLookupVippsPath}?state=${state}&code=${authCode}&redirectUrl=${redirectUrl}`;
+    } else if(cell){
+        return  `${window.saleApi.basePath}${window.saleApi.phoneLookupPath}/${cell}`
+    }
+}
 function OnboardingLookupV2(cell = null, email = null, authCode = null, state = null, redirectUrl = null, trackingObj = null) {
     //debugger;
     showSpinner("#btnSubmitCellSearch");
     showPulse("#step1-cell");
-    let apiUrl;
+    const apiUrl = getLookupApiUrl(cell, authCode, state, redirectUrl);
 
-    if (cell != null) {
-        apiUrl = `${window.saleApi.basePath}${window.saleApi.phoneLookupPath}/${cell}`
-    }
-    else {
-        apiUrl = `${window.saleApi.basePath}${window.saleApi.phoneLookupVippsPath}?state=${state}&code=${authCode}&redirectUrl=${redirectUrl}`;
-        console.log("Vipps check url: ", apiUrl);
-        //apiUrl = window.saleApi.basePath + window.saleApi.phoneLookupVippsPath + state + "&code=" + authCode + "&redirectUrl=" + redirectUrl;
-return;
-        if (!authCode) {
-            return
-        }
-    }
-    //showLoader();
     let xhr = new XMLHttpRequest();
     xhr.open('GET', apiUrl, true);
-    xhr.onreadystatechange = function () {
+    xhr.onreadystatechange = lookupResponseHandler
+    xhr.send();
+}
+
+function lookupResponseHandler(){
         if (this.readyState === 4) {
             if (this.status === 200 || this.status === 204) {
                 let jsonContent = JSON.parse(this.responseText);
-
-                //debugger;
-
                 customerData = jsonContent;
-                var unhappy = false;
                 if (email)
                     jsonContent.email = email;
 
@@ -64,11 +57,7 @@ return;
                 }
                 else {
                     SetOnboardingState("unhappy");
-                    unhappy = true;
                 }
-                //if (!jsonContent.personalNumber)
-                //    showElement("#sep1-pnr");
-
 
                 $("#deliveriesContainer").empty();
                 if (!!jsonContent.deliveries) {
@@ -91,50 +80,31 @@ return;
                 }
                 sessionStorage.setItem('onboardingObj', JSON.stringify(jsonContent));
 
-                //debugger;
-
-                if (jsonContent.authMethod == "Vipps") {
+                if (jsonContent.authMethod === "Vipps") {
                     $("#onboarding_cell").val(jsonContent.cell)
                 }
 
-
                 if (jsonContent.email) {
-                    // $("#emailInputStep3").val(jsonContent.email);
-
                     if (jsonContent.deliveries.length > 0) {
-                        //$("#step1-customername").html(jsonContent.firstName + ' ' + jsonContent.lastName);
                         gotoStep(2, 'deliveries');
-                    }
-
-                    else {
+                    } else {
                         gotoStep(2, 'manual');
                     }
-                }
-                else {
+                } else {
                     if (jsonContent.deliveries.length > 0) {
                         EditDeliveryV2('#data-0', 0);
-                    }
-                    else {
+                    } else {
                         gotoStep(2, 'edit');
                     }
                 }
-                //hideLoader();
-                //debugger;
-                //scrollToElement('#step2');
-                //scrollToElement('#step1-sum');
             }
             else {
                 gotoStep(1, 'phone');
-                //hideLoader();
                 removeSpinner("#btnSubmitCellSearch");
                 removeAllPulse();
-                //hideElement("#city-loader");
             }
         }
-    }
-    xhr.send();
 }
-
 
 function SaveEditDeliveryV2() {
     let index = $("#deliveryIdEdit").val();

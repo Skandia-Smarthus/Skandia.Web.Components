@@ -1,7 +1,8 @@
 {
-
+  "mode" : "Production",
+  "imagePath" : "https://elkompissquarespace.blob.core.windows.net/assets/site",
   "saleApi" : {
-    "basePath" : "https://app-elkompis-service-dev.azurewebsites.net/",
+    "basePath" : "https://app-elkompis-service-prod.azurewebsites.net/",
     "phoneLookupPath" : "sale/lookup",
     "phoneLookupVippsPath" : "sale/lookupvipps",
     "placeLookupPath" : "sale/place",

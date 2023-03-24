@@ -1,4 +1,5 @@
 {
+  "enabled" : true,
   "mode" : "Production",
   "imagePath" : "https://elkompissquarespace.blob.core.windows.net/assets/site",
   "saleApi" : {

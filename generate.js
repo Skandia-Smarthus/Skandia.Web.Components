@@ -4,7 +4,9 @@ const Handlebars = require('handlebars');
 const _ = require('lodash');
 const pagesDirectory = "pages";
 const output = "site";
+
 (async () => {
+    // Register some custom handlebar helpers that are used in the template
     registerHelpers(Handlebars)
 
     // Global settings
@@ -26,12 +28,14 @@ const output = "site";
     for (const jsonFileName of jsonFiles) {
         console.log(`\n\n Working on ${jsonFileName}`)
         const jsonFile = await fs.readJson(path.join(pagesDirectory, jsonFileName))
-        if(globalProductionJson || globalDevelopmentJson){
-            if(globalProductionJson){
+        // We want to support multiple environment. Here we are checking the different environments
+        // and if they are set and enabled. If not we generate the template from just the json page source.
+        if((globalProductionJson && globalProductionJson.enabled )|| (globalDevelopmentJson && globalDevelopmentJson.enabled)){
+            if(globalProductionJson && globalProductionJson.enabled){
                 console.log(`Creating ${jsonFile.filename} with production configuration`)
                 await createTemplateFile(jsonFile, globalProductionJson, jsonFile.filename, template, scriptSource)
             }
-            if(globalDevelopmentJson){
+            if(globalDevelopmentJson && globalDevelopmentJson.enabled){
                 console.log(`Creating ${jsonFile.filename}-development with development configuration`)
                 await createTemplateFile(jsonFile, globalDevelopmentJson, jsonFile.filename + "-development", template, scriptSource)
             }
@@ -41,8 +45,6 @@ const output = "site";
         }
     }
 })();
-
-
 
 async function getGlobalConfig(mode){
     const jsonPath = path.join(pagesDirectory, `global-${mode}.json`)

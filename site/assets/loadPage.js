@@ -1,22 +1,9 @@
 window.addEventListener('DOMContentLoaded', async () => {
-    console.log("DOMCONTENTLoaded for onboarding monitoring")
-
     const onboardingDiv = document.getElementById('onboarding');
-
     if (onboardingDiv) {
-        // const pageName = onboardingDiv.dataset.page;
-        // const url = `https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/site/${pageName}.html`
-        // console.log(`Trying to load ${url}`)
-        // const response = await fetch(url);
-        // const pageContent = await response.text();
-        //
-        // const parser = new DOMParser();
-        // const doc = parser.parseFromString(pageContent, 'text/html');
-        // onboardingDiv.innerHTML = doc.body.innerHTML;
         loadOnboardingForm(onboardingDiv);
     }
 });
-
 
 function loadOnboardingForm(targetElement){
     const pageName = targetElement.dataset.page;
@@ -56,6 +43,6 @@ function getRequestUrl(pageName) {
         const port = window.location.port;
         return `${protocol}//${hostname}:${port}/site/${pageName}.html`;
     } else {
-        return `https://cdn.jsdelivr.net/gh/Skandia-Smarthus/Skandia.Web.Components@main/site/${pageName}.html`
+        return `https://elkompissquarespace.blob.core.windows.net/assets/site/${pageName}.html`
     }
 }

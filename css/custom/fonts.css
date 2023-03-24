@@ -22,7 +22,7 @@
             format('woff2'), url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/fonts/Roobert-SemiBold.woff') format("woff");
     }
 
-    #onboarding h1, #onboarding .h1 {
+    #skandia-custom h1, #skandia-custom .h1 {
         font-size: 64px;
         font-family: "Roobert-Semibold", sans-serif;
         @apply font-semibold;
@@ -30,7 +30,7 @@
         line-height: 1.2;
     }
 
-    #onboarding h2, #onboarding h2.h2, #onboarding .h2 {
+    #skandia-custom h2, #skandia-custom h2.h2, #skandia-custom .h2 {
         font-family: "Roobert-Semibold", sans-serif;
         @apply mb-5 font-semibold;
         font-size: 46px;
@@ -38,7 +38,7 @@
         line-height: 1.4;
     }
 
-    #onboarding h3, #onboarding .h3 {
+    #skandia-custom h3, #skandia-custom .h3 {
         font-family: "Roobert-Semibold", sans-serif;
         @apply mb-7 font-semibold;
         font-size: 32px;
@@ -46,28 +46,28 @@
         line-height: 1.4;
     }
 
-    #onboarding h4, #onboarding .h4 {
+    #skandia-custom h4, #skandia-custom .h4 {
         font-family: "Roobert-Semibold", sans-serif;
         @apply mb-3 font-semibold SkandiaEnergi:font-black;
         font-size: 22px;
         line-height: 1.4;
     }
 
-    #onboarding h5, #onboarding .h5 {
+    #skandia-custom h5, #skandia-custom .h5 {
         font-family: "Roobert-SemiBold", sans-serif;
         font-weight: 600;
         line-height: 1.4;
     }
 
-    #onboarding p {
+    #skandia-custom p {
         @apply mb-6 md:mb-9;
     }
 
-    #onboarding blockquote {
+    #skandia-custom blockquote {
         @apply md:text-2xl font-bold italic my-14 border-l border-black pl-8;
     }
 
-   #onboarding .container {
+   #skandia-custom .container {
         max-width: 1320px;
     }
 }

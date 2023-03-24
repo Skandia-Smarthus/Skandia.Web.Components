@@ -1,0 +1,19 @@
+/* Default fill color for all paths without fill attribute */
+path:not([fill]) {
+    fill: #100072;
+}
+
+/* Default fill color for all paths without fill attribute inside SkandiaEnergi class */
+.SkandiaEnergi path:not([fill]) {
+    fill: #DEE5E7;
+}
+
+/* Hover effect for all paths without fill attribute */
+g:hover path:not([fill]), g.active path:not([fill]) {
+    fill: #FF0098;
+}
+
+/* Hover effect for all paths without fill attribute inside SkandiaEnergi class */
+.SkandiaEnergi g:hover path:not([fill]), .SkandiaEnergi g.active path:not([fill]) {
+    fill: #1db100;
+}

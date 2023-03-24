@@ -1,9 +1,12 @@
+// noinspection DuplicatedCode
+
 const fs = require('fs-extra');
 const path = require('path');
 const Handlebars = require('handlebars');
 const _ = require('lodash');
-const pagesDirectory = "pages";
-const output = "site";
+const handlebars = require("handlebars");
+const pagesDirectory = "pages/strompris";
+const output = "site/strompris";
 
 (async () => {
     // Register some custom handlebar helpers that are used in the template
@@ -13,9 +16,13 @@ const output = "site";
     const globalProductionJson = await getGlobalConfig('production')
     const globalDevelopmentJson = await getGlobalConfig('development')
 
+    // Ensure directories
+    await fs.ensureDir(output)
+
     // Load the Handlebars template
-    const templateSource = await fs.readFile('./templates/onboarding-template.hbs', 'utf8');
-    const scriptSource = await fs.readFile('./templates/onboarding-scripts.html', 'utf8');
+    const templateSource = await fs.readFile('./templates/strompris-template.hbs', 'utf8');
+   // enable if needed const scriptSource = await fs.readFile('./templates/strompris-scripts.html', 'utf8');
+    const scriptSource = ""
     const template = Handlebars.compile(templateSource);
 
     // Read all files in the pages directory
@@ -46,16 +53,6 @@ const output = "site";
     }
 })();
 
-async function getGlobalConfig(mode){
-    const jsonPath = path.join(pagesDirectory, `global-${mode}.json`)
-    if(await fs.pathExists(jsonPath)){
-        console.log("Reading global configuration in " + jsonPath);
-        return await fs.readJson(jsonPath);
-    }
-    console.log("No global data found. Using page configuration only");
-    return null
-}
-
 async function createTemplateFile(jsonFile, globalJson, targetFileName, template, scriptSource){
     const jsonData = _.merge({}, globalJson, jsonFile);
     const filePath = path.join(output, `${targetFileName}.html`)
@@ -71,29 +68,21 @@ async function createTemplateFile(jsonFile, globalJson, targetFileName, template
 }
 function isNotSystemFiles(file)
 {
-    return file !== 'global-production.json' && file!=='global-development.json' && file !== 'template_settings.json'
+    return file !== 'global-production.json' && file!=='global-development.json' && file !== 'template-settings.json'
+}
+async function getGlobalConfig(mode){
+    const jsonPath = path.join(pagesDirectory, `global-${mode}.json`)
+    if(await fs.pathExists(jsonPath)){
+        console.log("Reading global configuration in " + jsonPath);
+        return await fs.readJson(jsonPath);
+    }
+    console.log("No global data found. Using page configuration only");
+    return null
 }
 
 
 function registerHelpers(Handlebars){
-    Handlebars.registerHelper('empty', function (value, options) {
-        if (!value) { return options.fn(this); }
-        return value.replace(/\s*/g, '').length === 0
-            ? options.fn(this)
-            : options.inverse(this);
-    });
-    Handlebars.registerHelper('not-empty', function (value, options) {
-        // Return true if value is not null, undefined, or a string with only whitespace characters
-        if (value && value.trim().length > 0) {
-            return options.fn(this);
-        } else {
-            return options.inverse(this);
-        }
-    });
     Handlebars.registerHelper('json', function(context) {
         return JSON.stringify(context);
-    });
-    Handlebars.registerHelper('ifEquals', function(arg1, arg2, options) {
-        return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
     });
 }

@@ -875,6 +875,10 @@ select {
   }
 }
 
+#onboarding .container {
+  max-width: 1320px;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -969,6 +973,40 @@ select {
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .absolute {
   position: absolute;
 }
@@ -995,6 +1033,10 @@ select {
 
 .m-0 {
   margin: 0px;
+}
+
+.m-auto {
+  margin: auto;
 }
 
 .mx-2 {
@@ -1049,6 +1091,10 @@ select {
   margin-bottom: 3rem;
 }
 
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1073,12 +1119,20 @@ select {
   margin-bottom: 2rem;
 }
 
+.ml-0 {
+  margin-left: 0px;
+}
+
 .ml-3 {
   margin-left: 0.75rem;
 }
 
 .ml-4 {
   margin-left: 1rem;
+}
+
+.mr-0 {
+  margin-right: 0px;
 }
 
 .mr-2 {
@@ -1185,8 +1239,16 @@ select {
   height: 100%;
 }
 
+.max-h-\[500px\] {
+  max-height: 500px;
+}
+
 .min-h-\[300px\] {
   min-height: 300px;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .w-12 {
@@ -1342,6 +1404,11 @@ select {
   border-top-width: 2px;
 }
 
+.border-gray {
+  --tw-border-opacity: 1;
+  border-color: rgba(var(--colors-gray), var(--tw-border-opacity));
+}
+
 .border-red-700 {
   --tw-border-opacity: 1;
   border-color: rgb(185 28 28 / var(--tw-border-opacity));
@@ -1371,17 +1438,43 @@ select {
   padding-right: 1rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.pl-10 {
+  padding-left: 2.5rem;
 }
 
 .pl-12 {
   padding-left: 3rem;
 }
 
+.pr-10 {
+  padding-right: 2.5rem;
+}
+
 .pr-4 {
   padding-right: 1rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-left {
@@ -1414,6 +1507,11 @@ select {
 .text-oform-h1 {
   font-size: 22px;
   line-height: 37px;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -3057,6 +3155,30 @@ img.aligncenter {
 /*
 */
 
+/* Default fill color for all paths without fill attribute */
+
+path:not([fill]) {
+  fill: #100072;
+}
+
+/* Default fill color for all paths without fill attribute inside SkandiaEnergi class */
+
+.SkandiaEnergi path:not([fill]) {
+  fill: #DEE5E7;
+}
+
+/* Hover effect for all paths without fill attribute */
+
+g:hover path:not([fill]), g.active path:not([fill]) {
+  fill: #FF0098;
+}
+
+/* Hover effect for all paths without fill attribute inside SkandiaEnergi class */
+
+.SkandiaEnergi g:hover path:not([fill]), .SkandiaEnergi g.active path:not([fill]) {
+  fill: #1db100;
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
@@ -3067,6 +3189,12 @@ img.aligncenter {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.focus\:appearance-none:focus {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
 .SkandiaEnergi .SkandiaEnergi\:hidden {
   display: none;
 }
@@ -3074,5 +3202,36 @@ img.aligncenter {
 @media (min-width: 640px) {
   .sm\:p-6 {
     padding: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
+  .md\:items-center {
+    align-items: center;
+  }
+
+  .md\:pr-24 {
+    padding-right: 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:mb-24 {
+    margin-bottom: 6rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }

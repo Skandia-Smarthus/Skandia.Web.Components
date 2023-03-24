@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./site/**/*.{html,js}', './*.hbs'],
+  content: ['./site/**/*.{html,js}', './*.hbs', './index.html'],
   important: false,
   variant: {
     display: ['responsive', 'group-hover', 'group-focus']

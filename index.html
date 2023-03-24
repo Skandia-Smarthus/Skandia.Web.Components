@@ -8,24 +8,36 @@
     <script>
         (function() {
             const urlSearchParams = new URLSearchParams(window.location.search);
-            const formQueryParam = urlSearchParams.get('page');
+            const formQueryParam = urlSearchParams.get('form');
+            const priceQueryParam = urlSearchParams.get('price');
 
             if (formQueryParam) {
                 const divElement = document.createElement('div');
                 divElement.id = 'onboarding';
-                divElement.setAttribute('data-page', formQueryParam);
+                divElement.setAttribute('data-form', formQueryParam);
+                document.head.appendChild(divElement);
+            }
+            if (priceQueryParam) {
+                const divElement = document.createElement('div');
+                divElement.id = 'strompris';
+                divElement.setAttribute('data-price', priceQueryParam);
                 document.head.appendChild(divElement);
             }
         })();
         document.addEventListener('DOMContentLoaded', function (){
-            const divElement = document.getElementById("onboarding");
-            if(divElement){
-                document.body.appendChild(divElement);
+            const onboardingDiv = document.getElementById("onboarding");
+            if(onboardingDiv){
+                document.body.appendChild(onboardingDiv);
+            }
+            const priceDiv = document.getElementById("strompris");
+            if(priceDiv){
+                document.body.appendChild(priceDiv);
             }
         })
     </script>
 </head>
-<body>
+<body class="py-4 px-5">
+
 </body>
 </html>
 <script src="site/assets/loadPage.js"></script>
@@ -33,25 +45,4 @@
 <script src="site/assets/js/onboarding-validate.js"></script>
 <script src="site/assets/js/onboarding-api.js"></script>
 <script src="site/assets/js/onboarding.js"></script>
-<!--<script async>-->
-<!--    document.addEventListener('DOMContentLoaded',-->
-<!--        function() {-->
-
-<!--            const urlSearchParams = new URLSearchParams(window.location.search);-->
-<!--            const formQueryParam = urlSearchParams.get('form');-->
-
-<!--            if (formQueryParam) {-->
-<!--                const firstDiv = document.querySelector('body div:first-child');-->
-<!--                if (firstDiv) {-->
-<!--                    firstDiv.id = formQueryParam;-->
-<!--                }-->
-<!--            }-->
-
-<!--            const script = document.createElement('script');-->
-<!--            script.src = 'squarespace/loadPage.js';-->
-<!--            script.onload = function() {-->
-<!--                console.log('loadPage.js loaded');-->
-<!--            };-->
-<!--            document.body.appendChild(script);-->
-<!--        })-->
-<!--</script>-->
+<script src="site/assets/js/strompris.js"></script>

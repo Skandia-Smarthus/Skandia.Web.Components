@@ -1,8 +1,9 @@
 {
   "scripts": {
-    "build-pages": "node generate.js",
+    "build-pages": "node build/generate-onboarding.js",
+    "build-strompris": "node build/generate-strompris.js",
     "build-css": "npx tailwindcss --postcss postcss.config.js --config tailwind.config.js -i ./css/input.css -o ./site/assets/output.css",
-    "build" : "npm run build-pages && npm run build-css",
+    "build" : "npm run build-pages && npm run build-strompris && npm run build-css",
     "debug" : "node server.js"
   },
   "devDependencies": {

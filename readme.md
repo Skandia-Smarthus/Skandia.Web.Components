@@ -14,7 +14,7 @@ This project can be built and used multiple ways. Here are a couple:
 ### Terminal
 Navigate to the project root, where the package.json is located. Run npm run <desired command>
 Example for building everything
-`npm run buil`
+`npm run build`
 You can see in the package.json available commands, but as of this document you can use:
 * build
 * build-css

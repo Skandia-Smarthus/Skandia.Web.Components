@@ -1,8 +1,8 @@
 {
   "enabled" : true,
   "mode" : "development",
-  "strompris-api" : {
-    "base-url" : "https://app-elkompis-service-dev.azurewebsites.net/",
-    "price-for-zip-path" : "Public/Spotprice/"
+  "stromprisApi" : {
+    "baseUrl" : "https://app-elkompis-service-dev.azurewebsites.net/",
+    "priceForZipPath" : "Public/Spotprice/"
   }
 }

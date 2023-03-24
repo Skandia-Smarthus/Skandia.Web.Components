@@ -28,10 +28,10 @@ function StromPrisSetup() {
         // Creating Our XMLHttpRequest object
         let xhr = new XMLHttpRequest();
 
-        var apiUrl = "https://app-elkompis-service-prod.azurewebsites.net/";
+        var apiUrl = window.stromprisApi.baseUrl
         // Making our connection
         if (zip !== null) {
-            var url = apiUrl + "Public/Spotprice/" + zip;
+            var url = apiUrl + window.stromprisApi.priceForZipPath + zip;
             xhr.open("GET", url, true);
         }
         if (zone !== null) {

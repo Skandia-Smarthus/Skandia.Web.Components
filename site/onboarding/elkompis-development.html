@@ -3,7 +3,7 @@
 
 <div class="hidden opacity-70 opacity-50 animate-pulse skandiaenergi ">
     <div class="SkandiaEnergi:hidden">
-        ElKompis
+        SkandiaEnergi
     </div>
     <input type="hidden" id="linkWelcome1" value="@linkWelcome1Url" />
     <input type="hidden" id="linkWelcome2" value="@linkWelcome2Url" />
@@ -25,7 +25,7 @@
 
     <div class="mx-auto relative w-full text-center font-bold">DEV MODE</div>
     <div id="step1-scrollto"></div>
-    <div id="onboardingformV2" class="w-600 mx-auto relative mt-10 mb-20 ElKompis">
+    <div id="onboardingformV2" class="w-600 mx-auto relative mt-10 mb-20 SkandiaEnergi">
         <div id="onboarding-container" class="">
             <!--Steg1 start-->
             <div id="step1-sum" class="hidden">
@@ -50,7 +50,7 @@
 
                                 <div class="mb-2">
                                     <a id="vipps-button" class="e-btn bg-warning-vipps inline-block whitespace-nowrap text-white em btn-t-vipps">
-                                        Start med Vipps
+                                        Start med Vipps!!!
                                     </a>
                                 </div>
                             <div class="mb-2">
@@ -72,7 +72,7 @@
                                 <div class="flex flex-col gap-4">
                                     <div class="basis-1">
                                         <label class="text-oform-body2 em iconRequired centerRight pr-4">Mobilnummer</label>
-                                        <input type="text" class="form-control" aria-describedby="Mobilnummer" id="onboarding_cell" placeholder="Skriv inn mobilnummer" required="required" pattern="\d{8,8}" />
+                                        <input type="tel" class="form-control" aria-describedby="Mobilnummer" id="onboarding_cell" placeholder="Skriv inn mobilnummer" required="required" pattern="\d{8,8}" />
                                         <label class="error-text">Fyll inn gyldig mobilnummer</label>
                                     </div>
                                     <div class="basis-1">
@@ -431,7 +431,7 @@ Påslag: 1 øre/kilowattime
         console.log("Setting up component elkompis");
         window.saleApi = {"basePath":"https://app-elkompis-service-dev.azurewebsites.net/","phoneLookupPath":"sale/lookup","phoneLookupVippsPath":"sale/lookupvipps","placeLookupPath":"sale/place","customerLookupPath":"sale/customerlookup","vippsUrlLookupPath":"sale/vippsurl","saleLeadPath":"sale/salelead","saleRegisterPath":"sale","saleRegisterSkandiaPath":"sale/skandiaEnergiSale"};
         window.vippsRedirectUrl = '';
-        window.profile = 'ElKompis';
+        window.profile = 'SkandiaEnergi';
     })();
 
 </script> <div id="scriptcontainer" class="hidden">

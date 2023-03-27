@@ -60,7 +60,7 @@ If everything is setup correctly it should load the form names hyttestrom.html t
 Change this name to whatever you want in the ./site/onboarding folder (NB must be available in production, so pushed out).
 
 Its the same for strompris. 
-`<strompris" data-name="elkompis"/>`
+`<strompris data-name="elkompis"/>`
 This will load the strompris component for elkompis.
 
 For this to work we use, in squarespace, global code injection to inject the following files (in this order) located in ./site.

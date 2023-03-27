@@ -37,16 +37,15 @@ function OnboardingLookupV2(cell = null, email = null, authCode = null, state = 
     const apiUrl = getLookupApiUrl(cell, authCode, state, redirectUrl);
 
     let xhr = new XMLHttpRequest();
+    xhr.email = email;
+    xhr.cell = cell;
     xhr.open('GET', apiUrl, true);
-    xhr.onreadystatechange = lookupResponseHandler
-    xhr.send();
-}
-
-function lookupResponseHandler(){
+    xhr.onreadystatechange = function(){
         if (this.readyState === 4) {
             if (this.status === 200 || this.status === 204) {
                 let jsonContent = JSON.parse(this.responseText);
                 customerData = jsonContent;
+                const email = this.email;
                 if (email)
                     jsonContent.email = email;
 
@@ -104,7 +103,11 @@ function lookupResponseHandler(){
                 removeAllPulse();
             }
         }
+    }
+    xhr.send();
 }
+
+
 
 function SaveEditDeliveryV2() {
     let index = $("#deliveryIdEdit").val();

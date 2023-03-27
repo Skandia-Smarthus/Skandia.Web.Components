@@ -3,7 +3,7 @@
 
 <div class="hidden opacity-70 opacity-50 animate-pulse skandiaenergi ">
     <div class="SkandiaEnergi:hidden">
-        {{profile}}
+        SkandiaEnergi
     </div>
     <input type="hidden" id="linkWelcome1" value="@linkWelcome1Url" />
     <input type="hidden" id="linkWelcome2" value="@linkWelcome2Url" />
@@ -13,7 +13,7 @@
             <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
             <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
         </svg>
-        {{global.buttons.next}}
+        Gå videre
     </button>
     <div class="bg-brand-pink">TEST2</div>
     <div id="loader" class="mx-auto hidden absolute top-1/4 left-0 right-0 z-10">
@@ -21,13 +21,8 @@
     </div>
 </div>
 
-{{#ifEquals mode "Development"}}
-<div class="border-4 border-red-700 rounded-md mx-2 my-2">
-
-    <div class="mx-auto relative w-full text-center font-bold">DEV MODE</div>
-{{/ifEquals}}
     <div id="step1-scrollto"></div>
-    <div id="onboardingformV2" class="w-600 mx-auto relative mt-10 mb-20 {{profile}}">
+    <div id="onboardingformV2" class="w-600 mx-auto relative mt-10 mb-20 SkandiaEnergi">
         <div id="onboarding-container" class="">
             <!--Steg1 start-->
             <div id="step1-sum" class="hidden">
@@ -35,7 +30,7 @@
                     <div class="form-bullet pos-left md em mx-4">1</div>
                     <div class="text-oform-h1 em">
 
-                        {{step1.title}}
+                         Start din bestilling her
                     </div>
                 </div>
             </div>
@@ -45,48 +40,30 @@
                     <div class="form-bullet pos-center lg em">1</div>
                     <div id="step1-intro" class="">
                         <div class="inner">
-                            <div class="text-oform-h1 em mt-2 font-bold">{{step1.header.text}}</div>
-                            {{step1.header.sub-text}}
+                            <div class="text-oform-h1 em mt-2 font-bold">1. Hei, så hyggelig at du vil bli kunde i SkandiaEnergi!</div>
+                            Avtalen Hyttestrøm koster kun 0 kr/mnd og 5,6 øre/kWh. Det er gratis å bytte, og vi avslutter din gamle strømavtale for deg.
                         </div>
                         <div class="text-center mt-6">
-                            {{#if step1.vipps.enabled}}
 
                                 <div class="mb-2">
                                     <a id="vipps-button" class="e-btn bg-warning-vipps inline-block whitespace-nowrap text-white em btn-t-vipps">
-                                        {{step1.vipps.button-text}}
+                                        Finn dine opplysninger med vipps
                                     </a>
                                 </div>
-                                {{#if step1.button-search-text}}
-
-                                    <div class="text-oform-body mb-2">eller</div>
-                                {{/if}}
-                            {{/if}}
                             <div class="mb-2">
                                 <button name="step1ButtonTextSearch" class="e-btn e-btn-primary text-white em btn-t-phone" onclick="gotoStep(1,'cell')">
-                                    {{step1.cell.button-text}}
+                                    Manuell registrering!!!!!!
                                 </button>
                             </div>
-                            {{#if step1.info-popup.heading.text}}
-                                <div class="mt-8 mb-2 relative">
-                                    <div id="step1InfoTekst" class="form-popup hidden">
-                                        <div class="flex justify-between mb-2">
-                                            <div class="em">{{step1.info-popup.header.text}}</div>
-                                            <div class="form-popup-close iconClose btnIcon m-0 w-6 h-6 topRight cursor-pointer" onclick="HidePopup('#step1InfoTekst')"></div>
-                                        </div>
-                                        {{step1.heading.sub-text}}
-                                    </div>
-                                    <div class="e-btn-link em underline cursor-pointer form-link-help" data-popup="#step1InfoTekst" onclick="ShowPopup('#step1InfoTekst')">{{step1.header.heading}}</div>
-                                </div>
-                            {{/if}}
                         </div>
 
                     </div>
 
                     <div id="step1-cell" class="inner hidden">
                         <div class="text-oform-h1 em mt-2">
-                            {{step1.cell.header.text}}
+                            Da er du i gang!
                         </div>
-                        {{step1.cell.header.sub-text}}
+                        Fyll ut mobilnummer og epost, så vi finner dine opplysninger.
                         <form action="#" id="lookup">
                             <div class="text-left mt-4 mb-8">
                                 <div class="flex flex-col gap-4">
@@ -106,7 +83,7 @@
                             <div class="flex justify-between">
 
                                 <button class="e-btn-link underline btn-t-back" onclick="gotoStep(1,'intro')" type="button">
-                                    {{global.buttons.back}}
+                                    Tilbake
                                 </button>
                                 <button class="e-btn-lg e-btn-secondary text-white inline-flex items-center px-4 py-2 btn-t-cellsearch" type="submit" id="btnSubmitCellSearch">
                                     <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
@@ -114,7 +91,7 @@
                                         <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                                     </svg>
 
-                                    {{global.buttons.next}}
+                                    Gå videre
                                 </button>
                             </div>
                         </form>
@@ -129,7 +106,7 @@
                 <div class="form-bullet pos-left md em mx-4">2</div>
                 <div class="grow text-oform-h1 em flex flex-row gap-x-4 mr-4">
                     <div class="grow text-left">
-                        {{step2.title}}
+                        Navn og adresse
                     </div>
                     <div id="step2-editpen" class="hidden text-right place-content-end w-6 flex-none btn-t-deliverybackedit">
                         <button class="btn align-start place-content-end iconPencil size1"
@@ -149,24 +126,18 @@
                     <div class="form-bullet pos-center lg em">2</div>
                     <div class="inner">
                         <div class="text-oform-h1 em mt-2">
-                            {{step2.header.text}}
+                            Navn og adresse
                         </div>
                         <div class="text-left mt-6">
                             <div id="deliveriesContainer">
                             </div>
-                            {{#if step2.buttons.add-delivery}}
-                                <button class="my-4 ml-3 iconPlus btnIcon hover:underline centerLeft pl-12 em text-left" onclick="gotoStep(2,'add')">
-                                    {{step2.buttons.add-delivery}}
-                                </button>
-
-                            {{/if}}
 
                             <div class="flex justify-between mt-4">
                                 <button class="e-btn-link underline btn-t-back" onclick="gotoStep(1,'intro')" type="button">
-                                    {{global.buttons.back}}
+                                    Tilbake
                                 </button>
                                 <button id="step2Next" class="e-btn-lg e-btn-secondary text-white btn-t-deliveries" onclick="validate('step2', 'overview')">
-                                    {{global.buttons.next}}
+                                    Gå videre
                                 </button>
                             </div>
                         </div>
@@ -183,9 +154,9 @@
                     <div class="form-bullet pos-center lg em">2</div>
                     <div class="inner">
                         <div class="text-oform-h1 em mt-2">
-                            {{step2.header.text}}
+                            Navn og adresse
                         </div>
-                        {{step2.header.sub-text}}
+                        Du trenger ikke å finne målenummeret ditt før du bestiller. Vi kontakter deg senere for å legge det inn. Har du en partner står nummeret gjerne på dem, og det overføres til deg.
                         <div class="text-left mt-6">
                             <div id="onboarding-manual-name" class="">
                                 <div class="flex flex-col gap-2 mb-2">
@@ -237,17 +208,17 @@
                                 <div id="meternumberPopup" class="form-popup hidden">
                                     <div class="flex justify-between mb-2">
                                         <div class="em">
-                                            {{step2.info-popup.text}}
+                                            Målernummer
                                         </div>
                                         <div class="form-popup-close iconClose btnIcon m-0 w-6 h-6 topRight cursor-pointer" onclick="HidePopup('#meternumberPopup')"></div>
                                     </div>
-                                    {{step2.info-popup.sub-text}}
+                                    
+Du trenger ikke å finne målenummeret ditt før du bestiller. Vi kontakter deg senere for å legge det inn. Har du en partner står nummeret gjerne på dem, og det overføres til deg.
+
                                 </div>
                                 <div class="flex h-[25px]">
                                     <label class="grow text-oform-body2 em">Målernummer</label>
-                                    {{#not-empty step2.info-popup.sub-text}}
                                         <div class="e-btn-link em underline cursor-pointer iconHelp centerRight w-4 h-4" data-popup="#step1InfoTekst" onclick="ShowPopup('#meternumberPopup')"></div>
-                                    {{/not-empty}}
 
                                 </div>
                                 <input id="meterNumberAdd" type="text" class="form-control" placeholder="Dersom tilgjengelig">
@@ -265,7 +236,7 @@
                                     <input id="supply-takover" name="takover" type="checkbox" class="control w-6 h-6 rounded-sm">
                                     <label for="supply-takover" class="ml-4 block text-oform-body em my-0 cursor-pointer">
 
-                                        {{global.text.move-date}}
+                                        Jeg overtar hytten
                                     </label>
                                 </div>
                             </div>
@@ -277,15 +248,15 @@
                             <div class="flex justify-between">
                                 <button class="e-btn-link underline btn-t-back" onclick="gotoStep(2, 'back')">
 
-                                    {{global.buttons.back}}
+                                    Tilbake
                                 </button>
                                 <button id="step2EditButton" class="e-btn-lg e-btn-secondary text-white hidden btn-t-editdelivery" onclick="validate('step2')">
 
-                                    {{global.buttons.next}}
+                                    Gå videre
                                 </button>
                                 <button id="step2AddButton" class="e-btn-lg e-btn-secondary text-white btn-t-addelivery" onclick="validate('step2', 'add')">
 
-                                    {{global.buttons.next}}
+                                    Gå videre
                                 </button>
                             </div>
                         </div>
@@ -299,7 +270,7 @@
                 <div class="form-bullet pos-left md em mx-4">3</div>
                 <div class="text-oform-h1 em">
 
-                    {{step3.title}}
+                    Bekreft og bestill
                 </div>
             </div>
 
@@ -312,27 +283,21 @@
                     <div class="inner">
                         <div class="text-oform-h1 em mt-2">
 
-                            {{step3.header.text}}
+                            Bestill, vi fikser resten
                         </div>
 
-                        {{step3.header.sub-text}}
+                        Bestill og len deg tilbake mens vi fikser alt det praktiske. 🚀 
                         <div class="text-left mt-6">
                             <div class="flex mb-4">
-                                {{#not-empty step3.securing.image-url}}
-                                    <div class="w-20 flex-none">
-
-                                        <img src="{{step3.securing.image-url}}" />
-                                    </div>
-                                {{/not-empty}}
 
                                 <div class="grow">
                                     <div class="em">
 
-                                        {{step3.securing.header.text}}
+                                        
                                     </div>
                                     <div class="">
 
-                                        {{step3.securing.header.sub-text}}
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -348,46 +313,46 @@
                         <!--Ordredetaljer-->
                         <div class="inner text-left">
                             <div class="flex mb-4">
-                                <div class="w-12 flex-none"><img src="{{imagePath}}/assets/icons/Smiley.svg" alt="Person" /></div>
+                                <div class="w-12 flex-none"><img src="https://elkompissquarespace.blob.core.windows.net/assets/site/assets/icons/Smiley.svg" alt="Person" /></div>
                                 <div class="grow" id="step3CustomerDataContainer">
                                 </div>
                             </div>
                             <div class="flex mb-4">
-                                <div class="w-12 flex-none"><img src="{{imagePath}}/assets/icons/House.svg" alt="Adresse" /></div>
+                                <div class="w-12 flex-none"><img src="https://elkompissquarespace.blob.core.windows.net/assets/site/assets/icons/House.svg" alt="Adresse" /></div>
                                 <div class="grow leading-6">
                                     <div class="em">
 
-                                        {{step3.order-details.address.text}}
+                                        Du får strøm levert til
                                     </div>
                                     <div id="step3CustomerDeliveriesContainer">
                                     </div>
                                     <div id="step3CustomerText" class="hidden">
 
-                                        {{step3.order-details.address.sub-text}}
+                                        Vi kontakter deg for å skaffe målernummeret ditt
                                     </div>
                                 </div>
                             </div>
-                            {{#not-empty step3.order-details.product.text}}
                                 <div class="flex mb-4">
-                                    <div class="w-12 flex-none"><img src="{{imagePath}}/assets/icons/Agreement.svg" alt="Avtale" /></div>
+                                    <div class="w-12 flex-none"><img src="https://elkompissquarespace.blob.core.windows.net/assets/site/assets/icons/Agreement.svg" alt="Avtale" /></div>
                                     <div class="grow leading-8">
                                         <div class="em">
 
-                                            {{step3.order-details.product.text}}
+                                            Abonnementsdetaljer
                                         </div>
 
-                                        {{step3.order-details.product.sub-text}}
+                                        Avtaletype: Hyttestrøm
+Månedsbeløp: 0 kr
+Påslag: 5,6 øre/kilowattime
                                     </div>
                                 </div>
 
-                            {{/not-empty}}
 
                             <div class="flex mb-4">
-                                <div class="w-12 flex-none"><img src="{{imagePath}}/assets/icons/Pen.svg" alt="Endre" /></div>
+                                <div class="w-12 flex-none"><img src="https://elkompissquarespace.blob.core.windows.net/assets/site/assets/icons/Pen.svg" alt="Endre" /></div>
                                 <div class="grow">
                                     <button class="e-btn-link em btn-t-editdelivery" onclick="gotoStep(2)">
 
-                                        {{global.buttons.edit}}
+                                        Rediger
                                     </button>
                                 </div>
                             </div>
@@ -403,38 +368,13 @@
                                 <div class="flex items-start">
                                     <input id="acceptedTerms" name="acceptedTerms" type="checkbox" class="control w-6 h-6 rounded-sm mt-2 btn-t-acceptedterms">
                                     <div class="ml-4 block text-oform-body1 my-0 cursor-pointer topLeft">
-                                        {{step3.confirm.accept}}
+                                        Jeg bekrefter at jeg har lest og forstått vilkårene. Jeg har også sett/er kjent med standard angreskjema og standard skjema for opplysning om angrerett.
                                     </div>
                                 </div>
                             </div>
-                            {{#not-empty step3.confirm.expedited}}
-                                <div class="mb-2">
-                                    <div class="flex items-start">
-                                        <input id="confirm-faststartup" name="faststartup" type="checkbox" class="control w-6 h-6 rounded-sm mt-2 btn-t-faststartup">
-                                        <label for="confirm-faststartup" class="ml-4 block text-oform-body1 my-0 cursor-pointer">
-                                            {{step3.confirm.expedited}}
-                                        </label>
-                                    </div>
-                                </div>
-                            {{/not-empty}}
-
-                            {{#not-empty step3.confirm.text}}
-                                <div class="mb-2">
-                                    <div class="flex items-start">
-                                        <input id="confirm-news" name="news" type="checkbox" class="control w-6 h-6 rounded-sm mt-2 btn-t-newsletter">
-                                        <label for="confirm-news" class="ml-4 block text-oform-body1 my-0 cursor-pointer">
-                                            {{step3.confirm.text}}
-                                        </label>
-                                    </div>
-                                </div>
-                            {{/not-empty}}
 
 
-                            {{#not-empty step3.confirm.offer-and-newsletter}}
-                                <div class="mb-2">
-                                    {{step3.confirm.offer-and-newsletter}}
-                                </div>
-                            {{/not-empty}}
+
 
 
                             <!--Bestill knapp-->
@@ -444,7 +384,7 @@
                                         <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                                         <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                                     </svg>
-                                    {{global.buttons.order}}
+                                    Bestill nå
                                 </button>
                             </div>
                         </div>
@@ -457,7 +397,7 @@
             <div id="step-createorder" class="hidden">
                 <div class="min-h-[300px]">
                     <div class="mx-auto mb-12">
-                        <lottie-player src="{{imagePath}}/assets/animation.json" background="transparent" speed="1" class="h-20 w-20 mx-auto" loop autoplay></lottie-player>
+                        <lottie-player src="https://elkompissquarespace.blob.core.windows.net/assets/site/assets/animation.json" background="transparent" speed="1" class="h-20 w-20 mx-auto" loop autoplay></lottie-player>
                     </div>
 
                 </div>
@@ -467,19 +407,45 @@
     </div>
 
 
-{{#ifEquals mode "Development"}}
-</div>
-{{/ifEquals}}
 </div>
 
-<p class="hidden">Compiled in mode {{mode}}</p>
+<p class="hidden">Compiled in mode Production</p>
 
 <script>
     (function(){
-        console.log("Setting up component {{filename}}");
-        window.saleApi = {{{json saleApi}}};
-        window.vippsRedirectUrl = '{{step1.vipps.redirectUrl}}';
-        window.profile = '{{profile}}';
+        console.log("Setting up component hyttestrom");
+        window.saleApi = {"basePath":"https://app-elkompis-service-prod.azurewebsites.net/","phoneLookupPath":"sale/lookup","phoneLookupVippsPath":"sale/lookupvipps","placeLookupPath":"sale/place","customerLookupPath":"sale/customerlookup","vippsUrlLookupPath":"sale/vippsurl","saleLeadPath":"sale/salelead","saleRegisterPath":"sale","saleRegisterSkandiaPath":"sale/skandiaEnergiSale"};
+        window.vippsRedirectUrl = '';
+        window.profile = 'SkandiaEnergi';
     })();
 
-</script>
+</script> <div id="scriptcontainer" class="hidden">
+    <script id="orderDetailsCustomer" type="template">
+        <div class="em">{{Firstname}} {{Lastname}}</div>
+        <div class="leading-8">Tlf. {{Cell}}</div>
+        <div>{{Email}}</div>
+    </script>
+    <script id="orderDetailsDeliveries" type="template">
+        <div class="my-2">
+            <div class="{{andClass}} em mb-2">og</div>
+            <div>{{Address}} {{HouseNumber}}</div>
+            <div>{{ZipCode}} {{Place}}</div>
+        </div>
+    </script>
+    <script id="deliveryNew" type="template">
+        <div class="rounded-xl shadow hover:shadow mt-4 border bg-white mb-2" id="delivery-{{index}}">
+            <input type="hidden" class="deliveryIndex" value="{{index}}"/>
+            <div class="p-3 sm:p-6 flex deliveryData">
+                <div class="checkbox-container hidden"><input type="checkbox" {{checked}} class="delivery-selector rounded-sm control "></div>
+                <div class="w-8 h-8"><button class="btn iconDelete w-full h-full centerLeft hideonskandiasale" onclick="DeleteDelivery({{index}})"></button></div>
+                <div class="grow data overflow-hidden" id="data-{{index}}">
+                    <div class="e-text-body1 em"><span class="address">{{Address}}</span> <span class="houseno">{{HouseNo}}</span></div>
+                    <div class="e-text-body1">{{Firstname}} {{Lastname}}</div>
+                    <div class="e-hidden"><span class="zipcode">{{ZipCode}}</span> <span class="place">{{Place}}</span></div>
+                    <div class="flex e-text-body2 mt-3 text-ellipsis {{meterNumberClass}}"><div class="mr-2">Målernr</div><div class="meternumber">{{meterNumber}}</div></div>
+                </div>
+                <div class="text-right place-content-end w-6"><button class="btn align-start place-content-end iconPencil size1 topRight" onclick="EditDeliveryV2('#data-{{index}}', {{index}})"></button></div>
+            </div>
+        </div>
+    </script>
+</div>

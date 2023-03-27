@@ -4,7 +4,10 @@
     "build-strompris": "node build/generate-strompris.js",
     "build-css": "npx tailwindcss --postcss postcss.config.js --config tailwind.config.js -i ./css/input.css -o ./site/assets/output.css",
     "build" : "npm run build-onboarding && npm run build-strompris && npm run build-css",
-    "debug" : "node server.js"
+    "debug" : "npm-run-all --parallel server watch:*",
+    "server" : "node server.js",
+    "watch:build" : "nodemon",
+    "watch:browser-sync": "browser-sync start --proxy https://localhost:44326 --files 'index.html, site/assets/**/*.*'"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.3",
@@ -15,7 +18,10 @@
     "expose-loader": "^4.1.0",
     "http-server": "^14.1.1",
     "express": "^4.18.2",
-    "selfsigned": "^2.1.1"
+    "selfsigned": "^2.1.1",
+    "nodemon": "^2.0.22",
+    "browser-sync": "^2.29.1",
+    "npm-run-all": "^4.1.5"
   },
   "dependencies": {
     "autoprefixer": "^10.4.14",

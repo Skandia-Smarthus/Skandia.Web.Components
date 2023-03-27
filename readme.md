@@ -65,7 +65,7 @@ This will load the strompris component for elkompis.
 
 For this to work we use, in squarespace, global code injection to inject the following files (in this order) located in ./site.
 * ./assets/output.css
-* ./assets/loadComponents.js - this is important as it will load the correct component based on the data-form/price attribute.
+* ./assets/load-components.js - this is important as it will load the correct component based on the data-form/price attribute.
 * ./assets/js/common.js
 * ./assets/js/onboarding-validate.js
 * ./assets/js/onboarding-api.js

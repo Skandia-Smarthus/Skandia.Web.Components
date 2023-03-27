@@ -1,7 +1,5 @@
 const https = require('https');
 const express = require('express');
-const { readFileSync } = require('fs');
-const { createServer } = require('http');
 const selfsigned = require('selfsigned');
 
 const app = express();

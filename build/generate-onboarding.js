@@ -4,7 +4,7 @@ const path = require('path');
 const Handlebars = require('handlebars');
 const _ = require('lodash');
 const handlebars = require("handlebars");
-const pagesDirectory = path.join('pages', 'onboarding');
+const pagesDirectory = path.join('components', 'onboarding');
 const output = path.join('site', 'onboarding');
 
 (async () => {
@@ -22,7 +22,7 @@ const output = path.join('site', 'onboarding');
     const scriptSource = await fs.readFile(path.join('templates', 'onboarding-scripts.html'), 'utf8');
     const template = Handlebars.compile(templateSource);
 
-    // Read all files in the pages directory
+    // Read all files in the components directory
     const files = await fs.readdir(pagesDirectory);
 
     // Filter JSON files

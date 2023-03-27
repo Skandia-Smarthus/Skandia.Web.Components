@@ -5,7 +5,7 @@ const path = require('path');
 const Handlebars = require('handlebars');
 const _ = require('lodash');
 const handlebars = require("handlebars");
-const pagesDirectory = "pages/strompris";
+const pagesDirectory = "components/strompris";
 const output = "site/strompris";
 
 (async () => {
@@ -25,7 +25,7 @@ const output = "site/strompris";
     const scriptSource = ""
     const template = Handlebars.compile(templateSource);
 
-    // Read all files in the pages directory
+    // Read all files in the components directory
     const files = await fs.readdir(pagesDirectory);
 
     // Filter JSON files

@@ -1,11 +1,16 @@
 window.addEventListener('DOMContentLoaded', async () => {
-    const onboardingDiv = document.getElementById('onboarding');
-    const stromprisDiv = document.getElementById('strompris');
-    if (onboardingDiv) {
-        loadDynamicDocument(onboardingDiv, onboardingDiv.dataset.form, "onboarding", OnboardingSetup);
+    const onboardingTag = document.getElementsByTagName('onboarding');
+    const stromprisTag = document.getElementsByTagName('strompris');
+
+    if(onboardingTag){
+        for(element of onboardingTag){
+            loadDynamicDocument(element, element.dataset.name, "onboarding", OnboardingSetup);
+        }
     }
-    if(stromprisDiv){
-        loadDynamicDocument(stromprisDiv, stromprisDiv.dataset.price, "strompris", StromPrisSetup);
+    if(stromprisTag){
+        for(element of stromprisTag){
+            loadDynamicDocument(element, element.dataset.name, "strompris", StromPrisSetup);
+        }
     }
 });
 

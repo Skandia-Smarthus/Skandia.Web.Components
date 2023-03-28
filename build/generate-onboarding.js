@@ -74,7 +74,7 @@ async function createTemplateFile(jsonFile, globalJson, targetFileName, template
 }
 function isNotSystemFiles(file)
 {
-    return file !== 'global-production.json' && file!=='global-development.json' && file !== 'template_settings.json'
+    return file !== 'global-production.json' && file!=='global-development.json' && file !== 'template-settings.json'
 }
 
 

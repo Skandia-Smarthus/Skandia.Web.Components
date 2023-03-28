@@ -1,5 +1,5 @@
 {
-  "enabled" : true,
+  "enabled" : false,
   "mode" : "Development",
   "imagePath" : "https://localhost:44326/site",
   "saleApi" : {

@@ -27,3 +27,4 @@ steps:
     Destination: 'AzureBlob'
     storage: 'elkompissquarespace'
     ContainerName: 'assets'
+    CleanTargetBeforeCopy: true

@@ -1,6 +1,6 @@
 {
   "profile": "SkandiaEnergi",
-  "filename" : "hyttestrom",
+  "name" : "hyttestrom",
   "global" : {
     "buttons" : {
       "back" : "Tilbake",

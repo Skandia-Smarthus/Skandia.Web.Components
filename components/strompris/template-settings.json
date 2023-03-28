@@ -1,5 +1,6 @@
 {
-  "profile" : "Elkompis",
+  "profile" : "<profile to use (Elkompis/SkandiaEnergi)>",
+  "name" : "<name of component>",
   "fill-color" : "#100072",
   "title" : "Dagens strømpris",
   "sub-title" : "Se gjennomsnittlig strømpris (ink. mva) i ditt område. Merk at noen postnummer kan ligge i flere prisområder. ",

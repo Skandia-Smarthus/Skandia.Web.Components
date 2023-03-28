@@ -1,6 +1,6 @@
 {
   "profile": "ElKompis",
-  "filename" : "elkompis",
+  "name" : "elkompis",
   "global" : {
     "buttons" : {
       "back" : "Tilbake",

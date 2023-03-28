@@ -1,6 +1,6 @@
 {
   "profile" : "Elkompis",
-  "filename" : "elkompis",
+  "name" : "elkompis",
   "fill-color" : "#100072",
   "title" : "Dagens strømpris nå fra NordPool",
   "sub-title" : "Se gjennomsnittlig strømpris (ink. mva) i ditt område. Merk at noen postnummer kan ligge i flere prisområder. Lenger ned ser du historiske priser og strømstøttekalkulator.",

@@ -1,6 +1,6 @@
 {
-  "profile": "ElKompis",
-  "filename" : "elkompis",
+  "profile": "<profile to use (ElKompis/SkandiaEnergi)>",
+  "name" : "<name of component>",
   "global" : {
     "buttons" : {
       "back" : "Tilbake",

@@ -1,6 +1,6 @@
 {
   "profile": "SkandiaEnergi",
-  "filename" : "skandiaspot",
+  "name" : "skandiaspot",
   "global" : {
     "buttons" : {
       "back" : "Tilbake",

@@ -108,6 +108,9 @@ module.exports = {
   variants: {
     extend: {},
   },
+  corePlugins: {
+    preflight: false,
+  },
   plugins: [
     require('@tailwindcss/forms'),
     require('postcss-import'),

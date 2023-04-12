@@ -588,6 +588,10 @@ select {
   }
 }
 
+.container {
+  max-width: none;
+}
+
 .absolute {
   position: absolute;
 }

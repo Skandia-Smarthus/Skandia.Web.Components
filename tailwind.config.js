@@ -6,6 +6,9 @@ module.exports = {
     display: ['responsive', 'group-hover', 'group-focus']
   },
   theme: {
+    container: {
+      center: true,
+    },
     fontFamily: {
       sans: ['Roboto', 'Cabin', 'ui-sans-serif', 'system-ui']
     },

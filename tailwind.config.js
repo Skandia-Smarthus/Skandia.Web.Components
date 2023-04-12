@@ -7,7 +7,7 @@ module.exports = {
   },
   theme: {
     container: {
-      center: true,
+      center: true,      
     },
     fontFamily: {
       sans: ['Roboto', 'Cabin', 'ui-sans-serif', 'system-ui']

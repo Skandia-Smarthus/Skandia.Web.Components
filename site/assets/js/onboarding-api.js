@@ -258,21 +258,21 @@ function OnboardingSaleV2(profile) {
                     }
                 }
 
-                if (!welcomeUrl && obj.expeditedStartup) {
-                    //til rask oppstartvelkomst om finnes
-                    var urlTemp = $("#linkWelcome2").val();
-                    if (urlTemp && urlTemp.length > 0) {
-                        welcomeUrl = getUrlParamsV2(urlTemp);
-                    }
-                }
+                // if (!welcomeUrl && obj.expeditedStartup) {
+                //     //til rask oppstartvelkomst om finnes
+                //     var urlTemp = $("#linkWelcome2").val();
+                //     if (urlTemp && urlTemp.length > 0) {
+                //         welcomeUrl = getUrlParamsV2(urlTemp);
+                //     }
+                // }
 
-                if (!welcomeUrl) {
-                    //til rask generell velkomst om finnes
-                    var urlTemp = $("#linkWelcome3").val();
-                    if (urlTemp && urlTemp.length > 0) {
-                        welcomeUrl = getUrlParamsV2(urlTemp);
-                    }
-                }
+                // if (!welcomeUrl) {
+                //     //til rask generell velkomst om finnes
+                //     var urlTemp = $("#linkWelcome3").val();
+                //     if (urlTemp && urlTemp.length > 0) {
+                //         welcomeUrl = getUrlParamsV2(urlTemp);
+                //     }
+                // }
                 if (!welcomeUrl) {
                     welcomeUrl = getUrlParamsV2('/velkommen');
                 }

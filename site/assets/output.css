@@ -588,10 +588,6 @@ select {
   }
 }
 
-.container {
-  max-width: none;
-}
-
 .absolute {
   position: absolute;
 }
@@ -1155,6 +1151,10 @@ select {
   min-width: 334px;
   width: 96%;
   max-width: 600px;
+}
+
+.container {
+  max-width: 100%  !important;
 }
 
 @media (max-width: 620px) {

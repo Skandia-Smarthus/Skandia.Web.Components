@@ -25,6 +25,9 @@
     width: 96%;
     max-width: 600px;
 }
+.container {
+    max-width: 100%  !important;
+}
 
 @media (max-width: 620px) {
     *, div {
@@ -35,5 +38,3 @@
         hyphens: auto;
     }
 }
-
-

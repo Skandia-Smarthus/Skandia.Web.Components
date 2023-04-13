@@ -1,6 +1,6 @@
 {
   "profile": "SkandiaEnergi",
-  "name" : "skandiaspot",
+  "name" : "solstrom",
   "global" : {
     "buttons" : {
       "back" : "Tilbake",
@@ -33,7 +33,7 @@
     },
     "header": {
       "text" : "1. Hei, så hyggelig at du vil bli kunde i SkandiaEnergi!",
-      "sub-text" : "Avtalen SkandiaSpot koster kun 29 kr/mnd og 5,6 øre/kWh. Det er gratis å bytte, og vi avslutter din gamle strømavtale for deg."
+      "sub-text" : "Avtalen Solstrøm koster kun 35 kr/mnd og 5,95 øre/kWh. Det er gratis å bytte, og vi avslutter din gamle strømavtale for deg."
     },
     "info-popup" : {
       "header": {
@@ -62,7 +62,7 @@
     },
     "securing" : {
       "image-url": "",
-      "text" : "SkandiaSpot til kun 29 kr/mnd og 5,6 øre/kWh",
+      "text" : "Solstrøm til kun 35 kr/mnd og 5,95 øre/kWh",
       "sub-text" : ""
     },
     "order-details" : {
@@ -72,7 +72,7 @@
       },
       "product": {
         "text" : "Abonnementsdetaljer",
-        "sub-text" : "Avtaletype: SkandiaSpot\nMånedsbeløp: 29 kr\nPåslag: 5,6 øre/kilowattime"
+        "sub-text" : "Avtaletype: Solstrøm\nMånedsbeløp: 35 kr\nPåslag: 5,95 øre/kilowattime"
       }
     },
     "confirm" : {

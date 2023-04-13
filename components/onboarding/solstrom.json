@@ -79,7 +79,8 @@
       "accept" : "Jeg bekrefter at jeg har lest og forstått vilkårene. Jeg har også sett/er kjent med standard angreskjema og standard skjema for opplysning om angrerett.",
       "expedited" : "",
       "offer-and-newsletter" : "",
-      "text" : ""
+      "text" : "",
+      "return-to": "/takk/for/din/bestilling/solstrom"
     }
   }
 }

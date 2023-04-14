@@ -40,8 +40,8 @@
 }
 
 
-
-.sqs-block-content #onboardingformV2 :last-child {
+.sqs-block-code .sqs-block-content #onboardingformV2 :last-child
+.sqs-block-content  :last-child {
     margin-bottom: auto;
   }
   

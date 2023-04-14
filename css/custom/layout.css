@@ -38,3 +38,10 @@
         hyphens: auto;
     }
 }
+
+
+
+.sqs-block-content #onboardingformV2 :last-child {
+    margin-bottom: auto;
+  }
+  

@@ -1166,6 +1166,10 @@ select {
   }
 }
 
+.sqs-block-content #onboardingformV2 :last-child {
+  margin-bottom: auto;
+}
+
 .e-box {
   margin-bottom: 0.75rem;
   width: 100%;

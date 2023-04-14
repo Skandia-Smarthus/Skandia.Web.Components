@@ -2,6 +2,11 @@ window.addEventListener('DOMContentLoaded', async () => {
     const onboardingTag = document.getElementsByTagName('onboarding');
     const stromprisTag = document.getElementsByTagName('strompris');
 
+    const closestParentOnboardingTag = onboardingTag.closest('.sqs-block-content');
+    if (closestParentOnboardingTag) {
+        closestParentOnboardingTag.className = 'sqs-block-content-updated'; // set the class of the closest parent element to 'new-class'
+    }
+
     if(onboardingTag){
         for(element of onboardingTag){
             loadDynamicDocument(element, element.dataset.name, "onboarding", OnboardingSetup);

@@ -620,6 +620,11 @@ select {
   margin: auto;
 }
 
+.\!my-5 {
+  margin-top: 1.25rem !important;
+  margin-bottom: 1.25rem !important;
+}
+
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -645,14 +650,17 @@ select {
   margin-bottom: 1rem;
 }
 
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.\!mt-3 {
+  margin-top: 0.75rem !important;
+}
+
+.\!mt-3\.5 {
+  margin-top: 0.875rem !important;
 }
 
 .-ml-1 {
@@ -733,10 +741,6 @@ select {
 
 .mt-3 {
   margin-top: 0.75rem;
-}
-
-.mt-3\.5 {
-  margin-top: 0.875rem;
 }
 
 .mt-4 {

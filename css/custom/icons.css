@@ -14,7 +14,7 @@
 .iconHelp  { background-image: url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/icons/Help.svg'); }
 .iconHouse {background-image: url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/icons/House.svg');}
 .iconSmiley {background-image: url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/icons/Smiley.svg');}
-.iconDelete, .iconBin {background-image: url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/icons//Bin.svg');}
+.iconDelete, .iconBin {background-image: url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/icons/Bin.svg');}
 .iconRequired {background-image: url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/images/RequiredStar.svg');}
 .iconCalendar { background-image: url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/icons/Calendar.svg');}
 
@@ -26,8 +26,16 @@
 
 .iconVipps { background-image: url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/images/vipps-rgb-orange-neg.svg'); background-size: 70px; background-position: 87% center; }
 
-.size1 { @apply w-6 h-6;}
+[class*="icon"].btn {
+    @apply border-0 bg-transparent;
+    /* background-color: transparent; */
+}
 [class^='icon'], [class*='icon'] { background-repeat: no-repeat !important; }
+
+
+
+.size1 { @apply w-6 h-6;}
+
 
 .img-vert, .flip {
     -moz-transform: scaleY(-1);

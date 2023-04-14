@@ -76,7 +76,7 @@
       }
     },
     "confirm" : {
-      "accept" : "Jeg bekrefter at jeg har lest og forstått vilkårene. Jeg har også sett/er kjent med standard angreskjema og standard skjema for opplysning om angrerett.",
+      "accept" : "Jeg bekrefter at jeg har lest og forstått <a href=\"/avtalevilkar-skandiaspot\" target=\"_blank\">vilkårene.</a>. Jeg har også sett/er kjent med standard angreskjema og standard skjema for opplysning om angrerett.",
       "expedited" : "",
       "offer-and-newsletter" : "",
       "text" : "",

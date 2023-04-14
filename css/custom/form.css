@@ -199,7 +199,7 @@ input.custom-form::placeholder {
 
 
 .e-btn-basic, .k-button {
-    @apply no-underline text-center rounded-full;
+    @apply no-underline text-center rounded-full border-0 cursor-pointer;
 }
 
 .e-btn-sm {

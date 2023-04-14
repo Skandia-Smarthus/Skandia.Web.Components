@@ -75,8 +75,8 @@
         "sub-text" : "Avtaletype: Hyttestrøm\nMånedsbeløp: 0 kr\nPåslag: 5,6 øre/kilowattime"
       }
     },
-    "confirm" : {
-      "accept" : "Jeg bekrefter at jeg har lest og forstått vilkårene. Jeg har også sett/er kjent med standard angreskjema og standard skjema for opplysning om angrerett.",
+    "confirm" : {      
+      "accept" : "Jeg bekrefter at jeg har lest og forstått <a href=\"/avtalevilkar-hyttestrom\" target=\"_blank\">vilkårene.</a>. Jeg har også sett/er kjent med standard angreskjema og standard skjema for opplysning om angrerett.",
       "expedited" : "",
       "offer-and-newsletter" : "",
       "text" : "",

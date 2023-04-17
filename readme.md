@@ -65,6 +65,7 @@ Change this name to whatever you want in the ./site/onboarding folder (NB must b
 It's the same for strompris. 
 `<strompris data-name="elkompis"/>`
 This will load the strompris component for elkompis.
+`<strompris data-name="skandia"/>` will load for SkandiaEnergi
 
 For this to work we use, in squarespace, global code injection to inject the following files (in this order) located in ./site.
 * ./assets/output.css

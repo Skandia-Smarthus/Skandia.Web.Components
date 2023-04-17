@@ -12,7 +12,7 @@
     },
     "text" : {
       "add-delivery" : "",
-      "move-date" : "Jeg overtar hytten",
+      "move-date" : "Jeg overtar boligen",
       "reset-user" : "Ikke deg?"
     }
   },
@@ -30,8 +30,8 @@
       }
     },
     "header": {
-      "text" : "1. Hei, så hyggelig at du vil bli kunde i SkandiaEnergi!",
-      "sub-text" : "Avtalen Hyttestrøm koster kun 0 kr/mnd og 5,6 øre/kWh. Det er gratis å bytte, og vi avslutter din gamle strømavtale for deg."
+      "text" : "1. Hei, så hyggelig at du vil bli kunde i elKompis!",
+      "sub-text" : "Avtalen Smart strømavtale koster kun 34 kr/mnd og 1 øre/kWh. Det er gratis å bytte, og vi avslutter din gamle strømavtale for deg."
     },
     "info-popup" : {
       "header": {
@@ -59,11 +59,11 @@
     "title" : "Bekreft og bestill",
     "header" : {
       "text": "Bestill, vi fikser resten",
-      "sub-text" : "Bestill og len deg tilbake mens vi fikser alt det praktiske. \uD83D\uDE80 "
+      "sub-text" : "Bestill og len deg tilbake mens vi fikser alt det praktiske. \uD83D\uDE80 "
     },
     "securing" : {
       "image-url": "",
-      "text" : "Hyttestrøm til kun 0 kr/mnd og 5,6 øre/kWh",
+      "text" : "Smart strømavtale til kun 34 kr/mnd og 1 øre/kWh",
       "sub-text" : ""
     },
     "order-details" : {
@@ -77,11 +77,13 @@
       }
     },
     "confirm" : {
-      "accept" : "Jeg bekrefter at jeg har lest og forstått vilkårene. Jeg har også sett/er kjent med standard angreskjema og standard skjema for opplysning om angrerett.",
+      "accept" : "Jeg bekrefter at jeg har lest og forstått <a href=\"https://intercom.help/elkompis/nb/articles/5698010-vilkar-for-bruk\" target=\"_blank\">vilkårene.</a>. Jeg har også sett/er kjent med standard angreskjema og standard skjema for opplysning om angrerett.",
       "expedited" : "Jeg ønsker oppstart så raskt som mulig og ønsker at leveringen av strøm kan påbegynnes før utløpet av angrefristen. Jeg aksepterer at jeg skal betale for leveringen av strøm i henhold til disse vilkårene dersom angreretten benyttes.",
       "offer-and-newsletter" : "",
       "text" : "",
-      "return-to": "https://elkompis.no/stromavtale/hytte"
+      "return-to": "/velkommen-leverandorbytte",
+      "return-to-fast": "/elkommen-rask-oppstart",
+      "return-to-takeover": "/velkommen-anleggsovertakelse"
     }
   }
 }

@@ -233,9 +233,15 @@ function OnboardingSaleV2(profile) {
 
     obj.profile = profile;
 
+    let apiUrl = window.saleApi.basePath + window.saleApi.customerLookupPath;
+
+    if(profile === 'SkandiaEnergi')
+    {
+        apiUrl = window.saleApi.basePath+ window.saleApi.saleRegisterSkandiaPath
+    }
+
     let xhr = new XMLHttpRequest();
-    xhr.open('POST', window.saleApi.basePath + profile === 'SkandiaEnergi' ?
-        window.saleApi.saleRegisterSkandiaPath : window.saleApi.saleRegisterPath, true);
+    xhr.open('POST', apiUrl, true);
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhr.send(JSON.stringify(obj));
 

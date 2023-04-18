@@ -6,8 +6,8 @@
         SkandiaEnergi
     </div>
     <input type="hidden" id="linkWelcome1" value="/takk/for/din/bestilling/hyttestrom" />
-    <!--<input type="hidden" id="linkWelcome2" value="@linkWelcome2Url" />
-    <input type="hidden" id="linkWelcome3" value="@linkWelcome3Url" />-->
+    <input type="hidden" id="linkWelcome2" value="" />
+    <input type="hidden" id="linkWelcome3" value="" />
     <button id="step2AddButton5" class="e-btn-lg e-btn-secondary text-white inline-flex items-center px-4 py-2 spinner">
         <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
             <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
@@ -445,7 +445,7 @@ Påslag: 5,6 øre/kilowattime
                     <div class="e-hidden"><span class="zipcode">{{ZipCode}}</span> <span class="place">{{Place}}</span></div>
                     <div class="flex e-text-body2 mt-3 text-ellipsis {{meterNumberClass}}"><div class="mr-2">Målernr</div><div class="meternumber">{{meterNumber}}</div></div>
                 </div>
-                <div class="text-right place-content-end w-6"><button class="btn align-start place-content-end iconPencil size1 topRight" onclick="EditDeliveryV2('#data-{{index}}', {{index}})"></button></div>
+                <div class="text-right place-content-end w-4"><button class="btn align-start place-content-end iconPencil size1 topCenter" onclick="EditDeliveryV2('#data-{{index}}', {{index}})"></button></div>
             </div>
         </div>
     </script>

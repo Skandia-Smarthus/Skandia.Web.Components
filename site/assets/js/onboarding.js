@@ -634,9 +634,9 @@ function OnboardingSetup(){
     });
 
     $("#onboardingSaleButton").click(function () {
-        if (isLoading()) {
-            return;
-        }
+        // if (isLoading()) {
+        //     return;
+        // }
         //debugger;
         showPulse("#step3-confirm");
         showSpinner("#onboardingSaleButton");

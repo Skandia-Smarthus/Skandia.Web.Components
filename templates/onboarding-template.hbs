@@ -6,8 +6,8 @@
         {{profile}}
     </div>
     <input type="hidden" id="linkWelcome1" value="{{step3.confirm.return-to}}" />
-    <!--<input type="hidden" id="linkWelcome2" value="@linkWelcome2Url" />
-    <input type="hidden" id="linkWelcome3" value="@linkWelcome3Url" />-->
+    <input type="hidden" id="linkWelcome2" value="{{step3.confirm.return-to-fast}}" />
+    <input type="hidden" id="linkWelcome3" value="{{step3.confirm.return-to-takeover}}" />
     <button id="step2AddButton5" class="e-btn-lg e-btn-secondary text-white inline-flex items-center px-4 py-2 spinner">
         <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
             <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
@@ -155,7 +155,7 @@
                             <div id="deliveriesContainer">
                             </div>
                             {{#if step2.buttons.add-delivery}}
-                                <button class="my-4 ml-3 iconPlus btnIcon hover:underline centerLeft pl-12 em text-left" onclick="gotoStep(2,'add')">
+                                <button class="my-4 ml-3 e-btn iconPlus btnIcon hover:underline centerLeft pl-12 em text-left text-brand-blue !important" onclick="gotoStep(2,'add')">
                                     {{step2.buttons.add-delivery}}
                                 </button>
 

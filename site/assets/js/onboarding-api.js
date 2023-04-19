@@ -233,13 +233,14 @@ function OnboardingSaleV2(profile) {
 
     obj.profile = profile;
 
-    let apiUrl = window.saleApi.basePath + window.saleApi.customerLookupPath;
+    let apiUrl = window.saleApi.basePath + window.saleApi.saleRegisterPath;
 
     if(profile === 'SkandiaEnergi')
     {
-        apiUrl = window.saleApi.basePath+ window.saleApi.saleRegisterSkandiaPath
+        apiUrl = window.saleApi.basePath + window.saleApi.saleRegisterSkandiaPath
     }
 
+    console.log('apiUrl ' + apiUrl);
     let xhr = new XMLHttpRequest();
     xhr.open('POST', apiUrl, true);
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
@@ -275,7 +276,7 @@ function OnboardingSaleV2(profile) {
                 if (!welcomeUrl) {
                     //til rask generell velkomst om finnes
                     var urlTemp = $("#linkWelcome1").val();
-                    if (urlTemp && urlTemp.length > 0) {h
+                    if (urlTemp && urlTemp.length > 0) {
                         welcomeUrl = getUrlParamsV2(urlTemp);
                     }
                 }

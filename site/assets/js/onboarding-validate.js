@@ -125,7 +125,7 @@ function clearPnr(field, newVal) {
 
     if (obj.authMethod != "Vipps") {
         if (!val || !newVal || val.toLowerCase() != newVal.toLowerCase()) {
-            document.querySelector("#personalNumberEdit").val('');
+            document.querySelector("#personalNumberEdit").value = '';
         }
     }
 }

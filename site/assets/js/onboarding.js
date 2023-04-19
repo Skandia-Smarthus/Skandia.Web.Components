@@ -640,7 +640,7 @@ function OnboardingSetup(){
         //debugger;
         showPulse("#step3-confirm");
         showSpinner("#onboardingSaleButton");
-        OnboardingSaleV2("@_profileService.GetProfile()");
+        OnboardingSaleV2(window.profile);
 
     });
 

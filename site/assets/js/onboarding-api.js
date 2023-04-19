@@ -231,6 +231,8 @@ function OnboardingSaleV2(profile) {
         return;
     }
 
+    debugger;
+    
     obj.profile = profile;
 
     let apiUrl = window.saleApi.basePath + window.saleApi.saleRegisterPath;
@@ -239,10 +241,16 @@ function OnboardingSaleV2(profile) {
     {
         apiUrl = window.saleApi.basePath + window.saleApi.saleRegisterSkandiaPath
     }
+
+    
     console.log('profile ' + profile);
     console.log('apiUrl ' + apiUrl);
     let xhr = new XMLHttpRequest();
-    xhr.open('POST', apiUrl, true);
+    // xhr.open('POST', apiUrl, true);
+    xhr.open('POST', window.saleApi.basePath + profile === 'SkandiaEnergi' ?
+        window.saleApi.saleRegisterSkandiaPath : window.saleApi.saleRegisterPath, true);
+
+
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhr.send(JSON.stringify(obj));
 

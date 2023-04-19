@@ -42,7 +42,6 @@ function addressChange() {
 
 function gotoStep(step, sub, deliveryId = null) {
     let jsonContent = getJsonContent();
-    //debugger;
 
     const elementConfirm = $("#step3-confirm")
     removeAllSpinners();

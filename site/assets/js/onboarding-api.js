@@ -77,11 +77,13 @@ function OnboardingLookupV2(cell = null, email = null, authCode = null, state = 
                     jsonContent.utmTerm = trackingObj.utm_term;
                     jsonContent.utmContent = trackingObj.utm_content;
                 }
-                sessionStorage.setItem('onboardingObj', JSON.stringify(jsonContent));
-
                 if (jsonContent.authMethod === "Vipps") {
                     $("#onboarding_cell").val(jsonContent.cell)
                 }
+                if(!jsonContent.cell)
+                    jsonContent.cell = $("#onboarding_cell").val();
+
+                sessionStorage.setItem('onboardingObj', JSON.stringify(jsonContent));
 
                 if (jsonContent.email) {
                     if (jsonContent.deliveries && jsonContent.deliveries.length > 0) {
@@ -131,6 +133,10 @@ function SaveEditDeliveryV2() {
 
         if (!index || jsonContent.deliveries == null) {
             index = 0;
+
+            if (!jsonContent.deliveries) {
+                jsonContent.deliveries = [];
+              }
 
             const delivery = {
                 address: $("#onboardingAddressEdit").val(),
@@ -220,7 +226,7 @@ function SaveEditDeliveryV2() {
 
 
 function OnboardingSaleV2(profile) {
-    // debugger;
+    //debugger;
     $("#onboardingSaleClick").prop("disabled", true);
     let obj = SyncUserDataV2();
 

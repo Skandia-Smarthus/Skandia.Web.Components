@@ -220,7 +220,7 @@ function SaveEditDeliveryV2() {
 
 
 function OnboardingSaleV2(profile) {
-    //debugger;
+    debugger;
     $("#onboardingSaleClick").prop("disabled", true);
     let obj = SyncUserDataV2();
 
@@ -231,7 +231,6 @@ function OnboardingSaleV2(profile) {
         return;
     }
 
-    debugger;
     
     obj.profile = profile;
 
@@ -246,9 +245,9 @@ function OnboardingSaleV2(profile) {
     console.log('profile ' + profile);
     console.log('apiUrl ' + apiUrl);
     let xhr = new XMLHttpRequest();
-    // xhr.open('POST', apiUrl, true);
-    xhr.open('POST', window.saleApi.basePath + profile === 'SkandiaEnergi' ?
-        window.saleApi.saleRegisterSkandiaPath : window.saleApi.saleRegisterPath, true);
+    xhr.open('POST', apiUrl, true);
+    // xhr.open('POST', window.saleApi.basePath + profile === 'SkandiaEnergi' ?
+    //     window.saleApi.saleRegisterSkandiaPath : window.saleApi.saleRegisterPath, true);
 
 
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");

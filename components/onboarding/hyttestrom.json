@@ -25,7 +25,7 @@
       "return-to": "https://skandiaenergi.no/stromavtale/hytte"
       },
     "cell": {
-      "button-text": "Manuell registrering!!!!!!",
+      "button-text": "Manuell registrering",
       "header" : {
         "text" : "Da er du i gang!",
         "sub-text" : "Fyll ut mobilnummer og epost, så vi finner dine opplysninger."
@@ -33,7 +33,7 @@
     },
     "header": {
       "text" : "1. Hei, så hyggelig at du vil bli kunde i SkandiaEnergi!",
-      "sub-text" : "Avtalen Hyttestrøm koster kun 0 kr/mnd og 5,6 øre/kWh. Det er gratis å bytte, og vi avslutter din gamle strømavtale for deg."
+      "sub-text" : "Avtalen Hyttestrøm koster kun 0 kr/mnd og 5,60 øre/kWh. Det er gratis å bytte, og vi avslutter din gamle strømavtale for deg."
     },
     "info-popup" : {
       "header": {
@@ -62,7 +62,7 @@
     },
     "securing" : {
       "image-url": "",
-      "text" : "Hyttestrøm til kun 0 kr/mnd og 5,6 øre/kWh",
+      "text" : "Hyttestrøm til kun 0 kr/mnd og 5,60 øre/kWh",
       "sub-text" : ""
     },
     "order-details" : {
@@ -72,15 +72,15 @@
       },
       "product": {
         "text" : "Abonnementsdetaljer",
-        "sub-text" : "Avtaletype: Hyttestrøm\nMånedsbeløp: 0 kr\nPåslag: 5,6 øre/kilowattime"
+        "sub-text" : "Avtaletype: Hyttestrøm\nMånedsbeløp: 0 kr\nPåslag: 5,60 øre/kilowattime"
       }
     },
-    "confirm" : {      
+    "confirm" : {
       "accept" : "Jeg bekrefter at jeg har lest og forstått <a href=\"/avtalevilkar-hyttestrom\" target=\"_blank\">vilkårene.</a>. Jeg har også sett/er kjent med standard angreskjema og standard skjema for opplysning om angrerett.",
       "expedited" : "",
       "offer-and-newsletter" : "",
       "text" : "",
-      "return-to": "/takk/for/din/bestilling/hyttestrom"
+      "return-to": "/velkommen-hyttestrom"
     }
   }
 }

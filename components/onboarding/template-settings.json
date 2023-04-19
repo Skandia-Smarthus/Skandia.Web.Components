@@ -82,7 +82,9 @@
       "expedited" : "Jeg ønsker oppstart så raskt som mulig og ønsker at leveringen av strøm kan påbegynnes før utløpet av angrefristen. Jeg aksepterer at jeg skal betale for leveringen av strøm i henhold til disse vilkårene dersom angreretten benyttes.",
       "offer-and-newsletter" : "",
       "text" : "",
-      "return-to": "https://skandiaenergi.no/stromavtale/hytte"
+      "return-to": "https://skandiaenergi.no/stromavtale/hytte",
+      "return-to-fast": "/velkommen-rask-oppstart",
+      "return-to-takeover": "/velkommen-anleggsovertakelse"
     }
   }
 }

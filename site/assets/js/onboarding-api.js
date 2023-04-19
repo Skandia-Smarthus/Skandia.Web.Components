@@ -258,7 +258,7 @@ function OnboardingSaleV2(profile) {
 
                 if (obj.moveDate) {
                     //til flyttevelkomst om finnes
-                    var urlTemp = $("#linkWelcome1").val();
+                    var urlTemp = $("#linkWelcome3").val();
                     if (urlTemp && urlTemp.length > 0) {
                         welcomeUrl = getUrlParamsV2(urlTemp);
                     }
@@ -274,8 +274,8 @@ function OnboardingSaleV2(profile) {
 
                 if (!welcomeUrl) {
                     //til rask generell velkomst om finnes
-                    var urlTemp = $("#linkWelcome3").val();
-                    if (urlTemp && urlTemp.length > 0) {
+                    var urlTemp = $("#linkWelcome1").val();
+                    if (urlTemp && urlTemp.length > 0) {h
                         welcomeUrl = getUrlParamsV2(urlTemp);
                     }
                 }

@@ -239,7 +239,7 @@ function OnboardingSaleV2(profile) {
     {
         apiUrl = window.saleApi.basePath + window.saleApi.saleRegisterSkandiaPath
     }
-
+    console.log('profile ' + profile);
     console.log('apiUrl ' + apiUrl);
     let xhr = new XMLHttpRequest();
     xhr.open('POST', apiUrl, true);

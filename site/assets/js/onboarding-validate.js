@@ -124,7 +124,7 @@ function clearPnr(field, newVal) {
         val = obj.lastName;
 
     if (obj.authMethod != "Vipps") {
-        if (val.toLowerCase() != newVal.toLowerCase()) {
+        if (!val || !newVal || val.toLowerCase() != newVal.toLowerCase()) {
             document.querySelector("#personalNumberEdit").val('');
         }
     }

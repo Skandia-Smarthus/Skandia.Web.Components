@@ -84,13 +84,13 @@ function OnboardingLookupV2(cell = null, email = null, authCode = null, state = 
                 }
 
                 if (jsonContent.email) {
-                    if (jsonContent.deliveries.length > 0) {
+                    if (jsonContent.deliveries && jsonContent.deliveries.length > 0) {
                         gotoStep(2, 'deliveries');
                     } else {
                         gotoStep(2, 'manual');
                     }
                 } else {
-                    if (jsonContent.deliveries.length > 0) {
+                    if (jsonContent.deliveries && jsonContent.deliveries.length > 0) {
                         EditDeliveryV2('#data-0', 0);
                     } else {
                         gotoStep(2, 'edit');

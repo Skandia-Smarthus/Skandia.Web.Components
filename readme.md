@@ -26,13 +26,13 @@ You can see in the package.json available commands, but as of this document you 
 Debug runs a small http static serving server. Usage here is 
 `https://<see terminal for url>:<port>/?form=<name>`
 Example
-`https://localhost:44236/?form=elkompis` this will load component located in /site/onboarding/elkompis.html
-`https://localhost:44236/?price=elkompis` this will load component located in /site/strompris/elkompis.html
+`https://localhost:44326/?form=elkompis` this will load component located in /site/onboarding/elkompis.html
+`https://localhost:44326/?price=elkompis` this will load component located in /site/strompris/elkompis.html
 You can also load both at the same time
-`https://localhost:44236/?form=elkompis&price=elkompis`
+`https://localhost:44326/?form=elkompis&price=elkompis`
 
 NB: Running npm run debug will start a live-reload server. This means that any changes you make to the source files will be reflected in the browser without having to reload the page.
-Its port number is :3000, but just proxies the content from :44236. So for testing against lets say vipps go to the :44236 as its the old umbraco port used for these components. 
+Its port number is :3000, but just proxies the content from :44326. So for testing against lets say vipps go to the :44326 as its the old umbraco port used for these components. 
 
 ### IDE
 In VSCode, WebStorm etc there is built in tools for running the different commands. If you are using one of these products i guess you already know how.

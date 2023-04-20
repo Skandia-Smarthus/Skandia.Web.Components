@@ -478,9 +478,28 @@
 <script>
     (function(){
         console.log("Setting up component {{filename}}");
+        var inviteCode = getQueryParamValue('invite');
+
         window.saleApi = {{{json saleApi}}};
         window.vippsRedirectUrl = '{{step1.vipps.redirectUrl}}';
         window.profile = '{{profile}}';
-    })();
+        window.campaignCode = '{{campaignCode}}';
+        window.invite = inviteCode;
+
+        let trackingObj = sessionStorage.getItem('trackingObj');
+        if(!trackingObj)
+        {
+            const trackingObj = {
+                invite: inviteCode,
+                utm_source: getQueryParamValue('utm_source'),
+                utm_medium: getQueryParamValue('utm_medium'),                
+                utm_campaign: getQueryParamValue('utm_campaign'),
+                utm_term: getQueryParamValue('utm_term'),
+                utm_content: getQueryParamValue('utm_content'),
+            };
+            sessionStorage.setItem('trackingObj', JSON.stringify(trackingObj));
+        }
+    })();  
+
 
 </script>

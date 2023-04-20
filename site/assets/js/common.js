@@ -98,3 +98,5 @@ function generateUUID() {
         byteToHex[bytes[12]] + byteToHex[bytes[13]] +
         byteToHex[bytes[14]] + byteToHex[bytes[15]];
 }
+
+

@@ -1,6 +1,7 @@
 {
   "profile": "<profile to use (ElKompis/SkandiaEnergi)>",
   "name" : "<name of component>",
+  "campaignCode" : "<campaign or product code of product>",
   "global" : {
     "buttons" : {
       "back" : "Tilbake",

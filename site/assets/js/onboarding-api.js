@@ -68,15 +68,17 @@ function OnboardingLookupV2(cell = null, email = null, authCode = null, state = 
                     });
                 }
 
+                jsonContent.campaignCode = window.campaignCode;
+
                 if (trackingObj) {
                     jsonContent.referralCode = trackingObj.invite;
-                    jsonContent.campaignCode = trackingObj.campaignCode;
                     jsonContent.utmSource = trackingObj.utm_source;
                     jsonContent.utmMedium = trackingObj.utm_medium;
                     jsonContent.utmCampaign = trackingObj.utm_campaign;
                     jsonContent.utmTerm = trackingObj.utm_term;
                     jsonContent.utmContent = trackingObj.utm_content;
                 }
+
                 if (jsonContent.authMethod === "Vipps") {
                     $("#onboarding_cell").val(jsonContent.cell)
                 }

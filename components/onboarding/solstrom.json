@@ -1,6 +1,7 @@
 {
   "profile": "SkandiaEnergi",
   "name" : "solstrom",
+  "campaignCode" : "solstrom",
   "global" : {
     "buttons" : {
       "back" : "Tilbake",

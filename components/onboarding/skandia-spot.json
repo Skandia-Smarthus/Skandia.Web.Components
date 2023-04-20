@@ -1,6 +1,7 @@
 {
   "profile": "SkandiaEnergi",
   "name" : "skandiaspot",
+  "campaignCode" : "skandiaspot",
   "global" : {
     "buttons" : {
       "back" : "Tilbake",

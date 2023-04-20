@@ -1,6 +1,7 @@
 {
   "profile": "SkandiaEnergi",
   "name" : "digitalstrom",
+  "campaignCode" : "digitalstrom",
   "global" : {
     "buttons" : {
       "back" : "Tilbake",

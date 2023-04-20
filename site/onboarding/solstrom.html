@@ -415,10 +415,29 @@ Påslag: 5,95 øre/kilowattime
 <script>
     (function(){
         console.log("Setting up component ");
+        var inviteCode = getQueryParamValue('invite');
+
         window.saleApi = {"basePath":"https://app-elkompis-service-prod.azurewebsites.net/","phoneLookupPath":"sale/lookup","phoneLookupVippsPath":"sale/lookupvipps","placeLookupPath":"sale/place","customerLookupPath":"sale/customerlookup","vippsUrlLookupPath":"sale/vippsurl","saleLeadPath":"sale/salelead","saleRegisterPath":"sale","saleRegisterSkandiaPath":"sale/skandiaEnergiSale"};
         window.vippsRedirectUrl = '';
         window.profile = 'SkandiaEnergi';
-    })();
+        window.campaignCode = 'solstrom';
+        window.invite = inviteCode;
+
+        let trackingObj = sessionStorage.getItem('trackingObj');
+        if(!trackingObj)
+        {
+            const trackingObj = {
+                invite: inviteCode,
+                utm_source: getQueryParamValue('utm_source'),
+                utm_medium: getQueryParamValue('utm_medium'),                
+                utm_campaign: getQueryParamValue('utm_campaign'),
+                utm_term: getQueryParamValue('utm_term'),
+                utm_content: getQueryParamValue('utm_content'),
+            };
+            sessionStorage.setItem('trackingObj', JSON.stringify(trackingObj));
+        }
+    })();  
+
 
 </script> <div id="scriptcontainer" class="hidden">
     <script id="orderDetailsCustomer" type="template">

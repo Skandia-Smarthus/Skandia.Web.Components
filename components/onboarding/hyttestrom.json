@@ -1,6 +1,7 @@
 {
   "profile": "SkandiaEnergi",
   "name" : "hyttestrom",
+  "campaignCode" : "hyttestrom",
   "global" : {
     "buttons" : {
       "back" : "Tilbake",

@@ -194,6 +194,7 @@ function SaveEditDeliveryV2() {
         }
 
     }
+    
     if (moveTakeover) {
         moveDate = moveTakeover ? $("#takoverDate").val() : null;
         jsonContent.deliveries[index].moveDate = moveDate;
@@ -262,9 +263,8 @@ function OnboardingSaleV2(profile) {
                 //var deliveryId = String(jsonContent.deliveryId);
                 var welcomeUrl = null;
                 var urlTemp = "";
-                //debugger;
 
-                if (obj.moveDate) {
+                if(obj.deliveries && obj.deliveries[0] && obj.deliveries[0].moveDate){
                     //til flyttevelkomst om finnes
                     var urlTemp = $("#linkWelcome3").val();
                     if (urlTemp && urlTemp.length > 0) {

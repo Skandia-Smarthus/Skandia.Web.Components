@@ -19,11 +19,11 @@
   "step1": {
     "title" : " Start din bestilling her",
     "vipps": {
-      "button-text": "Start med Vipps!!!",
+      "button-text": "Start med Vipps",
       "enabled" : true
       },
     "cell": {
-      "button-text": "Start med ditt telefonnummer!!",
+      "button-text": "Start med ditt telefonnummer",
       "header" : {
         "text" : "Da er du i gang!",
         "sub-text" : "Fyll ut mobilnummer og epost, så vi finner dine opplysninger."
@@ -77,7 +77,7 @@
       }
     },
     "confirm" : {
-      "accept" : "Jeg bekrefter at jeg har lest og forstått <a href=\"https://intercom.help/elkompis/nb/articles/5698010-vilkar-for-bruk\" target=\"_blank\">vilkårene.</a>. Jeg har også sett/er kjent med standard angreskjema og standard skjema for opplysning om angrerett.",
+      "accept" : "Jeg bekrefter at jeg har lest og forstått <a href=\"https://intercom.help/elkompis/nb/articles/5698010-vilkar-for-bruk\" target=\"_blank\">vilkårene</a>. Jeg har også sett/er kjent med standard angreskjema og standard skjema for opplysning om angrerett.",
       "expedited" : "Jeg ønsker oppstart så raskt som mulig og ønsker at leveringen av strøm kan påbegynnes før utløpet av angrefristen. Jeg aksepterer at jeg skal betale for leveringen av strøm i henhold til disse vilkårene dersom angreretten benyttes.",
       "offer-and-newsletter" : "",
       "text" : "",

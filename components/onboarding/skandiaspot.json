@@ -1,7 +1,7 @@
 {
   "profile": "SkandiaEnergi",
-  "name" : "greenspotsekundaer",
-  "campaignCode" : "Greenspot sekundaer",
+  "name" : "skandiaspot",
+  "campaignCode" : "spot",
   "global" : {
     "buttons" : {
       "back" : "Tilbake",
@@ -13,7 +13,7 @@
     },
     "text" : {
       "add-delivery" : "",
-      "move-date" : "Jeg overtar boligen/hytten",
+      "move-date" : "Jeg overtar boligen",
       "reset-user" : "Ikke deg?"
     }
   },
@@ -34,7 +34,7 @@
     },
     "header": {
       "text" : "1. Hei, så hyggelig at du vil bli kunde i SkandiaEnergi!",
-      "sub-text" : "Avtalen Greenspot sekundær koster kun 0 kr/mnd og 8,9 øre/kWh. Det er gratis å bytte, og vi avslutter din gamle strømavtale for deg."
+      "sub-text" : "Avtalen Spot koster kun 39 kr/mnd og 5,9 øre/kWh. Det er gratis å bytte, og vi avslutter din gamle strømavtale for deg."
     },
     "info-popup" : {
       "header": {
@@ -63,7 +63,7 @@
     },
     "securing" : {
       "image-url": "",
-      "text" : "Greenspot sekundær til kun 0 kr/mnd og 8,9 øre/kWh",
+      "text" : "Spot til kun 39 kr/mnd og 5,9 øre/kWh",
       "sub-text" : ""
     },
     "order-details" : {
@@ -73,15 +73,15 @@
       },
       "product": {
         "text" : "Abonnementsdetaljer",
-        "sub-text" : "Avtaletype: Greenspot sekundær\nMånedsbeløp: 0 kr\nPåslag: 8,9 øre/kilowattime"
+        "sub-text" : "Avtaletype: Spot\nMånedsbeløp: 39 kr\nPåslag: 5,9 øre/kilowattime"
       }
     },
     "confirm" : {
-      "accept" : "Jeg bekrefter at jeg har lest og forstått <a href=\"/avtalevilkar-greenspot-sekundaer\" target=\"_blank\">vilkårene.</a>. Jeg har også sett/er kjent med standard angreskjema og standard skjema for opplysning om angrerett.",
+      "accept" : "Jeg bekrefter at jeg har lest og forstått <a href=\"/avtalevilkar-spot\" target=\"_blank\">vilkårene.</a>. Jeg har også sett/er kjent med standard angreskjema og standard skjema for opplysning om angrerett.",
       "expedited" : "",
       "offer-and-newsletter" : "",
       "text" : "",
-      "return-to": "/velkommen-greenspot-sekundaer"
+      "return-to": "/velkommen-spot"
     }
   }
 }

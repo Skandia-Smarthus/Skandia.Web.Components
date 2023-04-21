@@ -95,6 +95,7 @@ Same with strompris. Copy an existing file in ./components/strompris, make the c
 We do have some required fields in the .json file. 
 * name
 * profile 
+* compaignCode for skandia skal kunne se produkt
 
 Profile controls the color scheme and must be equal to what is defined in tailwind.config.js.
 As of today we have the following schemes available

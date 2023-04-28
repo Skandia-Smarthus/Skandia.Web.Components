@@ -3,11 +3,12 @@
     "build-onboarding": "node build/generate-onboarding.js",
     "build-strompris": "node build/generate-strompris.js",
     "build-css": "npx tailwindcss --postcss postcss.config.js --config tailwind.config.js -i ./css/input.css -o ./site/assets/output.css",
-    "build" : "npm run build-onboarding && npm run build-strompris && npm run build-css",
-    "debug" : "npm-run-all --parallel server watch:*",
-    "server" : "node server.js",
-    "watch:build" : "nodemon",
-    "watch:browser-sync": "browser-sync start --proxy https://localhost:44326 --files 'index.html, site/assets/**/*.*'"
+    "build": "npm run build-onboarding && npm run build-strompris && npm run build-css",
+    "debug": "npm-run-all --parallel server watch:*",
+    "server": "node server.js",
+    "watch:build": "nodemon",
+    "watch:browser-sync": "browser-sync start --proxy https://localhost:44326 --files 'index.html, site/assets/**/*.*'",
+    "start": "node server.js"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.3",
@@ -30,5 +31,19 @@
     "postcss-cli": "^10.1.0",
     "postcss-import": "^15.1.0",
     "lodash": "^4.17.21"
-  }
+  },
+  "name": "skandia.web.components",
+  "description": "Skandia Web Components is a project for generating components to be used on external providers, like Squarespace as pr. today.\r The following technologies are being utilized for making this happen:\r * NodeJs > 14\r * Handlebars.js (Template compilation)\r * Lodash (json settings merge)\r * tailwindcss (styling of components)\r * postcss (compiling of styling sources)\r * http-server w. expressjs (for running components locally) - debugging",
+  "version": "1.0.0",
+  "main": "postcss.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skandia-Smarthus/Skandia.Web.Components.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Skandia-Smarthus/Skandia.Web.Components/issues"
+  },
+  "homepage": "https://github.com/Skandia-Smarthus/Skandia.Web.Components#readme"
 }

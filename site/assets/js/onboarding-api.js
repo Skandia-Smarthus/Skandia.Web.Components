@@ -1,8 +1,13 @@
 var customerData;
 
 function SmsVerification(cell = null) {
-  let apiUrl =
-    window.window.saleApi.basePath + window.window.saleApi.smsverificationPath;
+  var base = window.window.saleApi.basePath;
+  if (profile === "SkandiaEnergi") {
+    base = window.saleApi.basePathSkandia;
+  }
+
+  let apiUrl = base + window.window.saleApi.smsverificationPath;
+
   let obj = {
     cell: cell,
   };
@@ -25,8 +30,12 @@ function SmsVerification(cell = null) {
 }
 //registrer mobil og epost
 function CustomerSaleLead(cell = null, email = null) {
-  let apiUrl =
-    window.window.saleApi.basePath + window.window.saleApi.saleLeadPath;
+  var base = window.window.saleApi.basePath;
+  if (profile === "SkandiaEnergi") {
+    base = window.saleApi.basePathSkandia;
+  }
+
+  let apiUrl = base + window.window.saleApi.saleLeadPath;
   //debugger;
   let obj = {
     cell: cell,
@@ -46,10 +55,15 @@ function CustomerSaleLead(cell = null, email = null) {
   };
 }
 function getLookupApiUrl(cell, authCode, state, redirectUrl, verificationCode) {
+  var base = window.window.saleApi.basePath;
+  if (profile === "SkandiaEnergi") {
+    base = window.saleApi.basePathSkandia;
+  }
+
   if (authCode) {
-    return `${window.saleApi.basePath}${window.saleApi.phoneLookupVippsPath}?state=${state}&code=${authCode}&redirectUrl=${redirectUrl}`;
+    return `${base}${window.saleApi.phoneLookupVippsPath}?state=${state}&code=${authCode}&redirectUrl=${redirectUrl}`;
   } else if (cell) {
-    return `${window.saleApi.basePath}${window.saleApi.phoneLookupPath}/${cell}/${verificationCode}`;
+    return `${base}${window.saleApi.phoneLookupPath}/${cell}/${verificationCode}`;
   }
 }
 function OnboardingLookupV2(
@@ -61,7 +75,7 @@ function OnboardingLookupV2(
   trackingObj = null,
   verificationCode = null
 ) {
-  //debugger;
+  debugger;
   showSpinner("#btnSubmitCellSearch");
   showPulse("#step1-cell");
   const apiUrl = getLookupApiUrl(
@@ -268,14 +282,14 @@ function OnboardingSaleV2(profile) {
   // #####
   // #####
   // #####
-  // REMOVE
+  // TODO switch baseURL
   if (profile === "SkandiaEnergi") {
     apiUrl = window.saleApi.basePath + window.saleApi.saleRegisterSkandiaPath;
-    // #####
-    // #####
-    // #####
-    // #####
   }
+  // #####
+  // #####
+  // #####
+  // #####
   let xhr = new XMLHttpRequest();
   xhr.open("POST", apiUrl, true);
 

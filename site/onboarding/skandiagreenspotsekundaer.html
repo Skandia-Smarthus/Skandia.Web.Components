@@ -64,7 +64,7 @@
                             Da er du i gang!
                         </div>
                         Fyll ut mobilnummer og epost, så vi finner dine opplysninger.
-                        <form action="#" id="lookup">
+                        <form action="#" id="cellvalidation">
                             <div class="text-left mt-4 mb-8">
                                 <div class="flex flex-col gap-4">
                                     <div class="basis-1">
@@ -83,6 +83,38 @@
                             <div class="flex justify-between">
 
                                 <button class="e-btn-link underline btn-t-back" onclick="gotoStep(1,'intro')" type="button">
+                                    Tilbake
+                                </button>
+                                <button class="e-btn-lg e-btn-secondary text-white inline-flex items-center px-4 py-2 btn-t-cellsearch" type="submit" id="btnSubmitCellSearch">
+                                    <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                    </svg>
+
+                                    Gå videre
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="step1-verification" class="inner hidden">
+                        <div class="text-oform-h1 em mt-2">
+                            Godt jobbet!
+                        </div>
+                        Fyll inn koden du fikk på sms.
+                        <form action="#" id="lookup">
+                            <div class="text-left mt-4 mb-8">
+                                <div class="flex flex-col gap-4">
+                                    <div class="basis-1">
+                                        <label class="text-oform-body2 em iconRequired centerRight pr-4">Verifiseringskode</label>
+                                        <input type="tel" class="form-control" aria-describedby="VerificationCode" id="cell_verification" placeholder="Skriv inn kode" required="required" pattern="\d{5,5}" />
+                                        <label class="error-text">Fyll inn gyldig kode</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-between">
+
+                                <button class="e-btn-link underline btn-t-back" onclick="gotoStep(1,'cell')" type="button">
                                     Tilbake
                                 </button>
                                 <button class="e-btn-lg e-btn-secondary text-white inline-flex items-center px-4 py-2 btn-t-cellsearch" type="submit" id="btnSubmitCellSearch">
@@ -417,7 +449,7 @@ Påslag: 8,9 øre/kilowattime
         console.log("Setting up component ");
         var inviteCode = getQueryParamValue('invite');
 
-        window.saleApi = {"basePath":"https://app-elkompis-service-prod.azurewebsites.net/","phoneLookupPath":"sale/lookup","phoneLookupVippsPath":"sale/lookupvipps","placeLookupPath":"sale/place","customerLookupPath":"sale/customerlookup","vippsUrlLookupPath":"sale/vippsurl","saleLeadPath":"sale/salelead","saleRegisterPath":"sale","saleRegisterSkandiaPath":"sale/skandiaEnergiSale"};
+        window.saleApi = {"basePath":"https://app-elkompis-service-prod.azurewebsites.net/","phoneLookupPath":"sale/lookup","smsverificationPath":"sale/smsverification","phoneLookupVippsPath":"sale/lookupvipps","placeLookupPath":"sale/place","customerLookupPath":"sale/customerlookup","vippsUrlLookupPath":"sale/vippsurl","saleLeadPath":"sale/salelead","saleRegisterPath":"sale","saleRegisterSkandiaPath":"sale/skandiaEnergiSale"};
         window.vippsRedirectUrl = '';
         window.profile = 'SkandiaEnergi';
         window.campaignCode = 'Greenspot sekundaer';

@@ -9,7 +9,7 @@ const output = path.join('site', 'onboarding');
 
 (async () => {
     // Register some custom handlebar helpers that are used in the template
-   registerHelpers(handlebars)
+    registerHelpers(handlebars)
     // Ensure directories
     await fs.ensureDir(output)
     // Try to remove existing files and create folder if it does not exist
@@ -39,12 +39,12 @@ const output = path.join('site', 'onboarding');
         const jsonFile = await fs.readJson(path.join(pagesDirectory, jsonFileName))
         // We want to support multiple environment. Here we are checking the different environments
         // and if they are set and enabled. If not we generate the template from just the json page source.
-        if((globalProductionJson && globalProductionJson.enabled )|| (globalDevelopmentJson && globalDevelopmentJson.enabled)){
-            if(globalProductionJson && globalProductionJson.enabled){
+        if ((globalProductionJson && globalProductionJson.enabled) || (globalDevelopmentJson && globalDevelopmentJson.enabled)) {
+            if (globalProductionJson && globalProductionJson.enabled) {
                 console.log(`Creating ${jsonFile.name} with production configuration`)
                 await createTemplateFile(jsonFile, globalProductionJson, jsonFile.name, template, scriptSource)
             }
-            if(globalDevelopmentJson && globalDevelopmentJson.enabled){
+            if (globalDevelopmentJson && globalDevelopmentJson.enabled) {
                 console.log(`Creating ${jsonFile.name}-development with development configuration`)
                 await createTemplateFile(jsonFile, globalDevelopmentJson, jsonFile.name + "-development", template, scriptSource)
             }
@@ -55,9 +55,9 @@ const output = path.join('site', 'onboarding');
     }
 })();
 
-async function getGlobalConfig(mode){
+async function getGlobalConfig(mode) {
     const jsonPath = path.join(pagesDirectory, `global-${mode}.json`)
-    if(await fs.pathExists(jsonPath)){
+    if (await fs.pathExists(jsonPath)) {
         console.log("Reading global configuration in " + jsonPath);
         return await fs.readJson(jsonPath);
     }
@@ -65,7 +65,7 @@ async function getGlobalConfig(mode){
     return null
 }
 
-async function createTemplateFile(jsonFile, globalJson, targetFileName, template, scriptSource){
+async function createTemplateFile(jsonFile, globalJson, targetFileName, template, scriptSource) {
     const jsonData = _.merge({}, globalJson, jsonFile);
     const filePath = path.join(output, `${targetFileName}.html`)
 
@@ -77,15 +77,17 @@ async function createTemplateFile(jsonFile, globalJson, targetFileName, template
 
     console.log(`Generated ${filePath}`);
 }
-function isNotSystemFiles(file)
-{
-    return file !== 'global-production.json' && file!=='global-development.json' && file !== 'template-settings.json'
+
+function isNotSystemFiles(file) {
+    return file !== 'global-production.json' && file !== 'global-development.json' && file !== 'template-settings.json'
 }
 
 
-function registerHelpers(Handlebars){
+function registerHelpers(Handlebars) {
     Handlebars.registerHelper('empty', function (value, options) {
-        if (!value) { return options.fn(this); }
+        if (!value) {
+            return options.fn(this);
+        }
         return value.replace(/\s*/g, '').length === 0
             ? options.fn(this)
             : options.inverse(this);
@@ -98,10 +100,10 @@ function registerHelpers(Handlebars){
             return options.inverse(this);
         }
     });
-    Handlebars.registerHelper('json', function(context) {
+    Handlebars.registerHelper('json', function (context) {
         return JSON.stringify(context);
     });
-    Handlebars.registerHelper('ifEquals', function(arg1, arg2, options) {
+    Handlebars.registerHelper('ifEquals', function (arg1, arg2, options) {
         return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
     });
 }

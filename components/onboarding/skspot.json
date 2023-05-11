@@ -32,6 +32,13 @@
         "sub-text": "Fyll ut mobilnummer og epost, så vi finner dine opplysninger."
       }
     },
+    "smsverification": {
+      "button-text": "Kode fra sms",
+      "header": {
+        "text": "Godt jobbet!",
+        "sub-text": "Fyll inn koden du fikk på sms."
+      }
+    },
     "header": {
       "text": "1. Hei, så hyggelig at du vil bli kunde i SkandiaEnergi!",
       "sub-text": "Avtalen Spot koster kun 39 kr/mnd og 5,9 øre/kWh. Det er gratis å bytte, og vi avslutter din gamle strømavtale for deg."

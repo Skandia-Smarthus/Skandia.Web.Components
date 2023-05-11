@@ -1,16 +1,17 @@
 {
-  "enabled" : false,
-  "mode" : "Development",
-  "imagePath" : "https://localhost:44326/site",
-  "saleApi" : {
-    "basePath" : "https://app-elkompis-service-dev.azurewebsites.net/",
-    "phoneLookupPath" : "sale/lookup",
-    "phoneLookupVippsPath" : "sale/lookupvipps",
-    "placeLookupPath" : "sale/place",
-    "customerLookupPath" : "sale/customerlookup",
-    "vippsUrlLookupPath" : "sale/vippsurl",
-    "saleLeadPath" : "sale/salelead",
-    "saleRegisterPath" : "sale",
-    "saleRegisterSkandiaPath" : "sale/skandiaEnergiSale"
+  "enabled": false,
+  "mode": "Development",
+  "imagePath": "https://localhost:44326/site",
+  "saleApi": {
+    "basePath": "https://app-elkompis-service-dev.azurewebsites.net/",
+    "phoneLookupPath": "sale/lookup",
+    "smsverificationPath": "sale/smsverification",
+    "phoneLookupVippsPath": "sale/lookupvipps",
+    "placeLookupPath": "sale/place",
+    "customerLookupPath": "sale/customerlookup",
+    "vippsUrlLookupPath": "sale/vippsurl",
+    "saleLeadPath": "sale/salelead",
+    "saleRegisterPath": "sale",
+    "saleRegisterSkandiaPath": "sale/skandiaEnergiSale"
   }
 }

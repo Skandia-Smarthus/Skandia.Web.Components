@@ -1,88 +1,94 @@
 {
   "profile": "<profile to use (ElKompis/SkandiaEnergi)>",
-  "name" : "<name of component>",
-  "campaignCode" : "<campaign or product code of product>",
-  "global" : {
-    "buttons" : {
-      "back" : "Tilbake",
-      "next" : "Gå videre",
-      "edit" : "Rediger",
-      "order" : "Bestill nå",
-      "order-waiting" : "Vent litt mens vi registrerer din bestilling"
-
+  "name": "<name of component>",
+  "campaignCode": "<campaign or product code of product>",
+  "global": {
+    "buttons": {
+      "back": "Tilbake",
+      "next": "Gå videre",
+      "edit": "Rediger",
+      "order": "Bestill nå",
+      "order-waiting": "Vent litt mens vi registrerer din bestilling"
     },
-    "text" : {
-      "add-delivery" : "",
-      "move-date" : "Jeg overtar hytten",
-      "reset-user" : "Ikke deg?"
+    "text": {
+      "add-delivery": "",
+      "move-date": "Jeg overtar hytten",
+      "reset-user": "Ikke deg?"
     }
   },
   "step1": {
-    "title" : " Start din bestilling her",
+    "title": " Start din bestilling her",
     "vipps": {
-      "redirectUrl" : "https://elkompis.no/bli-kunde",
+      "redirectUrl": "https://elkompis.no/bli-kunde",
       "button-text": "Start med Vipps",
-      "enabled" : true
+      "enabled": true
     },
     "cell": {
       "button-text": "Manuell registrering",
-      "header" : {
-        "text" : "Da er du i gang!",
-        "sub-text" : "Fyll ut mobilnummer og epost, så vi finner dine opplysninger."
+      "header": {
+        "text": "Da er du i gang!",
+        "sub-text": "Fyll ut mobilnummer og epost, så vi finner dine opplysninger."
+      }
+    },
+    "smsverification": {
+      "button-text": "Kode fra sms",
+      "header": {
+        "text": "Godt jobbet!",
+        "sub-text": "Fyll inn koden du fikk på sms."
       }
     },
     "header": {
-      "text" : "1. Hei, så hyggelig at du vil bli kunde i SkandiaEnergi!",
-      "sub-text" : "Avtalen Hyttestrøm koster kun 0 kr/mnd og 5,6 øre/kWh. Det er gratis å bytte, og vi avslutter din gamle strømavtale for deg."
+      "text": "1. Hei, så hyggelig at du vil bli kunde i SkandiaEnergi!",
+      "sub-text": "Avtalen Hyttestrøm koster kun 0 kr/mnd og 5,6 øre/kWh. Det er gratis å bytte, og vi avslutter din gamle strømavtale for deg."
     },
-    "info-popup" : {
+    "info-popup": {
       "header": {
-        "text" : "Slik bruker vi informasjonen din",
-        "sub-text" : "Vi finner opplysninger om deg og din hytte i adresseregistere, og om din strømmåler i Elhub. Ingen informasjon blir lagret før du bekrefter og sender inn bestillingen."
+        "text": "Slik bruker vi informasjonen din",
+        "sub-text": "Vi finner opplysninger om deg og din hytte i adresseregistere, og om din strømmåler i Elhub. Ingen informasjon blir lagret før du bekrefter og sender inn bestillingen."
       }
     }
   },
   "step2": {
-    "title" : "Navn og adresse",
-    "sub-title" : "Fyll ut din informasjon så vi kan levere strøm til deg",
-    "header" : {
-      "text" : "Navn og adresse",
-      "sub-text" : "Du trenger ikke å finne målenummeret ditt før du bestiller. Vi kontakter deg senere for å legge det inn. Har du en partner står nummeret gjerne på dem, og det overføres til deg."
+    "title": "Navn og adresse",
+    "sub-title": "Fyll ut din informasjon så vi kan levere strøm til deg",
+    "header": {
+      "text": "Navn og adresse",
+      "sub-text": "Du trenger ikke å finne målenummeret ditt før du bestiller. Vi kontakter deg senere for å legge det inn. Har du en partner står nummeret gjerne på dem, og det overføres til deg."
     },
-    "info-popup" : {
-      "text" : "Målernummer",
-      "sub-text" : "Du trenger ikke å finne målenummeret ditt før du bestiller. Vi kontakter deg senere for å legge det inn. Har du en partner står nummeret gjerne på dem, og det overføres til deg.\n"
+    "info-popup": {
+      "text": "Målernummer",
+      "sub-text": "Du trenger ikke å finne målenummeret ditt før du bestiller. Vi kontakter deg senere for å legge det inn. Har du en partner står nummeret gjerne på dem, og det overføres til deg.\n"
     },
-    "buttons" : {
-      "add-delivery" : "Legg til flere anlegg"
+    "buttons": {
+      "add-delivery": "Legg til flere anlegg"
     }
   },
   "step3": {
-    "title" : "Bekreft og bestill",
-    "header" : {
+    "title": "Bekreft og bestill",
+    "header": {
       "text": "Bestill, vi fikser resten",
-      "sub-text" : "Bestill og len deg tilbake mens vi fikser alt det praktiske. \uD83D\uDE80 "
+      "sub-text": "Bestill og len deg tilbake mens vi fikser alt det praktiske. \uD83D\uDE80 "
     },
-    "securing" : {
+    "securing": {
       "image-url": "",
-      "text" : "Hyttestrøm til kun 0 kr/mnd og 5,6 øre/kWh",
-      "sub-text" : ""
+      "text": "Hyttestrøm til kun 0 kr/mnd og 5,6 øre/kWh",
+      "sub-text": ""
     },
-    "order-details" : {
-      "address" : {
-        "text" : "Du får strøm levert til",
-        "sub-text" : "Vi kontakter deg for å skaffe målernummeret ditt"
+    "order-details": {
+      "address": {
+        "text": "Du får strøm levert til",
+        "sub-text": "Vi kontakter deg for å skaffe målernummeret ditt"
       },
       "product": {
-        "text" : "Abonnementsdetaljer",
-        "sub-text" : "Avtaletype: Spotpris\nMånedsbeløp: 34 kr\nPåslag: 1 øre/kilowattime"
+        "text": "Abonnementsdetaljer",
+        "sub-text": "Avtaletype: Spotpris\nMånedsbeløp: 34 kr\nPåslag: 1 øre/kilowattime"
       }
     },
-    "confirm" : {
-      "accept" : "Jeg bekrefter at jeg har lest og forstått <a href=\"/avtalevilkar-hyttestrom\" target=\"_blank\">vilkårene.</a>. Jeg har også sett/er kjent med standard angreskjema og standard skjema for opplysning om angrerett.",
-      "expedited" : "Jeg ønsker oppstart så raskt som mulig og ønsker at leveringen av strøm kan påbegynnes før utløpet av angrefristen. Jeg aksepterer at jeg skal betale for leveringen av strøm i henhold til disse vilkårene dersom angreretten benyttes.",
-      "offer-and-newsletter" : "",
-      "text" : "",
+    "confirm": {
+      "accept": "Jeg bekrefter at jeg har lest og forstått <a href=\"/avtalevilkar-hyttestrom\" target=\"_blank\">vilkårene.</a>. Jeg har også sett/er kjent med standard angreskjema og standard skjema for opplysning om angrerett.",
+      "expedited": "Jeg ønsker oppstart så raskt som mulig og ønsker at leveringen av strøm kan påbegynnes før utløpet av angrefristen. Jeg aksepterer at jeg skal betale for leveringen av strøm i henhold til disse vilkårene dersom angreretten benyttes.",
+      "offer-and-newsletter": "",
+      "text": "",
       "return-to": "https://skandiaenergi.no/stromavtale/hytte",
       "return-to-fast": "/velkommen-rask-oppstart",
       "return-to-takeover": "/velkommen-anleggsovertakelse"

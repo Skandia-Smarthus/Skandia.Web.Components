@@ -116,7 +116,9 @@ function OnboardingLookupV2(
           });
         }
 
+        debugger;
         jsonContent.campaignCode = window.campaignCode;
+        jsonContent.productId = window.productId;
 
         if (trackingObj) {
           jsonContent.referralCode = trackingObj.invite;

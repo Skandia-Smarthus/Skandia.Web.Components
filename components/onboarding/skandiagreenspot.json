@@ -2,6 +2,7 @@
   "profile": "SkandiaEnergi",
   "name": "skandiagreenspot",
   "campaignCode": "Greenspot",
+  "productId": 1,
   "global": {
     "buttons": {
       "back": "Tilbake",

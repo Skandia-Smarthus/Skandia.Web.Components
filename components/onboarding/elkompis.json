@@ -1,6 +1,7 @@
 {
   "profile": "ElKompis",
   "name": "elkompis",
+  "productId": 1,
   "global": {
     "buttons": {
       "back": "Tilbake",

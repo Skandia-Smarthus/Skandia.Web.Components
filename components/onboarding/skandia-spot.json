@@ -1,7 +1,8 @@
 {
   "profile": "SkandiaEnergi",
   "name": "skandiaspot",
-  "campaignCode": "owffs",
+  "campaignCode": "vrsjc",
+  "productId": 2,
   "global": {
     "buttons": {
       "back": "Tilbake",

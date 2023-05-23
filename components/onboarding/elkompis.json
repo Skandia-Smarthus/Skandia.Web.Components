@@ -2,6 +2,7 @@
   "profile": "ElKompis",
   "name": "elkompis",
   "productId": 1,
+  "campaignCode": "klwew",
   "global": {
     "buttons": {
       "back": "Tilbake",

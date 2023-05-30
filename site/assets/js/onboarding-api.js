@@ -279,19 +279,13 @@ function OnboardingSaleV2(profile) {
 
   obj.profile = profile;
 
-  let apiUrl = window.saleApi.basePath + window.saleApi.saleRegisterPath;
-
-  // #####
-  // #####
-  // #####
-  // TODO switch baseURL
+  var base = window.window.saleApi.basePath;
   if (profile === "SkandiaEnergi") {
-    apiUrl = window.saleApi.basePath + window.saleApi.saleRegisterSkandiaPath;
+    base = window.saleApi.basePathSkandia;
   }
-  // #####
-  // #####
-  // #####
-  // #####
+
+  let apiUrl = base + window.saleApi.saleRegisterPath;
+
   let xhr = new XMLHttpRequest();
   xhr.open("POST", apiUrl, true);
 

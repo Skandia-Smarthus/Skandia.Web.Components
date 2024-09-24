@@ -130,3 +130,13 @@ dist
 .pnp.*
 
 .idea
+.vs/slnx.sqlite
+.vs/VSWorkspaceState.json
+.vs/Skandia.Web.Components/config/applicationhost.config
+.vs/Skandia.Web.Components/FileContentIndex/ac86f1e8-c698-48cc-8bc9-f58e31e8c9b6.vsidx
+.vs/Skandia.Web.Components/FileContentIndex/ae084fc8-ea99-484f-a8ad-b8d9f29c15a7.vsidx
+.vs/Skandia.Web.Components/FileContentIndex/bcac90cc-0653-48d6-9119-fe54eee4e124.vsidx
+.vs/Skandia.Web.Components/FileContentIndex/f760712c-68b7-43b2-a749-6698d11711cc.vsidx
+.vs/Skandia.Web.Components/FileContentIndex/f76a0144-c267-47d8-ba85-f27ad85f7a64.vsidx
+.vs/Skandia.Web.Components/v17/.wsuo
+.vs/Skandia.Web.Components/v17/DocumentLayout.json

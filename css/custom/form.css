@@ -181,7 +181,7 @@ input.custom-form::placeholder {
 [type='radio'].control,
 [type='checkbox'].eChoice,
 [type='radio'].eChoice {
-    @apply border text-primary-dark ring-inset cursor-pointer block border-primary bg-white;
+    @apply border text-primary-dark ring-inset cursor-pointer block border-primary bg-slate-300;
     @apply focus:ring-primary focus:outline-none focus:border-primary focus:ring-primary focus:ring-0 focus:ring-offset-0;
     @apply checked:bg-primary checked:border-primary disabled:bg-primary-gray-10 disabled:border-gray-300;
 }

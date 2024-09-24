@@ -694,3 +694,6 @@ function getVippsState() {
 function getVippsAuthCode() {
   return getQueryParamValue("code");
 }
+
+
+

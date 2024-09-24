@@ -424,16 +424,16 @@ function CustomerLookupV2(obj = null, index = null) {
 }
 
 async function getVippsUrl() {
-  //const vippsState = generateUUID();
-  //const redirectUrl = getRedirectURL(); // Assuming you've already implemented this function
-  //const urlEncoded = encodeURIComponent(redirectUrl);
-  //const vippsUrlLookupPath = saleApi.basePath + saleApi.vippsUrlLookupPath; // Replace this with your actual Vipps URL lookup path
+  const vippsState = generateUUID();
+  const redirectUrl = getRedirectURL(); // Assuming you've already implemented this function
+  const urlEncoded = encodeURIComponent(redirectUrl);
+  const vippsUrlLookupPath = saleApi.basePath + saleApi.vippsUrlLookupPath; // Replace this with your actual Vipps URL lookup path
 
-  //const response = await fetch(
-  //  `${vippsUrlLookupPath}?state=${vippsState}&redirectUrl=${urlEncoded}`
-  //);
-  //  const url = await response.text();
-    const url = "https://api.vipps.no/access-management-1.0/access/oauth2/auth?client_id=a4ced04c-7d7b-46d7-a663-f16f6dab6786&response_type=code&scope=openid+address+email+name+phoneNumber+nin&state=74988d4d-8213-4df6-b985-92ef1a6471cf&redirect_uri=https://localhost:3002/";
+  const response = await fetch(
+    `${vippsUrlLookupPath}?state=${vippsState}&redirectUrl=${urlEncoded}`
+  );
+    const url = await response.text();
+    //const url = "https://api.vipps.no/access-management-1.0/access/oauth2/auth?client_id=a4ced04c-7d7b-46d7-a663-f16f6dab6786&response_type=code&scope=openid+address+email+name+phoneNumber+nin&state=74988d4d-8213-4df6-b985-92ef1a6471cf&redirect_uri=https://localhost:3002/";
   return url;
 }
 

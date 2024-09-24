@@ -140,3 +140,4 @@ dist
 .vs/Skandia.Web.Components/FileContentIndex/f76a0144-c267-47d8-ba85-f27ad85f7a64.vsidx
 .vs/Skandia.Web.Components/v17/.wsuo
 .vs/Skandia.Web.Components/v17/DocumentLayout.json
+*.vsidx

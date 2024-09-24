@@ -424,10 +424,18 @@ function CustomerLookupV2(obj = null, index = null) {
 }
 
 async function getVippsUrl() {
-  const vippsState = generateUUID();
-  const redirectUrl = getRedirectURL(); // Assuming you've already implemented this function
-  const urlEncoded = encodeURIComponent(redirectUrl);
-  const vippsUrlLookupPath = saleApi.basePath + saleApi.vippsUrlLookupPath; // Replace this with your actual Vipps URL lookup path
+    var base = window.window.saleApi.basePath;
+    if (profile === "SkandiaEnergi") {
+        base = window.saleApi.basePathSkandia;
+    }
+    else if (profile === "SagaEnergi") {
+        base = window.saleApi.basePathSaga;
+    }
+
+    const vippsState = generateUUID();
+    const redirectUrl = getRedirectURL(); // Assuming you've already implemented this function
+    const urlEncoded = encodeURIComponent(redirectUrl);
+    const vippsUrlLookupPath = base + saleApi.vippsUrlLookupPath; // Replace this with your actual Vipps URL lookup path
 
   const response = await fetch(
     `${vippsUrlLookupPath}?state=${vippsState}&redirectUrl=${urlEncoded}`

@@ -141,3 +141,5 @@ dist
 .vs/Skandia.Web.Components/v17/.wsuo
 .vs/Skandia.Web.Components/v17/DocumentLayout.json
 *.vsidx
+*.testlog
+*.manifest

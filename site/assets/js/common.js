@@ -30,9 +30,35 @@ function removeDisabled(el) {
 }
 
 function showSpinner(el) {
+    debugger;
     $(el).prop("disabled", true);
     $(el).addClass('spinner');
 }
+
+function showNewSpinner() {
+    let stylesheet = document.styleSheets[0];
+
+    for (let i = 0; i < stylesheet.cssRules.length; i++) {
+        let rule = stylesheet.cssRules[i];
+
+        if (rule.selectorText === '.animate-spin') {
+            rule.style.display = "";
+        }
+    }
+}
+
+function removeNewSpinner() {
+    let stylesheet = document.styleSheets[0];
+
+    for (let i = 0; i < stylesheet.cssRules.length; i++) {
+        let rule = stylesheet.cssRules[i];
+
+        if (rule.selectorText === '.animate-spin') {
+            rule.style.display = "none";
+        }
+    }
+}
+
 
 function removeSpinner(el) {
     $(el).prop("disabled", false);

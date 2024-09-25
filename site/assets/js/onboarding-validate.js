@@ -225,8 +225,12 @@ function OnboardingValidationSetup() {
 
     const validCell = validateCell(cellField);
 
-    const valid = validCell;
-    if (valid) SmsVerification(validCell);
+      const valid = validCell;
+
+      if (valid) {
+          showNewSpinner();
+          SmsVerification(validCell);
+      }
 
     return false;
   });

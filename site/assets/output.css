@@ -1465,7 +1465,10 @@ select {
   display: none;
 }
 
-.spinner .animate-spin {
+/*.spinner .animate-spin {
+*/
+
+.spinner {
   display: inline-flex;
 }
 

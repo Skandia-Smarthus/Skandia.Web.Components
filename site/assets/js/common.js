@@ -36,27 +36,67 @@ function showSpinner(el) {
 }
 
 function showNewSpinner() {
-    let stylesheet = document.styleSheets[0];
 
-    for (let i = 0; i < stylesheet.cssRules.length; i++) {
-        let rule = stylesheet.cssRules[i];
+    //// Få tak i det første stilarket (stylesheet)
+    //let stylesheet = document.styleSheets[0];
 
-        if (rule.selectorText === '.animate-spin') {
-            rule.style.display = "";
+    //// Gå gjennom alle regler i stilarket
+    //for (let i = 0; i < stylesheet.cssRules.length; i++) {
+    //    let rule = stylesheet.cssRules[i];
+
+    //    // Sjekk om reglen er for klassen '.animate-spin'
+    //    if (rule.selectorText === '.animate-spin') {
+    //        // Endre 'display' verdien til en tom streng
+    //        rule.style.display = "";
+    //    }
+    //}
+
+
+
+    for (let i = 0; i < document.styleSheets.length; i++) {
+        let stylesheet = document.styleSheets[i];
+
+        try {
+            let rules = stylesheet.cssRules || stylesheet.rules;
+
+            for (let j = 0; j < rules.length; j++) {
+                let rule = rules[j];
+
+                if (rule.selectorText === '.animate-spin') {
+                    rule.style.display = "";
+                    //break;
+                }
+            }
+        } catch (e) {
+            console.warn("Can't read rule from stylesheet: ", stylesheet.href);
         }
     }
+
+
 }
 
 function removeNewSpinner() {
     let stylesheet = document.styleSheets[0];
 
-    for (let i = 0; i < stylesheet.cssRules.length; i++) {
-        let rule = stylesheet.cssRules[i];
+    for (let i = 0; i < document.styleSheets.length; i++) {
+        let stylesheet = document.styleSheets[i];
 
-        if (rule.selectorText === '.animate-spin') {
-            rule.style.display = "none";
+        try {
+            let rules = stylesheet.cssRules || stylesheet.rules;
+
+            for (let j = 0; j < rules.length; j++) {
+                let rule = rules[j];
+
+                if (rule.selectorText === '.animate-spin') {
+                    rule.style.display = "none";
+                   // break;
+                }
+            }
+        } catch (e) {
+            console.warn("Can't read rule from stylesheet: ", stylesheet.href);
         }
     }
+
 }
 
 

@@ -508,7 +508,7 @@ function OnboardingCell(cell, email, verificationCode) {
     let retrievedObject = sessionStorage.getItem("trackingObj");
     let trackingObj = JSON.parse(retrievedObject);
 
-    CustomerSaleLead(cell, email);
+    //CustomerSaleLead(cell, email);
 
     OnboardingLookupV2(
         cell,
@@ -616,7 +616,7 @@ function OnboardingSetup() {
         //debugger;
         showPulse("#step3-confirm");
         showSpinner("#onboardingSaleButton");
-        showNewSpinner();
+        showNewSpinner(4);
 
         OnboardingSaleV2(window.profile);
     });

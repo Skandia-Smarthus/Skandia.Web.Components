@@ -22,7 +22,7 @@ function SmsVerification(cell = null) {
     xhr.onreadystatechange = function () {
         if (this.readyState === 4) {
             if (this.status === 200) {
-                removeNewSpinner();
+                removeNewSpinner(1);
                 gotoStep(1, "verification");
                 // OK
             } else {
@@ -87,7 +87,7 @@ function OnboardingLookupV2(
 ) {
     debugger;
     showSpinner("#btnSubmitCellSearch");
-    showNewSpinner();
+    showNewSpinner(2);
     showPulse("#step1-cell");
     const apiUrl = getLookupApiUrl(
         cell,
@@ -102,7 +102,7 @@ function OnboardingLookupV2(
     xhr.cell = cell;
     xhr.open("GET", apiUrl, true);
     xhr.onreadystatechange = function () {
-        removeNewSpinner();
+        removeNewSpinner(2);
         if (this.readyState === 4) {
             if (this.status === 200 || this.status === 204) {
                 let jsonContent = JSON.parse(this.responseText);
@@ -346,7 +346,7 @@ function OnboardingSaleV2(profile) {
                 window.location.href = welcomeUrl;
             } else {
                 removeSpinner("#onboardingSaleClick");
-                removeNewSpinner();
+                removeNewSpinner(4);
                 removeAllPulse();
             }
         }

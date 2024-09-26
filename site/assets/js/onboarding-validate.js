@@ -228,7 +228,7 @@ function OnboardingValidationSetup() {
       const valid = validCell;
 
       if (valid) {
-          showNewSpinner();
+          showNewSpinner(1);
           SmsVerification(validCell);
       }
 

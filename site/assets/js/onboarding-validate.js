@@ -102,6 +102,16 @@ function validate(type, part) {
     } else if (type == "step2") {
         //debugger;
 
+        debugger;
+        var moveDate = document.querySelector("#takoverDate").value;
+
+        if (moveDate != "") {
+            if (!validateMoveChecks()) {
+                allValid = false;
+                alert("Du må bekrefte oppstart innenfor angrefristen");
+            }
+        }
+
         if (obj.authMethod != "Vipps") {
             var personalNumberEdit = document.querySelector(
                 "#personalNumberEdit"
@@ -109,15 +119,7 @@ function validate(type, part) {
             var firstNameEdit = document.querySelector("#firstNameEdit").value;
             var lastNameEdit = document.querySelector("#lastNameEdit").value;
 
-            debugger;
-            var moveDate = document.querySelector("#takoverDate").value;
 
-            if (moveDate != "") {
-                if (!validateMoveChecks()) {
-                    allValid = false;
-                    alert("Du må bekrefte oppstart innenfor angrefristen");
-                }
-            }
             
             if (allValid) {
                 if (obj.firstName != firstNameEdit || obj.lastNameEdit != lastNameEdit) {

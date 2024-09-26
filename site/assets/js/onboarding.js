@@ -577,6 +577,8 @@ function OnboardingSetup() {
             $("#takeover-date").removeClass("hidden");
         } else {
             $("#takeover-date").addClass("hidden");
+            document.getElementById('takoverDate').value = "";
+            hideElement("#step2moveregret");
         }
     });
 
@@ -608,6 +610,8 @@ function OnboardingSetup() {
             $("#onboardingSaleButton").prop("disabled", true);
         }
     });
+
+    document.getElementById('takoverDate').addEventListener('change', checkDate);
 
     $("#onboardingSaleButton").click(function () {
         // if (isLoading()) {

@@ -1461,8 +1461,12 @@ select {
   background-image: url('https://elkompissquarespace.blob.core.windows.net/assets/site/assets/icons/Spinner2.svg');
 }
 
-.animate-spin {
+.animate-spin_off {
   display: none;
+}
+
+.animate-spin {
+  display: "";
 }
 
 /*.spinner .animate-spin {

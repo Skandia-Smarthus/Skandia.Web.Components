@@ -37,65 +37,95 @@ function showSpinner(el) {
 
 function showNewSpinner() {
 
-    //// Få tak i det første stilarket (stylesheet)
-    //let stylesheet = document.styleSheets[0];
+    //document.querySelectorAll('.animate-spin').forEach(function (element) {
+    //    element.style.display = ""; 
+    //});
 
-    //// Gå gjennom alle regler i stilarket
-    //for (let i = 0; i < stylesheet.cssRules.length; i++) {
-    //    let rule = stylesheet.cssRules[i];
+    debugger;
+    // Finn elementet med ID 'smsSpinner'
+    let spinnerElement = document.getElementById('smsSpinner');
 
-    //    // Sjekk om reglen er for klassen '.animate-spin'
-    //    if (rule.selectorText === '.animate-spin') {
-    //        // Endre 'display' verdien til en tom streng
-    //        rule.style.display = "";
-    //    }
+     //Sett display-stilen til ønsket verdi
+    if (spinnerElement) {
+        //spinnerElement.style.display = "block";
+        spinnerElement.classList.add('animate-spin');
+        spinnerElement.classList.remove('animate-spin_off');
+    }
+
+    //let spinnerElement2 = document.getElementById('smsSpinner2');
+
+    //// Sett display-stilen til ønsket verdi
+    //if (spinnerElement2) {
+    //    spinnerElement2.style.display = "";
+    //}
+
+    //let spinnerElement3 = document.getElementById('smsSpinner3');
+
+    //// Sett display-stilen til ønsket verdi
+    //if (spinnerElement3) {
+    //    spinnerElement3.style.display = "";
+    //}
+
+    //let spinnerElement4 = document.getElementById('smsSpinner4');
+
+    //// Sett display-stilen til ønsket verdi
+    //if (spinnerElement4) {
+    //    spinnerElement4.style.display = "";
     //}
 
 
+    //for (let i = 0; i < document.styleSheets.length; i++) {
+    //    let stylesheet = document.styleSheets[i];
 
-    for (let i = 0; i < document.styleSheets.length; i++) {
-        let stylesheet = document.styleSheets[i];
+    //    try {
+    //        let rules = stylesheet.cssRules || stylesheet.rules;
 
-        try {
-            let rules = stylesheet.cssRules || stylesheet.rules;
+    //        for (let j = 0; j < rules.length; j++) {
+    //            let rule = rules[j];
 
-            for (let j = 0; j < rules.length; j++) {
-                let rule = rules[j];
-
-                if (rule.selectorText === '.animate-spin') {
-                    rule.style.display = "";
-                    //break;
-                }
-            }
-        } catch (e) {
-            console.warn("Can't read rule from stylesheet: ", stylesheet.href);
-        }
-    }
+    //            if (rule.selectorText === '.animate-spin') {
+    //                rule.style.display = "";
+    //            }
+    //        }
+    //    } catch (e) {
+    //        console.warn("Can't read rule from stylesheet: ", stylesheet.href);
+    //    }
+    //}
 
 
 }
 
 function removeNewSpinner() {
-    let stylesheet = document.styleSheets[0];
 
-    for (let i = 0; i < document.styleSheets.length; i++) {
-        let stylesheet = document.styleSheets[i];
+    let spinnerElement = document.getElementById('smsSpinner');
 
-        try {
-            let rules = stylesheet.cssRules || stylesheet.rules;
-
-            for (let j = 0; j < rules.length; j++) {
-                let rule = rules[j];
-
-                if (rule.selectorText === '.animate-spin') {
-                    rule.style.display = "none";
-                   // break;
-                }
-            }
-        } catch (e) {
-            console.warn("Can't read rule from stylesheet: ", stylesheet.href);
-        }
+    //Sett display-stilen til ønsket verdi
+    if (spinnerElement) {
+        //spinnerElement.style.display = "block";
+        spinnerElement.classList.add('animatespin_offspin');
+        spinnerElement.classList.remove('animate-spin');
     }
+
+
+    //let stylesheet = document.styleSheets[0];
+
+    //for (let i = 0; i < document.styleSheets.length; i++) {
+    //    let stylesheet = document.styleSheets[i];
+
+    //    try {
+    //        let rules = stylesheet.cssRules || stylesheet.rules;
+
+    //        for (let j = 0; j < rules.length; j++) {
+    //            let rule = rules[j];
+
+    //            if (rule.selectorText === '.animate-spin') {
+    //                rule.style.display = "none";
+    //            }
+    //        }
+    //    } catch (e) {
+    //        console.warn("Can't read rule from stylesheet: ", stylesheet.href);
+    //    }
+    //}
 
 }
 

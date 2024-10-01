@@ -2,7 +2,7 @@
   "enabled" : false,
   "mode" : "development",
   "stromprisApi" : {
-    "baseUrl" : "https://app-elkompis-service-dev.azurewebsites.net/",
+    "baseUrl" : "https://app-elkompis-service-skandia-dev.azurewebsites.net/",
     "priceForZipPath" : "Public/Spotprice/"
   }
 }

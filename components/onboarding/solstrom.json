@@ -89,7 +89,8 @@
       "expedited": "",
       "offer-and-newsletter": "",
       "text": "",
-      "return-to": "/velkommen-solstrom"
+      "return-to": "/velkommen-solstrom",
+      "return-to-rejection": "/avvist"
     }
   }
 }

@@ -89,7 +89,8 @@
       "expedited": "",
       "offer-and-newsletter": "",
       "text": "",
-      "return-to": "/velkommen-greenspot-sekundaer"
+      "return-to": "/velkommen-greenspot-sekundaer",
+      "return-to-rejection": "/avvist"
     }
   }
 }

@@ -89,7 +89,8 @@
       "expedited": "",
       "offer-and-newsletter": "",
       "text": "",
-      "return-to": "/velkommen-skandiaspot"
+      "return-to": "/velkommen-skandiaspot",
+      "return-to-rejection": "/avvist"
     }
   }
 }

@@ -91,7 +91,8 @@
       "text": "",
       "return-to": "https://skandiaenergi.no/stromavtale/hytte",
       "return-to-fast": "/velkommen-rask-oppstart",
-      "return-to-takeover": "/velkommen-anleggsovertakelse"
+      "return-to-takeover": "/velkommen-anleggsovertakelse",
+      "return-to-rejection": "/avvist"
     }
   }
 }

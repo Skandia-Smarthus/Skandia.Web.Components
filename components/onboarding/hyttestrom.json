@@ -89,7 +89,8 @@
       "expedited": "",
       "offer-and-newsletter": "",
       "text": "",
-      "return-to": "/velkommen-hyttestrom"
+      "return-to": "/velkommen-hyttestrom",
+      "return-to-rejection": "/avvist"
     }
   }
 }

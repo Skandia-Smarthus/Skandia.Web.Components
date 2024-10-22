@@ -344,7 +344,20 @@ function OnboardingSaleV2(profile) {
 
                 //send til velkomstside
                 window.location.href = welcomeUrl;
-            } else {
+            }
+            else if (this.status == 206) { //Kredittsjekk avslag
+                var rejectionUrl = null;
+                var urlTemp = "";
+
+                var urlTemp = $("#linkRejection").val();
+                if (urlTemp && urlTemp.length > 0) {
+                    rejectionUrl = getUrlParamsV2(urlTemp);
+                }
+                removeAllPulse();
+
+                window.location.href = rejectionUrl;
+            }
+            else {
                 removeSpinner("#onboardingSaleClick");
                 removeNewSpinner(4);
                 removeAllPulse();

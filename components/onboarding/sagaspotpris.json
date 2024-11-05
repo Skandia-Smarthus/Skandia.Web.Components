@@ -89,7 +89,8 @@
       "expedited": "",
       "offer-and-newsletter": "",
       "text": "",
-      "return-to": "/velkommen-sagaspotpris"
+      "return-to": "/suksess",
+      "return-to-rejection": "/bestillingen-er-avvist"
     }
   }
 }

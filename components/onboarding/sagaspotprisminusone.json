@@ -23,7 +23,7 @@
     "vipps": {
       "enabled": true,
       "button-text": "Finn dine opplysninger med vipps",
-      "url": "https://api.vipps.no/access-management-1.0/access/oauth2/auth?client_id=a4ced04c-7d7b-46d7-a663-f16f6dab6786&response_type=code&scope=openid+address+email+name+phoneNumber+nin&state=58dcc19c-f18b-4363-8617-f7e92be513dd&redirect_uri=",
+      "url": "https://api.vipps.no/access-management-1.0/access/oauth2/auth?client_id=64bdd717-95a6-4262-837a-93ab41781420&response_type=code&scope=openid+address+email+name+phoneNumber+nin&state=58dcc19c-f18b-4363-8617-f7e92be513dd&redirect_uri=",
       "return-to": "https://skandiaenergi.no/stromavtale/hytte"
     },
     "cell": {

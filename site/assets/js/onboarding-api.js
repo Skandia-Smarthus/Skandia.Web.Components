@@ -5,7 +5,7 @@ function SmsVerification(cell = null) {
     if (profile === "SkandiaEnergi") {
         base = window.saleApi.basePathSkandia;
     }
-    else if (profile === "Saga Energi") {
+    else if (profile === "SagaEnergi") {
         base = window.saleApi.basePathSaga;
     }
 
@@ -38,7 +38,7 @@ function CustomerSaleLead(cell = null, email = null) {
     if (profile === "SkandiaEnergi") {
         base = window.saleApi.basePathSkandia;
     }
-    else if (profile === "Saga Energi") {
+    else if (profile === "SagaEnergi") {
         base = window.saleApi.basePathSaga;
     }
 
@@ -66,7 +66,7 @@ function getLookupApiUrl(cell, authCode, state, redirectUrl, verificationCode) {
     if (profile === "SkandiaEnergi") {
         base = window.saleApi.basePathSkandia;
     }
-    else if (profile === "Saga Energi") {
+    else if (profile === "SagaEnergi") {
         base = window.saleApi.basePathSaga;
     }
 
@@ -295,7 +295,7 @@ function OnboardingSaleV2(profile) {
     if (profile === "SkandiaEnergi") {
         base = window.saleApi.basePathSkandia;
     }
-    else if (profile === "Saga Energi") {
+    else if (profile === "SagaEnergi") {
         base = window.saleApi.basePathSaga;
     }
 
@@ -379,7 +379,7 @@ function OnboardingPlaceFromZipV2(zip = null) {
     if (profile === "SkandiaEnergi") {
         base = window.saleApi.basePathSkandia;
     }
-    else if (profile === "Saga Energi") {
+    else if (profile === "SagaEnergi") {
         base = window.saleApi.basePathSaga;
     }
 
@@ -453,7 +453,7 @@ async function getVippsUrl() {
     if (profile === "SkandiaEnergi") {
         base = window.saleApi.basePathSkandia;
     }
-    else if (profile === "Saga Energi") {
+    else if (profile === "SagaEnergi") {
         base = window.saleApi.basePathSaga;
     }
 

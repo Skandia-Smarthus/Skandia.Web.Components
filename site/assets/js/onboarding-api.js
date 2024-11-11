@@ -5,7 +5,7 @@ function SmsVerification(cell = null) {
     if (profile === "SkandiaEnergi") {
         base = window.saleApi.basePathSkandia;
     }
-    else if (profile === "SagaEnergi") {
+    else if (profile === "Saga Energi") {
         base = window.saleApi.basePathSaga;
     }
 
@@ -38,7 +38,7 @@ function CustomerSaleLead(cell = null, email = null) {
     if (profile === "SkandiaEnergi") {
         base = window.saleApi.basePathSkandia;
     }
-    else if (profile === "SagaEnergi") {
+    else if (profile === "Saga Energi") {
         base = window.saleApi.basePathSaga;
     }
 
@@ -66,7 +66,7 @@ function getLookupApiUrl(cell, authCode, state, redirectUrl, verificationCode) {
     if (profile === "SkandiaEnergi") {
         base = window.saleApi.basePathSkandia;
     }
-    else if (profile === "SagaEnergi") {
+    else if (profile === "Saga Energi") {
         base = window.saleApi.basePathSaga;
     }
 
@@ -295,7 +295,7 @@ function OnboardingSaleV2(profile) {
     if (profile === "SkandiaEnergi") {
         base = window.saleApi.basePathSkandia;
     }
-    else if (profile === "SagaEnergi") {
+    else if (profile === "Saga Energi") {
         base = window.saleApi.basePathSaga;
     }
 
@@ -375,7 +375,15 @@ function getUrlParamsV2(path) {
 function OnboardingPlaceFromZipV2(zip = null) {
     showElement("#city-loader");
 
-    const apiUrl = `${window.saleApi.basePath}${window.saleApi.placeLookupPath}/${zip}`;
+    var base = window.window.saleApi.basePath;
+    if (profile === "SkandiaEnergi") {
+        base = window.saleApi.basePathSkandia;
+    }
+    else if (profile === "Saga Energi") {
+        base = window.saleApi.basePathSaga;
+    }
+
+    const apiUrl = `${base}${window.saleApi.placeLookupPath}/${zip}`;
     let xhr = new XMLHttpRequest();
     xhr.open("GET", apiUrl, true);
     xhr.onreadystatechange = function () {
@@ -445,7 +453,7 @@ async function getVippsUrl() {
     if (profile === "SkandiaEnergi") {
         base = window.saleApi.basePathSkandia;
     }
-    else if (profile === "SagaEnergi") {
+    else if (profile === "Saga Energi") {
         base = window.saleApi.basePathSaga;
     }
 
@@ -458,7 +466,7 @@ async function getVippsUrl() {
         `${vippsUrlLookupPath}?state=${vippsState}&redirectUrl=${urlEncoded}`
     );
     const url = await response.text();
-    //const url = "https://api.vipps.no/access-management-1.0/access/oauth2/auth?client_id=a4ced04c-7d7b-46d7-a663-f16f6dab6786&response_type=code&scope=openid+address+email+name+phoneNumber+nin&state=74988d4d-8213-4df6-b985-92ef1a6471cf&redirect_uri=https://localhost:3002/";
+    //const url = "https://api.vipps.no/access-management-1.0/access/oauth2/auth?client_id=64bdd717-95a6-4262-837a-93ab41781420&response_type=code&scope=openid+address+email+name+phoneNumber+nin&state=74988d4d-8213-4df6-b985-92ef1a6471cf&redirect_uri=https://localhost:3002/?form=sagaspotpris";
     return url;
 }
 

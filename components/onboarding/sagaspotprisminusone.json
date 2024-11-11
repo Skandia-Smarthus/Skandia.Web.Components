@@ -1,5 +1,5 @@
 {
-  "profile": "SagaEnergi",
+  "profile": "Saga Energi",
   "name": "sagaspotprisminusone",
   "campaignCode": "vrsjc",
   "productId": 7,
@@ -41,7 +41,7 @@
       }
     },
     "header": {
-      "text": "1. Hei, så hyggelig at du vil bli kunde i SagaEnergi!",
+      "text": "1. Hei, så hyggelig at du vil bli kunde i Saga Energi!",
       "sub-text": "Det er gratis å bytte, og vi avslutter din gamle strømavtale for deg."
     },
     "info-popup": {

@@ -19,6 +19,7 @@ function getJsonContent() {
 }
 
 function setJsonContent(obj) {
+    alert(JSON.stringify(obj));
     sessionStorage.setItem("onboardingObj", JSON.stringify(obj));
 }
 

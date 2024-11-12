@@ -85,7 +85,6 @@ function OnboardingLookupV2(
     trackingObj = null,
     verificationCode = null
 ) {
-    debugger;
     showSpinner("#btnSubmitCellSearch");
     showNewSpinner(2);
     showPulse("#step1-cell");
@@ -97,6 +96,7 @@ function OnboardingLookupV2(
         verificationCode
     );
 
+    debugger;
     let xhr = new XMLHttpRequest();
     xhr.email = email;
     xhr.cell = cell;

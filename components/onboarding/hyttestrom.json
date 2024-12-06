@@ -81,7 +81,8 @@
       },
       "product": {
         "text": "Abonnementsdetaljer",
-        "sub-text": "Avtaletype: Hyttestrøm\nMånedsbeløp: 0 kr",
+        "sub-text": "Avtaletype: Hyttestrøm",
+        "sub-text1": "Månedsbeløp: 0 kr",
         "sub-text2": "Påslag: 5,60 øre/kilowattime"
       }
     },

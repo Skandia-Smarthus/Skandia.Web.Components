@@ -81,7 +81,8 @@
       },
       "product": {
         "text": "Abonnementsdetaljer",
-        "sub-text": "Avtaletype: Digitalstrøm\nMånedsbeløp: 12 kr",
+        "sub-text": "Avtaletype: Digitalstrøm",
+        "sub-text1": "Månedsbeløp: 12 kr",
         "sub-text2": "Påslag: 2,5 øre/kilowattime"
       }
     },

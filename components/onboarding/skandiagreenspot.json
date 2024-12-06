@@ -81,7 +81,8 @@
       },
       "product": {
         "text": "Abonnementsdetaljer",
-        "sub-text": "Avtaletype: Greenspot\nMånedsbeløp: 49 kr",
+        "sub-text": "Avtaletype: Greenspot",
+        "sub-text1": "Månedsbeløp: 49 kr",
         "sub-text2": "Påslag: 8,9 øre/kilowattime"
       }
     },

@@ -144,6 +144,7 @@ function validate(type, part) {
 
             if (obj.deliveries && obj.deliveries.length > 0) {
                 gotoStep(3);
+                window.scrollBy(0, -300);
             } else {
                 gotoStep(2, "manual");
             }

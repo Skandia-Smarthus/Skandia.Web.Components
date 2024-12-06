@@ -81,7 +81,8 @@
       },
       "product": {
         "text": "Abonnementsdetaljer",
-        "sub-text": "Avtaletype: SkandiaSpot\nMånedsbeløp: 29 kr",
+        "sub-text": "Avtaletype: SkandiaSpot",
+        "sub-text1": "Månedsbeløp: 29 kr",
         "sub-text2": "Påslag: 5,6 øre/kilowattime"
       }
     },

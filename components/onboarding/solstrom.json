@@ -81,7 +81,8 @@
       },
       "product": {
         "text": "Abonnementsdetaljer",
-        "sub-text": "Avtaletype: Solstrøm\nMånedsbeløp: 35 kr",
+        "sub-text": "Avtaletype: Solstrøm",
+        "sub-text1": "Månedsbeløp: 35 kr",
         "sub-text2": "Påslag: 5,95 øre/kilowattime"
       }
     },

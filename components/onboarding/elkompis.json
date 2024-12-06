@@ -81,7 +81,8 @@
       },
       "product": {
         "text": "Abonnementsdetaljer",
-        "sub-text": "Avtaletype: Spotpris\nMånedsbeløp: 34 kr",
+        "sub-text": "Avtaletype: Spotpris",
+        "sub-text1": "Månedsbeløp: 34 kr",
         "sub-text2": "Påslag: 1 øre/kilowattime"
       }
     },

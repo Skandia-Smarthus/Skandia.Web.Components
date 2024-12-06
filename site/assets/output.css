@@ -2110,6 +2110,11 @@ input.custom-form::placeholder {
   }
 }
 
+.bg-warning-vipps:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--colors-warning-light), var(--tw-bg-opacity));
+}
+
 .e-btn-primary {
   --tw-bg-opacity: 1;
   background-color: rgba(var(--colors-primary), var(--tw-bg-opacity));

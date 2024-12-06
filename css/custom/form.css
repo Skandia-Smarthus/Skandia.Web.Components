@@ -225,6 +225,9 @@ input.custom-form::placeholder {
     @apply e-btn-basic py-4 px-7 sm:px-12;
 }
 
+.bg-warning-vipps:hover {
+    @apply bg-warning-light;
+}
 
 .e-btn-primary {
     @apply bg-primary hover:bg-brand-blue-dark SkandiaEnergi:bg-brand-green hover:SkandiaEnergi:bg-brand-green-main-dark;

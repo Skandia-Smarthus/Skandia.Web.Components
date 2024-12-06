@@ -38,7 +38,7 @@
       }
     },
     "header": {
-      "text": "1. Hei, så hyggelig at du vil bli kunde i elKompis!",
+      "text": "Hei, så hyggelig at du vil bli kunde i elKompis!",
       "sub-text": "Avtalen Spot koster kun 34 kr/mnd og 1 øre/kWh. Det er gratis å bytte, og vi avslutter din gamle strømavtale for deg."
     },
     "info-popup": {
@@ -53,11 +53,11 @@
     "sub-title": "Fyll ut din informasjon så vi kan levere strøm til deg",
     "header": {
       "text": "Navn og adresse",
-      "sub-text": "Du trenger ikke å finne målenummeret ditt før du bestiller. Vi kontakter deg senere for å legge det inn. Har du en partner står nummeret gjerne på dem, og det overføres til deg."
+      "sub-text": ""
     },
     "info-popup": {
       "text": "Målernummer",
-      "sub-text": "Du trenger ikke å finne målenummeret ditt før du bestiller. Vi kontakter deg senere for å legge det inn. Har du en partner står nummeret gjerne på dem, og det overføres til deg.\n"
+      "sub-text": "\nOm du ikke har målernummer tilgjengelig kan du legge inn bestillingen uansett, vi finner ofte nummeret i våre systemer, om ikke tar vi kontakt med deg og spør om ytterligere opplysninger.\n"
     },
     "buttons": {
       "add-delivery": "Legg til flere anlegg"
@@ -81,7 +81,8 @@
       },
       "product": {
         "text": "Abonnementsdetaljer",
-        "sub-text": "Avtaletype: Spotpris\nMånedsbeløp: 34 kr\nPåslag: 1 øre/kilowattime"
+        "sub-text": "Avtaletype: Spotpris\nMånedsbeløp: 34 kr",
+        "sub-text2": "Påslag: 1 øre/kilowattime"
       }
     },
     "confirm": {

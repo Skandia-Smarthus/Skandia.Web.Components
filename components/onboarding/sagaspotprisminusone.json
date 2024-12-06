@@ -22,7 +22,7 @@
     "title": " Start din bestilling her",
     "vipps": {
       "enabled": true,
-      "button-text": "Finn dine opplysninger med vipps",
+      "button-text": "Finn dine opplysninger med Vipps",
       "url": "https://api.vipps.no/access-management-1.0/access/oauth2/auth?client_id=64bdd717-95a6-4262-837a-93ab41781420&response_type=code&scope=openid+address+email+name+phoneNumber+nin&state=58dcc19c-f18b-4363-8617-f7e92be513dd&redirect_uri=",
       "return-to": "https://skandiaenergi.no/stromavtale/hytte"
     },
@@ -41,7 +41,7 @@
       }
     },
     "header": {
-      "text": "1. Hei, så hyggelig at du vil bli kunde i Saga Energi!",
+      "text": "Hei, så hyggelig at du vil bli kunde i Saga Energi!",
       "sub-text": "Det er gratis å bytte, og vi avslutter din gamle strømavtale for deg."
     },
     "info-popup": {
@@ -56,11 +56,11 @@
     "sub-title": "Fyll ut din informasjon så vi kan levere strøm til deg",
     "header": {
       "text": "Navn og adresse",
-      "sub-text": "Du trenger ikke å finne målenummeret ditt før du bestiller. Vi kontakter deg senere for å legge det inn. Har du en partner står nummeret gjerne på dem, og det overføres til deg."
+      "sub-text": ""
     },
     "info-popup": {
       "text": "Målernummer",
-      "sub-text": "\nDu trenger ikke å finne målenummeret ditt før du bestiller. Vi kontakter deg senere for å legge det inn. Har du en partner står nummeret gjerne på dem, og det overføres til deg.\n"
+      "sub-text": "\nOm du ikke har målernummer tilgjengelig kan du legge inn bestillingen uansett, vi finner ofte nummeret i våre systemer, om ikke tar vi kontakt med deg og spør om ytterligere opplysninger.\n"
     }
   },
   "step3": {
@@ -81,11 +81,12 @@
       },
       "product": {
         "text": "Abonnementsdetaljer",
-        "sub-text": "Avtaletype: Spotpris -1 øre\nMånedsbeløp: 0 kr\nPåslag: -1 øre/kilowattime"
+        "sub-text": "Avtaletype: Spotpris -1 øre\nMånedsbeløp: 0 kr",
+        "sub-text2": "Påslag: -1 øre/kilowattime"
       }
     },
     "confirm": {
-      "accept": "Jeg bekrefter at jeg har lest og forstått <a href=\"/generelle-vilkar\" target=\"_blank\">vilkårene</a>. Jeg har også sett/er kjent med standard <a href=\"/angrerett\" target=\"_blank\">angreskjema</a> og standard skjema for opplysning om angrerett.",
+      "accept": "Jeg aksepterer <a href=\"/generelle-vilkar\" target=\"_blank\">vilkårene</a>. Jeg har også sett/er kjent med <a href=\"/angrerett\" target=\"_blank\">opplysninger om angrerett og angrerettskjema</a>.",
       "expedited": "",
       "offer-and-newsletter": "",
       "text": "",

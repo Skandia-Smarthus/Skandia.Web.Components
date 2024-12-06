@@ -41,7 +41,7 @@
                     <div class="form-bullet pos-center lg em">1</div>
                     <div id="step1-intro" class="">
                         <div class="inner">
-                            <div class="text-oform-h1 em mt-2 font-bold">1. Hei, så hyggelig at du vil bli kunde i elKompis!</div>
+                            <div class="text-oform-h1 em mt-2 font-bold">Hei, så hyggelig at du vil bli kunde i elKompis!</div>
                             Avtalen Spot koster kun 34 kr/mnd og 1 øre/kWh. Det er gratis å bytte, og vi avslutter din gamle strømavtale for deg.
                         </div>
                         <div class="text-center mt-6">
@@ -193,7 +193,7 @@
                         <div class="text-oform-h1 em mt-2">
                             Navn og adresse
                         </div>
-                        Du trenger ikke å finne målenummeret ditt før du bestiller. Vi kontakter deg senere for å legge det inn. Har du en partner står nummeret gjerne på dem, og det overføres til deg.
+                        
                     <div class="text-left mt-6">
                         <div id="onboarding-manual-name" class="">
                             <div class="flex flex-col gap-2 mb-2">
@@ -249,7 +249,8 @@
                                     </div>
                                     <div class="form-popup-close iconClose btnIcon m-0 w-6 h-6 topRight cursor-pointer" onclick="HidePopup('#meternumberPopup')"></div>
                                 </div>
-                                Du trenger ikke å finne målenummeret ditt før du bestiller. Vi kontakter deg senere for å legge det inn. Har du en partner står nummeret gjerne på dem, og det overføres til deg.
+                                
+Om du ikke har målernummer tilgjengelig kan du legge inn bestillingen uansett, vi finner ofte nummeret i våre systemer, om ikke tar vi kontakt med deg og spør om ytterligere opplysninger.
 
                             </div>
                             <div class="flex h-[25px]">
@@ -299,7 +300,7 @@
 
                                 Tilbake
                             </button>
-                            <button id="step2EditButton" class="e-btn-lg e-btn-secondary text-white hidden btn-t-editdelivery" onclick="validate('step2')">
+                            <button id="step2EditButton" class="e-btn-lg e-btn-secondary text-white hidden btn-t-editdelivery" onclick="validate('step2', 'overview')">
 
                                 Gå videre
                             </button>
@@ -390,8 +391,8 @@
                                         </div>
 
                                         Avtaletype: Spotpris
-Månedsbeløp: 34 kr
-Påslag: 1 øre/kilowattime
+Månedsbeløp: 34 kr<br />
+                                        Påslag: 1 øre/kilowattime
                                     </div>
                                 </div>
 
@@ -412,7 +413,7 @@ Påslag: 1 øre/kilowattime
                     <div>
                         <!--Vilkår-->
                         <div class="inner text-left">
-                            <div class="em !my-3">Kjøpsvilkår og oppstart</div>
+                            <div class="em !my-3">Kjøpsvilkår</div>
                             <div class="mb-2">
                                 <div class="flex items-start">
                                     <input id="acceptedTerms" name="acceptedTerms" type="checkbox" class="control w-6 h-6 rounded-sm mt-2 btn-t-acceptedterms">

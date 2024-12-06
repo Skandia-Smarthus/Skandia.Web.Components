@@ -325,7 +325,7 @@
 
                                 {{global.buttons.back}}
                             </button>
-                            <button id="step2EditButton" class="e-btn-lg e-btn-secondary text-white hidden btn-t-editdelivery" onclick="validate('step2')">
+                            <button id="step2EditButton" class="e-btn-lg e-btn-secondary text-white hidden btn-t-editdelivery" onclick="validate('step2', 'overview')">
 
                                 {{global.buttons.next}}
                             </button>
@@ -422,7 +422,8 @@
                                             {{step3.order-details.product.text}}
                                         </div>
 
-                                        {{step3.order-details.product.sub-text}}
+                                        {{step3.order-details.product.sub-text}}<br />
+                                        {{step3.order-details.product.sub-text2}}
                                     </div>
                                 </div>
 
@@ -444,7 +445,7 @@
                     <div>
                         <!--Vilkår-->
                         <div class="inner text-left">
-                            <div class="em !my-3">Kjøpsvilkår og oppstart</div>
+                            <div class="em !my-3">Kjøpsvilkår</div>
                             <div class="mb-2">
                                 <div class="flex items-start">
                                     <input id="acceptedTerms" name="acceptedTerms" type="checkbox" class="control w-6 h-6 rounded-sm mt-2 btn-t-acceptedterms">

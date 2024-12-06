@@ -41,7 +41,7 @@
       }
     },
     "header": {
-      "text": "1. Hei, så hyggelig at du vil bli kunde i SkandiaEnergi!",
+      "text": "Hei, så hyggelig at du vil bli kunde i SkandiaEnergi!",
       "sub-text": "Avtalen Greenspot koster kun 49 kr/mnd og 8,9 øre/kWh. Det er gratis å bytte, og vi avslutter din gamle strømavtale for deg."
     },
     "info-popup": {
@@ -56,11 +56,11 @@
     "sub-title": "Fyll ut din informasjon så vi kan levere strøm til deg",
     "header": {
       "text": "Navn og adresse",
-      "sub-text": "Du trenger ikke å finne målenummeret ditt før du bestiller. Vi kontakter deg senere for å legge det inn. Har du en partner står nummeret gjerne på dem, og det overføres til deg."
+      "sub-text": ""
     },
     "info-popup": {
       "text": "Målernummer",
-      "sub-text": "\nDu trenger ikke å finne målenummeret ditt før du bestiller. Vi kontakter deg senere for å legge det inn. Har du en partner står nummeret gjerne på dem, og det overføres til deg.\n"
+      "sub-text": "\nOm du ikke har målernummer tilgjengelig kan du legge inn bestillingen uansett, vi finner ofte nummeret i våre systemer, om ikke tar vi kontakt med deg og spør om ytterligere opplysninger.\n"
     }
   },
   "step3": {
@@ -81,11 +81,12 @@
       },
       "product": {
         "text": "Abonnementsdetaljer",
-        "sub-text": "Avtaletype: Greenspot\nMånedsbeløp: 49 kr\nPåslag: 8,9 øre/kilowattime"
+        "sub-text": "Avtaletype: Greenspot\nMånedsbeløp: 49 kr",
+        "sub-text2": "Påslag: 8,9 øre/kilowattime"
       }
     },
     "confirm": {
-      "accept": "Jeg bekrefter at jeg har lest og forstått <a href=\"/avtalevilkar-greenspot\" target=\"_blank\">vilkårene</a>. Jeg har også sett/er kjent med standard angreskjema og standard skjema for opplysning om angrerett.",
+      "accept": "Jeg aksepterer <a href=\"/avtalevilkar-greenspot\" target=\"_blank\">vilkårene</a>. Jeg har også sett/er kjent med standard angreskjema og standard skjema for opplysning om angrerett.",
       "expedited": "",
       "offer-and-newsletter": "",
       "text": "",

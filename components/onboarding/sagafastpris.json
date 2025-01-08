@@ -1,0 +1,98 @@
+{
+  "profile": "SagaEnergi",
+  "name": "sagafastpris",
+  "campaignCode": "vrsjc",
+  "productId": 21,
+  "global": {
+    "buttons": {
+      "back": "Tilbake",
+      "next": "Gå videre",
+      "edit": "Rediger",
+      "order": "Bestill nå",
+      "order-waiting": "Vent litt mens vi registrerer din bestilling",
+      "add-delivery": ""
+    },
+    "text": {
+      "add-delivery": "",
+      "move-date": "Jeg overtar boligen",
+      "reset-user": "Ikke deg?"
+    }
+  },
+  "step1": {
+    "title": " Start din bestilling her",
+    "vipps": {
+      "enabled": true,
+      "button-text": "Finn dine opplysninger med Vipps",
+      "url": "https://api.vipps.no/access-management-1.0/access/oauth2/auth?client_id=64bdd717-95a6-4262-837a-93ab41781420&response_type=code&scope=openid+address+email+name+phoneNumber+nin&state=58dcc19c-f18b-4363-8617-f7e92be513dd&redirect_uri=",
+      "return-to": "https://skandiaenergi.no/stromavtale/hytte"
+    },
+    "cell": {
+      "button-text": "Manuell registrering",
+      "header": {
+        "text": "Da er du i gang!",
+        "sub-text": "Fyll ut mobilnummer og epost, så vi finner dine opplysninger."
+      }
+    },
+    "smsverification": {
+      "button-text": "Kode fra sms",
+      "header": {
+        "text": "Godt jobbet!",
+        "sub-text": "Fyll inn koden du fikk på sms."
+      }
+    },
+    "header": {
+      "text": "Hei, så hyggelig at du vil bli kunde i Saga Energi!",
+      "sub-text": "Det er gratis å bytte, og vi avslutter din gamle strømavtale for deg."
+    },
+    "info-popup": {
+      "header": {
+        "text": "Slik bruker vi informasjonen din",
+        "sub-text": "Vi finner opplysninger om deg og din hytte i adresseregistere, og om din strømmåler i Elhub. Ingen informasjon blir lagret før du bekrefter og sender inn bestillingen."
+      }
+    }
+  },
+  "step2": {
+    "title": "Navn og adresse",
+    "sub-title": "Fyll ut din informasjon så vi kan levere strøm til deg",
+    "header": {
+      "text": "Navn og adresse",
+      "sub-text": ""
+    },
+    "info-popup": {
+      "text": "Målernummer",
+      "sub-text": "\nOm du ikke har målernummer tilgjengelig kan du legge inn bestillingen uansett, vi finner ofte nummeret i våre systemer, om ikke tar vi kontakt med deg og spør om ytterligere opplysninger.\n"
+    }
+  },
+  "step3": {
+    "title": "Bekreft og bestill",
+    "header": {
+      "text": "Bestill, vi fikser resten",
+      "sub-text": "Bestill og len deg tilbake mens vi fikser alt det praktiske. \uD83D\uDE80 "
+    },
+    "securing": {
+      "image-url": "",
+      "text": "SagaFastpris til kun 49 kr/mnd",
+      "sub-text": ""
+    },
+    "order-details": {
+      "address": {
+        "text": "Du får strøm levert til",
+        "sub-text": "Vi kontakter deg for å skaffe målernummeret ditt"
+      },
+      "product": {
+        "text": "Abonnementsdetaljer",
+        "sub-text": "Avtaletype: Fastpris",
+        "sub-text1": "Månedsbeløp: 49 kr",
+        "sub-text2": "Påslag: NO1: 99 øre/kWh. NO2: 119 øre/kWh. NO3: 59 øre/kWh. NO4: 39 øre/kWh. NO5: 99 øre/kWh"
+      }
+    },
+    "confirm": {
+      "accept": "Jeg aksepterer <a href=\"/generelle-vilkar\" target=\"_blank\">vilkårene</a>. Jeg har også sett/er kjent med <a href=\"/angrerett\" target=\"_blank\">opplysninger om angrerett og angrerettskjema</a>.",
+      "expedited": "",
+      "offer-and-newsletter": "",
+      "text": "",
+      "return-to": "/suksess",
+      "return-to-rejection": "/bestillingen-er-avvist"
+    }
+  }
+}

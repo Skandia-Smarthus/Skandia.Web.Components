@@ -96,7 +96,6 @@ function OnboardingLookupV2(
         verificationCode
     );
 
-    debugger;
     let xhr = new XMLHttpRequest();
     xhr.email = email;
     xhr.cell = cell;
@@ -106,6 +105,7 @@ function OnboardingLookupV2(
         if (this.readyState === 4) {
             if (this.status === 200 || this.status === 204) {
                 let jsonContent = JSON.parse(this.responseText);
+                debugger;
                 customerData = jsonContent;
                 const email = this.email;
                 if (email) jsonContent.email = email;
@@ -288,7 +288,7 @@ function OnboardingSaleV2(profile) {
         removeSpinner("#onboardingSaleClick");
         return;
     }
-
+    debugger;
     obj.profile = profile;
 
     var base = window.window.saleApi.basePath;
@@ -422,6 +422,7 @@ function InvalidZip() {
 }
 
 function CustomerLookupV2(obj = null, index = null) {
+    debugger;
     let apiUrl = window.saleApi.basePath + window.saleApi.customerLookupPath;
     let xhr = new XMLHttpRequest();
     xhr.open("POST", apiUrl, true);
@@ -431,7 +432,6 @@ function CustomerLookupV2(obj = null, index = null) {
         if (this.readyState === 4) {
             if (this.status === 200) {
                 let jsonContent = JSON.parse(this.responseText);
-                //debugger;
                 if (jsonContent) {
                     if (jsonContent.deliveries && jsonContent.deliveries.length > 0) {
                         $("#meterNumberAdd").val(meterNumber);

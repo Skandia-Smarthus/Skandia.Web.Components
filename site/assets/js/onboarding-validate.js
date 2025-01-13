@@ -77,11 +77,17 @@ function validateInitData(cell, email) {
     return validEmail && validCell;
 }
 
+function runValidateStep2() {
+    if (validate('step2')) {
+        validate('step2', 'overview');
+    }
+}
+
 //Steps
 function validate(type, part) {
     let obj = getJsonContent(); // sessionStorage.getItem('onboardingObj');
     if (obj == null) {
-        return null;
+        return false;
     }
 
     var allValid = true;
@@ -203,6 +209,7 @@ function validate(type, part) {
             }
         }
     }
+    return allValid;
 }
 
 function validateZip(zip) {

@@ -83,11 +83,11 @@
         "text": "Abonnementsdetaljer",
         "sub-text": "Avtaletype: Fastpris",
         "sub-text1": "Månedsbeløp: 49 kr",
-        "sub-text2": "Påslag: NO1: 99 øre/kWh. NO2: 119 øre/kWh. NO3: 59 øre/kWh. NO4: 39 øre/kWh. NO5: 99 øre/kWh"
+        "sub-text2": "Kraftpris: \uD83D\uDE80 NO1: 99 øre/kWh. \uD83D\uDE80 NO2: 119 øre/kWh. \uD83D\uDE80 NO3: 59 øre/kWh. NO4: 39 øre/kWh. NO5: 99 øre/kWh"
       }
     },
     "confirm": {
-      "accept": "Jeg aksepterer <a href=\"/generelle-vilkar\" target=\"_blank\">vilkårene</a>. Jeg har også sett/er kjent med <a href=\"/angrerett\" target=\"_blank\">opplysninger om angrerett og angrerettskjema</a>.",
+      "accept": "Jeg aksepterer <a href=\"/vilkar\" target=\"_blank\">vilkårene</a>. Jeg har også sett/er kjent med <a href=\"https://www.sagaenergi.no/angrerett/\" target=\"_blank\">opplysninger om angrerett og angrerettskjema</a>.",
       "expedited": "",
       "offer-and-newsletter": "",
       "text": "",

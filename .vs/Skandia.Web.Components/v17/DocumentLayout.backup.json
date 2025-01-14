@@ -230,7 +230,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -248,18 +248,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-01-13T10:31:52.74Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "skandiaenergi.json",
-              "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\components\\strompris\\skandiaenergi.json",
-              "RelativeDocumentMoniker": "components\\strompris\\skandiaenergi.json",
-              "ToolTip": "C:\\Source\\Skandia.Web.Components\\components\\strompris\\skandiaenergi.json",
-              "RelativeToolTip": "components\\strompris\\skandiaenergi.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-01T08:28:39.238Z"
             },
             {
               "$type": "Document",
@@ -351,6 +339,31 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "sagafastpris.json",
+              "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\components\\onboarding\\sagafastpris.json",
+              "RelativeDocumentMoniker": "components\\onboarding\\sagafastpris.json",
+              "ToolTip": "C:\\Source\\Skandia.Web.Components\\components\\onboarding\\sagafastpris.json",
+              "RelativeToolTip": "components\\onboarding\\sagafastpris.json",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAqwFUAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-08T14:34:43.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "skandiaenergi.json",
+              "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\components\\strompris\\skandiaenergi.json",
+              "RelativeDocumentMoniker": "components\\strompris\\skandiaenergi.json",
+              "ToolTip": "C:\\Source\\Skandia.Web.Components\\components\\strompris\\skandiaenergi.json",
+              "RelativeToolTip": "components\\strompris\\skandiaenergi.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-01T08:28:39.238Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
               "Title": "onboarding.js",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\site\\assets\\js\\onboarding.js",
@@ -396,19 +409,6 @@
               "ViewState": "AgIAACMAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-01-09T11:59:00.679Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "sagafastpris.json",
-              "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\components\\onboarding\\sagafastpris.json",
-              "RelativeDocumentMoniker": "components\\onboarding\\sagafastpris.json",
-              "ToolTip": "C:\\Source\\Skandia.Web.Components\\components\\onboarding\\sagafastpris.json",
-              "RelativeToolTip": "components\\onboarding\\sagafastpris.json",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAFsAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-08T14:34:43.103Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",

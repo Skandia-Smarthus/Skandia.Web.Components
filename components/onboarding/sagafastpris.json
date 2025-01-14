@@ -83,7 +83,7 @@
         "text": "Abonnementsdetaljer",
         "sub-text": "Avtaletype: Fastpris",
         "sub-text1": "Månedsbeløp: 49 kr",
-        "sub-text2": "Kraftpris: \uD83D\uDE80 NO1: 99 øre/kWh. \uD83D\uDE80 NO2: 119 øre/kWh. \uD83D\uDE80 NO3: 59 øre/kWh. NO4: 39 øre/kWh. NO5: 99 øre/kWh"
+        "sub-text2": "Kraftpris: NO1: 99 øre/kWh. <br/> NO2: 119 øre/kWh. NO3: 59 øre/kWh. NO4: 39 øre/kWh. NO5: 99 øre/kWh"
       }
     },
     "confirm": {

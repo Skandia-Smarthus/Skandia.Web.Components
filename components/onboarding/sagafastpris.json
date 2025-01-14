@@ -91,8 +91,8 @@
       "expedited": "",
       "offer-and-newsletter": "",
       "text": "",
-      "return-to": "/suksess",
-      "return-to-rejection": "/bestillingen-er-avvist"
+      "return-to": "/takk-for-bestilling",
+      "return-to-rejection": "/avvist-ordre"
     }
   }
 }

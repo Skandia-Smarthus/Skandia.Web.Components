@@ -1,5 +1,5 @@
 {
-  "profile": "SagaEnergi",
+  "profile": "VariEnergi",
   "name": "sagafastpris",
   "campaignCode": "vrsjc",
   "productId": 21,
@@ -41,7 +41,7 @@
       }
     },
     "header": {
-      "text": "Hei, så hyggelig at du vil bli kunde i Saga Energi!",
+      "text": "Hei, så hyggelig at du vil bli kunde i Vari Energi!",
       "sub-text": "Det er gratis å bytte, og vi avslutter din gamle strømavtale for deg."
     },
     "info-popup": {

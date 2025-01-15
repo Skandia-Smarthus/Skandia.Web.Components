@@ -328,6 +328,60 @@ module.exports = {
                             },
                         }
                     }
+                },
+                {
+                    // name your theme anything that could be a valid css selector
+                    // remember what you named your theme because you will use it as a class to enable the theme
+                    name: 'VariEnergi',
+                    // put any overrides your theme has here
+                    // just as if you were to extend tailwind's theme like normal https://tailwindcss.com/docs/theme#extending-the-default-theme
+                    extend: {
+                        fontFamily: {
+                            normal: ["Saira Condensed", 'sans-serif'],
+                            medium: ["Saira Condensed", 'sans-serif'],
+                            semibold: ["Saira Condensed", 'sans-serif'],
+                        },
+                        colors: {
+                            form: {
+                                'pink': {
+                                    DEFAULT: '#554fff',
+                                    'main-dark': '#7b77fc',
+                                },
+                                'blue': {
+                                    DEFAULT: '#534aff',
+                                    '10': '#F3F2F8',
+                                    '20': '#CFCCE3',
+                                    'text': '#C0059',
+                                    'dark': '#40338E'
+                                },
+                                'gray': '#DBDDE0',
+                                'error': '#E61D47',
+                            },
+                            brand: {
+                                DEFAULT: '#554fff',
+                                pink: '#554fff',
+                                'pink-dark': '#7b77fc',
+                                blue: '#554fff',
+                                'blue-dark': '#7b77fc',
+                                'blue-medium': '#CBD7E8',
+                                'blue-light': '#F3F6FA',
+                                'gray-light': '#F5F5F5',
+                                white: '#FBFAF8',
+                                'white-dark': '#f6f5f4',
+                                'white-darker': '#EEEDEA'
+                            },
+                            secondary: {
+                                DEFAULT: '#554fff',
+                                'dark': '#554fff',
+                                '10': '#FFE6F5',
+                                '500': '#FF99D6',
+                                'disabled': {
+                                    DEFAULT: '#b6b4fa',
+                                    'text': '#CBD7EB'
+                                }
+                            },
+                        }
+                    }
                 }
             ]
         })

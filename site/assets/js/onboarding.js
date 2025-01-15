@@ -145,6 +145,8 @@ function gotoStep(step, sub, deliveryId = null) {
                 stepNameEdit(false);
                 setReadonly("#personalNumberEdit");
             }
+            SetTakeoverDateLimits();
+
         } else if (sub == "add") {
             clearDeliveryFields();
             hideElement("#step2");
@@ -168,6 +170,7 @@ function gotoStep(step, sub, deliveryId = null) {
             } else {
                 stepNameEdit(true);
             }
+
             //}
             //else {
             //    stepNameEdit(false);
@@ -210,6 +213,48 @@ function gotoStep(step, sub, deliveryId = null) {
             scrollToElementOnboarding("#step3-confirm");
         }
     }
+}
+
+
+function SetTakeoverDateLimits() {
+
+    const today = new Date();
+
+    const minDate = new Date(today);
+    minDate.setDate(today.getDate() - 40); // 40 dager tilbake
+
+    const maxDate = new Date(today);
+    maxDate.setDate(today.getDate() + 40); // 40 dager frem
+
+    const formatDate = (date) => {
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, '0');
+        const day = String(date.getDate()).padStart(2, '0');
+        return `${year}-${month}-${day}`;
+    };
+
+    const dateInput = document.getElementById('takoverDate');
+    const errorText = document.querySelector('.error-text');
+
+    // Sett grensene for datoen i kalenderen
+    dateInput.min = formatDate(minDate);
+    dateInput.max = formatDate(maxDate);
+
+    // Valider datoen når brukeren endrer feltet
+    dateInput.addEventListener('input', () => {
+        debugger;
+        const selectedDate = new Date(dateInput.value);
+        if (selectedDate.getFullYear() > 1000) {
+            // Sjekk om datoen er innenfor grensene
+            if (selectedDate < minDate || selectedDate > maxDate) {
+                errorText.style.display = 'block';
+                dateInput.value = ''; // Nullstill inputfeltet
+            } else {
+                errorText.style.display = 'none';
+            }
+        }
+    });
+
 }
 
 function scrollToElementOnboarding(el2) {

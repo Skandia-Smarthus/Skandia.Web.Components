@@ -344,7 +344,7 @@ module.exports = {
                         colors: {
                             form: {
                                 'pink': {
-                                    DEFAULT: '#554fff',
+                                    DEFAULT: '#000279',
                                     'main-dark': '#7b77fc',
                                 },
                                 'blue': {
@@ -358,10 +358,10 @@ module.exports = {
                                 'error': '#E61D47',
                             },
                             brand: {
-                                DEFAULT: '#554fff',
-                                pink: '#554fff',
+                                DEFAULT: '#000279',
+                                pink: '#000279',
                                 'pink-dark': '#7b77fc',
-                                blue: '#554fff',
+                                blue: '#000279',
                                 'blue-dark': '#7b77fc',
                                 'blue-medium': '#CBD7E8',
                                 'blue-light': '#F3F6FA',
@@ -371,8 +371,8 @@ module.exports = {
                                 'white-darker': '#EEEDEA'
                             },
                             secondary: {
-                                DEFAULT: '#554fff',
-                                'dark': '#554fff',
+                                DEFAULT: '#000279',
+                                'dark': '#000279',
                                 '10': '#FFE6F5',
                                 '500': '#FF99D6',
                                 'disabled': {

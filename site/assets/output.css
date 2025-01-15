@@ -298,7 +298,7 @@ select {
   --fontFamily-medium-1: sans-serif;
   --fontFamily-semibold-0: Saira Condensed;
   --fontFamily-semibold-1: sans-serif;
-  --colors-form-pink: 85, 79, 255;
+  --colors-form-pink: 0, 2, 121;
   --colors-form-pink-main-dark: 123, 119, 252;
   --colors-form-blue-10: 243, 242, 248;
   --colors-form-blue-20: 207, 204, 227;
@@ -307,10 +307,10 @@ select {
   --colors-form-blue-dark: 64, 51, 142;
   --colors-form-gray: 219, 221, 224;
   --colors-form-error: 230, 29, 71;
-  --colors-brand: 85, 79, 255;
-  --colors-brand-pink: 85, 79, 255;
+  --colors-brand: 0, 2, 121;
+  --colors-brand-pink: 0, 2, 121;
   --colors-brand-pink-dark: 123, 119, 252;
-  --colors-brand-blue: 85, 79, 255;
+  --colors-brand-blue: 0, 2, 121;
   --colors-brand-blue-dark: 123, 119, 252;
   --colors-brand-blue-medium: 203, 215, 232;
   --colors-brand-blue-light: 243, 246, 250;
@@ -320,8 +320,8 @@ select {
   --colors-brand-white-darker: 238, 237, 234;
   --colors-secondary-10: 255, 230, 245;
   --colors-secondary-500: 255, 153, 214;
-  --colors-secondary: 85, 79, 255;
-  --colors-secondary-dark: 85, 79, 255;
+  --colors-secondary: 0, 2, 121;
+  --colors-secondary-dark: 0, 2, 121;
   --colors-secondary-disabled: 182, 180, 250;
   --colors-secondary-disabled-text: 203, 215, 235;
 }

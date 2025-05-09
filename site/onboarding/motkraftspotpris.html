@@ -3,12 +3,12 @@
 
     <div class="hidden opacity-70 opacity-50 animate-pulse skandiaenergi ">
         <div class="SkandiaEnergi:hidden">
-            SkandiaEnergi
+            Motkraft
         </div>
-        <input type="hidden" id="linkWelcome1" value="/velkommen-hyttestrom" />
+        <input type="hidden" id="linkWelcome1" value="/suksess" />
         <input type="hidden" id="linkWelcome2" value="" />
         <input type="hidden" id="linkWelcome3" value="" />
-        <input type="hidden" id="linkRejection" value="/avvist" />
+        <input type="hidden" id="linkRejection" value="/bestillingen-er-avvist" />
         <button id="step2AddButton5" class="e-btn-lg e-btn-secondary text-white inline-flex items-center px-4 py-2 spinner">
             <svg id="smsSpinner3" style="display:none" class="-ml-1 mr-3 h-5 w-5 text-white " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                 <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
@@ -23,7 +23,7 @@
     </div>
 
     <div id="step1-scrollto"></div>
-    <div id="onboardingformV2" class="w-600 mx-auto relative mt-10 mb-20 SkandiaEnergi">
+    <div id="onboardingformV2" class="w-600 mx-auto relative mt-10 mb-20 Motkraft">
         <div id="onboarding-container" class="">
             <!--Steg1 start-->
             <div id="step1-sum" class="hidden">
@@ -41,8 +41,8 @@
                     <div class="form-bullet pos-center lg em">1</div>
                     <div id="step1-intro" class="">
                         <div class="inner">
-                            <div class="text-oform-h1 em mt-2 font-bold">Hei, så hyggelig at du vil bli kunde i SkandiaEnergi!</div>
-                            Avtalen Hyttestrøm koster kun 0 kr/mnd og 5,60 øre/kWh. Det er gratis å bytte, og vi avslutter din gamle strømavtale for deg.
+                            <div class="text-oform-h1 em mt-2 font-bold">Hei, så hyggelig at du vil bli kunde i Motkraft!</div>
+                            Det er gratis å bytte, og vi avslutter din gamle strømavtale for deg.
                         </div>
                         <div class="text-center mt-6">
 
@@ -269,7 +269,7 @@ Om du ikke har målernummer tilgjengelig kan du legge inn bestillingen uansett, 
                                 <input id="supply-takover" name="takover" type="checkbox" class="control w-6 h-6 rounded-sm border">
                                 <label for="supply-takover" class="ml-4 block text-oform-body em my-0 cursor-pointer">
 
-                                    Jeg overtar hytten
+                                    Jeg overtar boligen
                                 </label>
                             </div>
                         </div>
@@ -386,9 +386,9 @@ Om du ikke har målernummer tilgjengelig kan du legge inn bestillingen uansett, 
                                             Abonnementsdetaljer
                                         </div>
 
-                                        Avtaletype: Hyttestrøm<br />
-                                        Månedsbeløp: 0 kr<br />
-                                        Påslag: 5,60 øre/kilowattime
+                                        Avtaletype: Spot<br />
+                                        Månedsbeløp: 39 kr<br />
+                                        Påslag: 2,95 øre/kilowattime
                                     </div>
                                 </div>
 
@@ -414,7 +414,7 @@ Om du ikke har målernummer tilgjengelig kan du legge inn bestillingen uansett, 
                                 <div class="flex items-start">
                                     <input id="acceptedTerms" name="acceptedTerms" type="checkbox" class="control w-6 h-6 rounded-sm mt-2 btn-t-acceptedterms">
                                     <div class="ml-4 block text-oform-body1 my-0 cursor-pointer topLeft">
-                                        Jeg aksepterer <a href="/avtalevilkar-hyttestrom" target="_blank">vilkårene</a>. Jeg har også sett/er kjent med standard angreskjema og standard skjema for opplysning om angrerett.
+                                        Jeg aksepterer <a href="/vilkar-stromavtalen-2024" target="_blank">vilkårene</a>. Jeg har også sett/er kjent med <a href="/vilkar-stromavtalen-2024" target="_blank">opplysninger om angrerett og angrerettskjema</a>.
                                     </div>
                                 </div>
                             </div>
@@ -465,9 +465,9 @@ Om du ikke har målernummer tilgjengelig kan du legge inn bestillingen uansett, 
 
         window.saleApi = {"basePath":"https://app-elkompis-service-prod.azurewebsites.net/","basePathSkandia":"https://app-elkompis-service-skandia-prod.azurewebsites.net/","basePathSaga":"https://app-elkompis-service-saga-prod.azurewebsites.net/","basePathMotkraft":"https://app-elkompis-service-saga-prod.azurewebsites.net/","phoneLookupPath":"sale/lookup","smsverificationPath":"sale/smsverification","phoneLookupVippsPath":"sale/lookupvipps","placeLookupPath":"sale/place","customerLookupPath":"sale/customerlookup","vippsUrlLookupPath":"sale/vippsurl","saleLeadPath":"sale/salelead","saleRegisterPath":"sale","saleRegisterSkandiaPath":"sale/skandiaEnergiSale","saleRegisterSagaPath":"sale/sagaEnergiSale"};
         window.vippsRedirectUrl = '';
-        window.profile = 'SkandiaEnergi';
+        window.profile = 'Motkraft';
         window.campaignCode = 'vrsjc';
-        window.productId = '3';
+        window.productId = '9';
         window.invite = inviteCode;
 
         let trackingObj = sessionStorage.getItem('trackingObj');

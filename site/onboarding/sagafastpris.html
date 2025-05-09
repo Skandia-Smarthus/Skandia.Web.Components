@@ -422,6 +422,7 @@ Om du ikke har målernummer tilgjengelig kan du legge inn bestillingen uansett, 
 
 
 
+
                             <!--Bestill knapp-->
                             <div class="text-center mt-3">
                                 <button id="onboardingSaleButton" class="e-btn-lg e-btn-secondary text-white inline-flex items-center px-4 py-2 btn-t-sale" onclick="" disabled="disabled">
@@ -462,7 +463,7 @@ Om du ikke har målernummer tilgjengelig kan du legge inn bestillingen uansett, 
         console.log("Setting up component ");
         var inviteCode = getQueryParamValue('invite');
 
-        window.saleApi = {"basePath":"https://app-elkompis-service-prod.azurewebsites.net/","basePathSkandia":"https://app-elkompis-service-skandia-prod.azurewebsites.net/","basePathSaga":"https://app-elkompis-service-saga-prod.azurewebsites.net/","phoneLookupPath":"sale/lookup","smsverificationPath":"sale/smsverification","phoneLookupVippsPath":"sale/lookupvipps","placeLookupPath":"sale/place","customerLookupPath":"sale/customerlookup","vippsUrlLookupPath":"sale/vippsurl","saleLeadPath":"sale/salelead","saleRegisterPath":"sale","saleRegisterSkandiaPath":"sale/skandiaEnergiSale","saleRegisterSagaPath":"sale/sagaEnergiSale"};
+        window.saleApi = {"basePath":"https://app-elkompis-service-prod.azurewebsites.net/","basePathSkandia":"https://app-elkompis-service-skandia-prod.azurewebsites.net/","basePathSaga":"https://app-elkompis-service-saga-prod.azurewebsites.net/","basePathMotkraft":"https://app-elkompis-service-saga-prod.azurewebsites.net/","phoneLookupPath":"sale/lookup","smsverificationPath":"sale/smsverification","phoneLookupVippsPath":"sale/lookupvipps","placeLookupPath":"sale/place","customerLookupPath":"sale/customerlookup","vippsUrlLookupPath":"sale/vippsurl","saleLeadPath":"sale/salelead","saleRegisterPath":"sale","saleRegisterSkandiaPath":"sale/skandiaEnergiSale","saleRegisterSagaPath":"sale/sagaEnergiSale"};
         window.vippsRedirectUrl = '';
         window.profile = 'VariEnergi';
         window.campaignCode = 'vrsjc';

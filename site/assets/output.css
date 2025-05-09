@@ -326,6 +326,42 @@ select {
   --colors-secondary-disabled-text: 203, 215, 235;
 }
 
+.Motkraft {
+    --fontFamily-normal-0: Saira Condensed;
+    --fontFamily-normal-1: sans-serif;
+    --fontFamily-medium-0: Saira Condensed;
+    --fontFamily-medium-1: sans-serif;
+    --fontFamily-semibold-0: Saira Condensed;
+    --fontFamily-semibold-1: sans-serif;
+    --colors-form-pink: 28, 33, 33;
+    --colors-form-pink-main-dark: 123, 119, 252;
+    --colors-form-blue-10: 243, 242, 248;
+    --colors-form-blue-20: 207, 204, 227;
+    --colors-form-blue: 28, 33, 33;
+    --colors-form-blue-text: #C0059;
+    --colors-form-blue-dark: 64, 51, 142;
+    --colors-form-gray: 219, 221, 224;
+    --colors-form-error: 230, 29, 71;
+    --colors-brand: 28, 33, 33;
+    --colors-brand-pink: 28, 33, 33;
+    --colors-brand-pink-dark: 123, 119, 252;
+    --colors-brand-blue: 28, 33, 33;
+    --colors-brand-blue-dark: 123, 119, 252;
+    --colors-brand-blue-medium: 203, 215, 232;
+    --colors-brand-blue-light: 243, 246, 250;
+    --colors-brand-gray-light: 245, 245, 245;
+    --colors-brand-white: 251, 250, 248;
+    --colors-brand-white-dark: 246, 245, 244;
+    --colors-brand-white-darker: 238, 237, 234;
+    --colors-primary: 28, 33, 33;
+    --colors-secondary-10: 255, 230, 245;
+    --colors-secondary-500: 255, 153, 214;
+    --colors-secondary: 28, 33, 33;
+    --colors-secondary-dark: 28, 33, 33;
+    --colors-secondary-disabled: 182, 180, 250;
+    --colors-secondary-disabled-text: 203, 215, 235;
+}
+
 /*    body.mobile h1, body.mobile .h1 {
         @apply text-h3 font-semiBold;
     }

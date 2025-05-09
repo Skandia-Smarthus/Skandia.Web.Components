@@ -8,6 +8,9 @@ function SmsVerification(cell = null) {
     else if (profile === "SagaEnergi" || profile === "VariEnergi") {
         base = window.saleApi.basePathSaga;
     }
+    else if (profile === "Motkraft") {
+        base = window.saleApi.basePathMotkraft;
+    }
 
     let apiUrl = base + window.window.saleApi.smsverificationPath;
 
@@ -41,6 +44,9 @@ function CustomerSaleLead(cell = null, email = null) {
     else if (profile === "SagaEnergi" || profile === "VariEnergi") {
         base = window.saleApi.basePathSaga;
     }
+    else if (profile === "Motkraft") {
+        base = window.saleApi.basePathMotkraft;
+    }
 
     let apiUrl = base + window.window.saleApi.saleLeadPath;
     //debugger;
@@ -68,6 +74,9 @@ function getLookupApiUrl(cell, authCode, state, redirectUrl, verificationCode) {
     }
     else if (profile === "SagaEnergi" || profile === "VariEnergi") {
         base = window.saleApi.basePathSaga;
+    }
+    else if (profile === "Motkraft") {
+        base = window.saleApi.basePathMotkraft;
     }
 
     if (authCode) {
@@ -298,6 +307,9 @@ function OnboardingSaleV2(profile) {
     else if (profile === "SagaEnergi" || profile === "VariEnergi") {
         base = window.saleApi.basePathSaga;
     }
+    else if (profile === "Motkraft") {
+        base = window.saleApi.basePathMotkraft;
+    }
 
     let apiUrl = base + window.saleApi.saleRegisterPath;
 
@@ -382,6 +394,9 @@ function OnboardingPlaceFromZipV2(zip = null) {
     else if (profile === "SagaEnergi" || profile === "VariEnergi") {
         base = window.saleApi.basePathSaga;
     }
+    else if (profile === "Motkraft") {
+        base = window.saleApi.basePathMotkraft;
+    }
 
     const apiUrl = `${base}${window.saleApi.placeLookupPath}/${zip}`;
     let xhr = new XMLHttpRequest();
@@ -455,6 +470,9 @@ async function getVippsUrl() {
     }
     else if (profile === "SagaEnergi" || profile === "VariEnergi") {
         base = window.saleApi.basePathSaga;
+    }
+    else if (profile === "Motkraft") {
+        base = window.saleApi.basePathMotkraft;
     }
 
     const vippsState = generateUUID();

@@ -6,7 +6,7 @@
     "basePath": "https://app-elkompis-service-prod.azurewebsites.net/",
     "basePathSkandia": "https://app-elkompis-service-skandia-prod.azurewebsites.net/",
     "basePathSaga": "https://app-elkompis-service-saga-prod.azurewebsites.net/",
-    "basePathMotkraft": "https://app-elkompis-service-saga-prod.azurewebsites.net/",
+    "basePathMotkraft": "https://app-elkompis-service-motkraft-prod.azurewebsites.net/",
     "phoneLookupPath": "sale/lookup",
     "smsverificationPath": "sale/smsverification",
     "phoneLookupVippsPath": "sale/lookupvipps",

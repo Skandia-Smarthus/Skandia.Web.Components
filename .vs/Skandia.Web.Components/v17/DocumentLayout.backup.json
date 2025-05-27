@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Source\\Skandia.Web.Components\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Source\\Skandia.Web.Components\\site\\assets\\output.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:site\\assets\\output.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Source\\Skandia.Web.Components\\site\\onboarding\\motkraftspotpris.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:site\\onboarding\\motkraftspotpris.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Source\\Skandia.Web.Components\\site\\assets\\js\\onboarding-validate.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:site\\assets\\js\\onboarding-validate.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Source\\Skandia.Web.Components\\tailwind.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -19,20 +23,12 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:site\\onboarding\\sagaspotpris.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Source\\Skandia.Web.Components\\site\\onboarding\\motkraftspotpris.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:site\\onboarding\\motkraftspotpris.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Source\\Skandia.Web.Components\\components\\onboarding\\motkraftspotpris.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:components\\onboarding\\motkraftspotpris.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Source\\Skandia.Web.Components\\components\\onboarding\\sagafastpris.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:components\\onboarding\\sagafastpris.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Source\\Skandia.Web.Components\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Source\\Skandia.Web.Components\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -61,14 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Source\\Skandia.Web.Components\\templates\\onboarding-scripts.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\onboarding-scripts.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Source\\Skandia.Web.Components\\site\\assets\\js\\onboarding.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:site\\assets\\js\\onboarding.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Source\\Skandia.Web.Components\\site\\assets\\js\\onboarding-validate.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:site\\assets\\js\\onboarding-validate.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Source\\Skandia.Web.Components\\site\\assets\\js\\onboarding-api.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -250,7 +238,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -258,46 +246,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "motkraftspotpris.html",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\site\\onboarding\\motkraftspotpris.html",
               "RelativeDocumentMoniker": "site\\onboarding\\motkraftspotpris.html",
               "ToolTip": "C:\\Source\\Skandia.Web.Components\\site\\onboarding\\motkraftspotpris.html",
               "RelativeToolTip": "site\\onboarding\\motkraftspotpris.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAUwDoAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-05-06T12:12:50.478Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "postcss.config.js",
-              "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\postcss.config.js",
-              "RelativeDocumentMoniker": "postcss.config.js",
-              "ToolTip": "C:\\Source\\Skandia.Web.Components\\postcss.config.js",
-              "RelativeToolTip": "postcss.config.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-12-06T09:27:53.958Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "server.js",
-              "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\server.js",
-              "RelativeDocumentMoniker": "server.js",
-              "ToolTip": "C:\\Source\\Skandia.Web.Components\\server.js",
-              "RelativeToolTip": "server.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-12T13:52:38.152Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "tailwind.config.js",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\tailwind.config.js",
               "RelativeDocumentMoniker": "tailwind.config.js",
@@ -305,21 +267,7 @@
               "RelativeToolTip": "tailwind.config.js",
               "ViewState": "AgIAAHkBAAAAAAAAAAAAAIsBAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-15T08:09:55.674Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "sagafastpris.json",
-              "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\components\\onboarding\\sagafastpris.json",
-              "RelativeDocumentMoniker": "components\\onboarding\\sagafastpris.json",
-              "ToolTip": "C:\\Source\\Skandia.Web.Components\\components\\onboarding\\sagafastpris.json",
-              "RelativeToolTip": "components\\onboarding\\sagafastpris.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-08T14:34:43.103Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-15T08:09:55.674Z"
             },
             {
               "$type": "Document",
@@ -331,12 +279,11 @@
               "RelativeToolTip": "components\\onboarding\\motkraftspotpris.json",
               "ViewState": "AgIAABYAAAAAAAAAAAAAAC8AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-06T11:11:16.081Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-06T11:11:16.081Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\index.html",
               "RelativeDocumentMoniker": "index.html",
@@ -344,12 +291,11 @@
               "RelativeToolTip": "index.html",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-05-06T11:21:20.501Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-06T11:21:20.501Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "sagaspotpris.html",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\site\\onboarding\\sagaspotpris.html",
               "RelativeDocumentMoniker": "site\\onboarding\\sagaspotpris.html",
@@ -357,12 +303,11 @@
               "RelativeToolTip": "site\\onboarding\\sagaspotpris.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-09-24T08:29:52.698Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T08:29:52.698Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 14,
               "Title": "onboarding-api.js",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\site\\assets\\js\\onboarding-api.js",
               "RelativeDocumentMoniker": "site\\assets\\js\\onboarding-api.js",
@@ -370,12 +315,11 @@
               "RelativeToolTip": "site\\assets\\js\\onboarding-api.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-09-20T14:32:18.958Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-20T14:32:18.958Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "package.json",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\package.json",
               "RelativeDocumentMoniker": "package.json",
@@ -383,64 +327,59 @@
               "RelativeToolTip": "package.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-06T11:21:36.63Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-06T11:21:36.63Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "output.css",
-              "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\site\\assets\\output.css",
-              "RelativeDocumentMoniker": "site\\assets\\output.css",
-              "ToolTip": "C:\\Source\\Skandia.Web.Components\\site\\assets\\output.css",
-              "RelativeToolTip": "site\\assets\\output.css",
-              "ViewState": "AgIAAEUBAAAAAAAAAAAAAFwBAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-12-05T13:33:51.429Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "onboarding.js",
-              "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\site\\assets\\js\\onboarding.js",
-              "RelativeDocumentMoniker": "site\\assets\\js\\onboarding.js",
-              "ToolTip": "C:\\Source\\Skandia.Web.Components\\site\\assets\\js\\onboarding.js",
-              "RelativeToolTip": "site\\assets\\js\\onboarding.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-15T08:02:49.456Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 1,
               "Title": "onboarding-validate.js",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\site\\assets\\js\\onboarding-validate.js",
               "RelativeDocumentMoniker": "site\\assets\\js\\onboarding-validate.js",
               "ToolTip": "C:\\Source\\Skandia.Web.Components\\site\\assets\\js\\onboarding-validate.js",
               "RelativeToolTip": "site\\assets\\js\\onboarding-validate.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-15T08:02:43.648Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-15T08:02:43.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "sagafastpris.json",
+              "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\components\\onboarding\\sagafastpris.json",
+              "RelativeDocumentMoniker": "components\\onboarding\\sagafastpris.json",
+              "ToolTip": "C:\\Source\\Skandia.Web.Components\\components\\onboarding\\sagafastpris.json",
+              "RelativeToolTip": "components\\onboarding\\sagafastpris.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-08T14:34:43.103Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "readme.md",
-              "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\readme.md",
-              "RelativeDocumentMoniker": "readme.md",
-              "ToolTip": "C:\\Source\\Skandia.Web.Components\\readme.md",
-              "RelativeToolTip": "readme.md",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-05-06T11:30:01.27Z",
-              "EditorCaption": ""
+              "Title": "server.js",
+              "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\server.js",
+              "RelativeDocumentMoniker": "server.js",
+              "ToolTip": "C:\\Source\\Skandia.Web.Components\\server.js",
+              "RelativeToolTip": "server.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-12T13:52:38.152Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 8,
+              "Title": "postcss.config.js",
+              "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\postcss.config.js",
+              "RelativeDocumentMoniker": "postcss.config.js",
+              "ToolTip": "C:\\Source\\Skandia.Web.Components\\postcss.config.js",
+              "RelativeToolTip": "postcss.config.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-06T09:27:53.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "azure-pipelines.yml",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\azure-pipelines.yml",
               "RelativeDocumentMoniker": "azure-pipelines.yml",
@@ -448,12 +387,11 @@
               "RelativeToolTip": "azure-pipelines.yml",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAAB0AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2025-05-06T11:21:05.651Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-06T11:21:05.651Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "nodemon.json",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\nodemon.json",
               "RelativeDocumentMoniker": "nodemon.json",
@@ -461,12 +399,11 @@
               "RelativeToolTip": "nodemon.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-06T11:21:29.198Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-06T11:21:29.198Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 15,
               "Title": "load-components.js",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\site\\assets\\js\\load-components.js",
               "RelativeDocumentMoniker": "site\\assets\\js\\load-components.js",
@@ -474,12 +411,11 @@
               "RelativeToolTip": "site\\assets\\js\\load-components.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-12-05T13:48:10.524Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T13:48:10.524Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 16,
               "Title": "common.js",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\site\\assets\\js\\common.js",
               "RelativeDocumentMoniker": "site\\assets\\js\\common.js",
@@ -487,12 +423,11 @@
               "RelativeToolTip": "site\\assets\\js\\common.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-09T11:57:33.696Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T11:57:33.696Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 17,
               "Title": "generate-onboarding.js",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\build\\generate-onboarding.js",
               "RelativeDocumentMoniker": "build\\generate-onboarding.js",
@@ -500,12 +435,11 @@
               "RelativeToolTip": "build\\generate-onboarding.js",
               "ViewState": "AgIAACoAAAAAAAAAAAAAADUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-05-06T11:18:23.546Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-06T11:18:23.546Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "package-lock.json",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\package-lock.json",
               "RelativeDocumentMoniker": "package-lock.json",
@@ -513,12 +447,11 @@
               "RelativeToolTip": "package-lock.json",
               "ViewState": "AgIAAJACAAAAAAAAAAAAAK0CAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-09T11:59:04.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T11:59:04.114Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 18,
               "Title": "global-production.json",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\components\\onboarding\\global-production.json",
               "RelativeDocumentMoniker": "components\\onboarding\\global-production.json",
@@ -526,12 +459,11 @@
               "RelativeToolTip": "components\\onboarding\\global-production.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-06T09:27:15.791Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T09:27:15.791Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "onboarding-scripts.html",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\templates\\onboarding-scripts.html",
               "RelativeDocumentMoniker": "templates\\onboarding-scripts.html",
@@ -539,12 +471,11 @@
               "RelativeToolTip": "templates\\onboarding-scripts.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-11-08T07:57:01.51Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T07:57:01.51Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 20,
               "Title": "skspot.json",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\components\\onboarding\\skspot.json",
               "RelativeDocumentMoniker": "components\\onboarding\\skspot.json",
@@ -552,12 +483,11 @@
               "RelativeToolTip": "components\\onboarding\\skspot.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-25T08:45:46.188Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T08:45:46.188Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 23,
               "Title": "svg.css",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\css\\custom\\svg.css",
               "RelativeDocumentMoniker": "css\\custom\\svg.css",
@@ -569,7 +499,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 24,
               "Title": "layout.css",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\css\\custom\\layout.css",
               "RelativeDocumentMoniker": "css\\custom\\layout.css",
@@ -581,7 +511,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 19,
               "Title": "global-development.json",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\components\\onboarding\\global-development.json",
               "RelativeDocumentMoniker": "components\\onboarding\\global-development.json",
@@ -589,12 +519,11 @@
               "RelativeToolTip": "components\\onboarding\\global-development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-24T07:56:57.105Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T07:56:57.105Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 25,
               "Title": "icons.css",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\css\\custom\\icons.css",
               "RelativeDocumentMoniker": "css\\custom\\icons.css",
@@ -606,7 +535,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 22,
               "Title": "input.css",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\css\\input.css",
               "RelativeDocumentMoniker": "css\\input.css",
@@ -618,7 +547,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 21,
               "Title": "tailwind.css",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\css\\tailwind.css",
               "RelativeDocumentMoniker": "css\\tailwind.css",
@@ -630,7 +559,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 26,
               "Title": "form.css",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\css\\custom\\form.css",
               "RelativeDocumentMoniker": "css\\custom\\form.css",
@@ -642,7 +571,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 27,
               "Title": "fonts.css",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\css\\custom\\fonts.css",
               "RelativeDocumentMoniker": "css\\custom\\fonts.css",
@@ -654,7 +583,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 28,
               "Title": "elements.css",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\css\\custom\\elements.css",
               "RelativeDocumentMoniker": "css\\custom\\elements.css",
@@ -666,7 +595,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 29,
               "Title": "base.css",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\css\\custom\\base.css",
               "RelativeDocumentMoniker": "css\\custom\\base.css",
@@ -678,7 +607,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 30,
               "Title": "animations.css",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\css\\custom\\animations.css",
               "RelativeDocumentMoniker": "css\\custom\\animations.css",
@@ -690,7 +619,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 31,
               "Title": "app.css",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\css\\custom\\app.css",
               "RelativeDocumentMoniker": "css\\custom\\app.css",
@@ -702,7 +631,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 32,
               "Title": "strompris.js",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\site\\assets\\js\\strompris.js",
               "RelativeDocumentMoniker": "site\\assets\\js\\strompris.js",
@@ -714,7 +643,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 34,
               "Title": "global-production.json",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\components\\strompris\\global-production.json",
               "RelativeDocumentMoniker": "components\\strompris\\global-production.json",
@@ -726,7 +655,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 33,
               "Title": "strompris-template.hbs",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\templates\\strompris-template.hbs",
               "RelativeDocumentMoniker": "templates\\strompris-template.hbs",
@@ -738,7 +667,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 36,
               "Title": "skandiaenergi.json",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\components\\strompris\\skandiaenergi.json",
               "RelativeDocumentMoniker": "components\\strompris\\skandiaenergi.json",
@@ -750,7 +679,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 35,
               "Title": "global-development.json",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\components\\strompris\\global-development.json",
               "RelativeDocumentMoniker": "components\\strompris\\global-development.json",
@@ -762,7 +691,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 38,
               "Title": "template-settings.json",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\components\\onboarding\\template-settings.json",
               "RelativeDocumentMoniker": "components\\onboarding\\template-settings.json",
@@ -774,7 +703,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 40,
               "Title": "skandiagreenspotsekundaer.json",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\components\\onboarding\\skandiagreenspotsekundaer.json",
               "RelativeDocumentMoniker": "components\\onboarding\\skandiagreenspotsekundaer.json",
@@ -786,7 +715,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 37,
               "Title": "solstrom.json",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\components\\onboarding\\solstrom.json",
               "RelativeDocumentMoniker": "components\\onboarding\\solstrom.json",
@@ -798,7 +727,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 41,
               "Title": "skandiagreenspot.json",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\components\\onboarding\\skandiagreenspot.json",
               "RelativeDocumentMoniker": "components\\onboarding\\skandiagreenspot.json",
@@ -810,7 +739,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 43,
               "Title": "hyttestrom.json",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\components\\onboarding\\hyttestrom.json",
               "RelativeDocumentMoniker": "components\\onboarding\\hyttestrom.json",
@@ -822,7 +751,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 42,
               "Title": "skandia-spot.json",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\components\\onboarding\\skandia-spot.json",
               "RelativeDocumentMoniker": "components\\onboarding\\skandia-spot.json",
@@ -834,7 +763,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 39,
               "Title": "sagaspotprisminusone.json",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\components\\onboarding\\sagaspotprisminusone.json",
               "RelativeDocumentMoniker": "components\\onboarding\\sagaspotprisminusone.json",
@@ -846,7 +775,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 44,
               "Title": "elkompis.json",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\components\\onboarding\\elkompis.json",
               "RelativeDocumentMoniker": "components\\onboarding\\elkompis.json",
@@ -858,7 +787,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 45,
               "Title": "digitalstrom.json",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\components\\onboarding\\digitalstrom.json",
               "RelativeDocumentMoniker": "components\\onboarding\\digitalstrom.json",
@@ -870,7 +799,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 46,
               "Title": "skandiaspot.html",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\site\\onboarding\\skandiaspot.html",
               "RelativeDocumentMoniker": "site\\onboarding\\skandiaspot.html",
@@ -882,7 +811,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 47,
               "Title": "skandiagreenspot.html",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\site\\onboarding\\skandiagreenspot.html",
               "RelativeDocumentMoniker": "site\\onboarding\\skandiagreenspot.html",
@@ -894,7 +823,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 48,
               "Title": "sagaspotprisminusone.html",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\site\\onboarding\\sagaspotprisminusone.html",
               "RelativeDocumentMoniker": "site\\onboarding\\sagaspotprisminusone.html",
@@ -906,7 +835,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 49,
               "Title": "skandiagreenspotsekundaer.html",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\site\\onboarding\\skandiagreenspotsekundaer.html",
               "RelativeDocumentMoniker": "site\\onboarding\\skandiagreenspotsekundaer.html",
@@ -918,7 +847,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 51,
               "Title": "skspot.html",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\site\\onboarding\\skspot.html",
               "RelativeDocumentMoniker": "site\\onboarding\\skspot.html",
@@ -930,7 +859,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 50,
               "Title": "solstrom.html",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\site\\onboarding\\solstrom.html",
               "RelativeDocumentMoniker": "site\\onboarding\\solstrom.html",
@@ -942,7 +871,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 52,
               "Title": "template-settings.json",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\components\\strompris\\template-settings.json",
               "RelativeDocumentMoniker": "components\\strompris\\template-settings.json",
@@ -954,7 +883,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 53,
               "Title": "generate-strompris.js",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\build\\generate-strompris.js",
               "RelativeDocumentMoniker": "build\\generate-strompris.js",
@@ -966,7 +895,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 54,
               "Title": "elkompis.json",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\components\\strompris\\elkompis.json",
               "RelativeDocumentMoniker": "components\\strompris\\elkompis.json",
@@ -978,7 +907,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 55,
               "Title": ".gitignore",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\.gitignore",
               "RelativeDocumentMoniker": ".gitignore",
@@ -990,7 +919,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 56,
               "Title": "elkompis.html",
               "DocumentMoniker": "C:\\Source\\Skandia.Web.Components\\site\\onboarding\\elkompis.html",
               "RelativeDocumentMoniker": "site\\onboarding\\elkompis.html",

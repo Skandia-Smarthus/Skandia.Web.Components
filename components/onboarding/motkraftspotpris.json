@@ -2,7 +2,7 @@
   "profile": "Motkraft",
   "name": "motkraftspotpris",
   "campaignCode": "vrsjc",
-  "productId": 9,
+  "productId": 1,
   "global": {
     "buttons": {
       "back": "Tilbake",
@@ -91,8 +91,8 @@
       "expedited": "",
       "offer-and-newsletter": "",
       "text": "",
-      "return-to": "/suksess",
-      "return-to-rejection": "/bestillingen-er-avvist"
+      "return-to": "https://www.motkraft.no/ny-kunde",
+      "return-to-rejection": "https://www.motkraft.no/bestilling-avvist"
     }
   }
 }

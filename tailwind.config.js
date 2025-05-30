@@ -398,11 +398,11 @@ module.exports = {
                         colors: {
                             form: {
                                 'pink': {
-                                    DEFAULT: '#1c2121',
-                                    'main-dark': '#7b77fc',
+                                    DEFAULT: '#67d7ac',
+                                    'main-dark': '#6f7070',
                                 },
                                 'blue': {
-                                    DEFAULT: '#1c2121',
+                                    DEFAULT: '#67d7ac',
                                     '10': '#F3F2F8',
                                     '20': '#CFCCE3',
                                     'text': '#C0059',
@@ -412,11 +412,11 @@ module.exports = {
                                 'error': '#E61D47',
                             },
                             brand: {
-                                DEFAULT: '#1c2121',
+                                DEFAULT: '#67d7ac',
                                 pink: '#1c2121',
-                                'pink-dark': '#7b77fc',
+                                'pink-dark': '#6f7070',
                                 blue: '#1c2121',
-                                'blue-dark': '#7b77fc',
+                                'blue-dark': '#6f7070',
                                 'blue-medium': '#CBD7E8',
                                 'blue-light': '#F3F6FA',
                                 'gray-light': '#F5F5F5',
@@ -428,7 +428,7 @@ module.exports = {
                                 DEFAULT: '#1b2121'
                             },
                             secondary: {
-                                DEFAULT: '#1c2121',
+                                DEFAULT: '#67d7ac',
                                 'dark': '#1c2121',
                                 '10': '#FFE6F5',
                                 '500': '#FF99D6',

@@ -42,7 +42,7 @@
     },
     "header": {
       "text": "Hei, så hyggelig at du vil bli kunde i SkandiaEnergi!",
-      "sub-text": "Avtalen Greenspot sekundær koster kun 0 kr/mnd og 8,9 øre/kWh. Det er gratis å bytte, og vi avslutter din gamle strømavtale for deg."
+      "sub-text": "Avtalen Greenspot sekundær koster kun 0 kr/mnd og 13,9 øre/kWh. Det er gratis å bytte, og vi avslutter din gamle strømavtale for deg."
     },
     "info-popup": {
       "header": {
@@ -71,7 +71,7 @@
     },
     "securing": {
       "image-url": "",
-      "text": "Greenspot sekundær til kun 0 kr/mnd og 8,9 øre/kWh",
+      "text": "Greenspot sekundær til kun 0 kr/mnd og 13,9 øre/kWh",
       "sub-text": ""
     },
     "order-details": {
@@ -83,7 +83,7 @@
         "text": "Abonnementsdetaljer",
         "sub-text": "Avtaletype: Greenspot sekundær",
         "sub-text1": "Månedsbeløp: 0 kr",
-        "sub-text2": "Påslag: 8,9 øre/kilowattime"
+        "sub-text2": "Påslag: 13,9 øre/kilowattime"
       }
     },
     "confirm": {

@@ -379,7 +379,14 @@ function OnboardingSaleV2(profile) {
 }
 
 function getUrlParamsV2(path) {
-    var mainurl = location.protocol + "//" + location.host + path;
+    let mainurl;
+
+    if (path.includes("http")) {
+        mainurl = path;
+    }
+    else {
+        mainurl = location.protocol + "//" + location.host + path;
+    }
     let utmCodes = getUtmCodes();
     return mainurl + utmCodes;
 }

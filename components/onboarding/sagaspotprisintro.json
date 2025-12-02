@@ -1,8 +1,8 @@
 {
   "profile": "SagaEnergi",
-  "name": "sagaspotpris",
+  "name": "sagaspotprisintro",
   "campaignCode": "vrsjc",
-  "productId": 23,
+  "productId": 22,
   "global": {
     "buttons": {
       "back": "Tilbake",
@@ -71,7 +71,7 @@
     },
     "securing": {
       "image-url": "",
-      "text": "Spotpris til kun 69 kr/mnd og 6,9 øre/kWh",
+      "text": "Spotpris intro til kun 0 kr/mnd og -6 øre/kWh",
       "sub-text": ""
     },
     "order-details": {
@@ -81,9 +81,9 @@
       },
       "product": {
         "text": "Abonnementsdetaljer",
-        "sub-text": "Avtaletype: Spotpris",
-        "sub-text1": "Månedsbeløp: 69 kr",
-        "sub-text2": "Påslag: 6,9 øre/kilowattime"
+        "sub-text": "Avtaletype: Spotpris -6 øre",
+        "sub-text1": "Månedsbeløp: 0 kr",
+        "sub-text2": "Påslag: -6 øre/kilowattime"
       }
     },
     "confirm": {

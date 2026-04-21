@@ -217,6 +217,7 @@ function SaveEditDeliveryV2() {
                 country: null,
                 mpid: null,
                 meterNumber: null,
+                consumption: null,
                 changeOfSupplyType: changeOfSup,
                 moveDate: moveDate,
                 isSelected: true,
@@ -248,6 +249,7 @@ function SaveEditDeliveryV2() {
             buildingNumber: $("#onboardingHouseNoEdit").val(),
             zipcode: $("#onboardingZipEdit").val(),
             meterNumber: jsonContent.deliveries[index].meterNumber,
+            consumption: jsonContent.deliveries[index].consumption,
             //"email": userData.email,
             email: null,
             orderId: 0,
@@ -345,7 +347,7 @@ function OnboardingSaleV2(profile) {
                     //til rask generell velkomst om finnes
                     var urlTemp = $("#linkWelcome1").val();
                     if (urlTemp && urlTemp.length > 0) {
-                        welcomeUrl = getUrlParamsV2(urlTemp);
+                        welcomeUrl = getUrlParamsV2(urlTemp) + "?em=" + obj.email + "&ph=" + obj.cell;
                     }
                 }
                 if (!welcomeUrl) {
@@ -460,7 +462,8 @@ function CustomerLookupV2(obj = null, index = null) {
                         if (index) {
                             var mpid = jsonContent.deliveries[0].mpid;
                             var meterNumber = jsonContent.deliveries[0].meterNumber;
-                            SyncUserDataEditObject(index, mpid, meterNumber);
+                            var consumption = jsonContent.deliveries[0].consumption;
+                            SyncUserDataEditObject(index, mpid, meterNumber, consumption);
                         }
                         SaveEditDelivery();
                     }

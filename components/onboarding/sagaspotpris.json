@@ -87,7 +87,7 @@
       }
     },
     "confirm": {
-      "accept": "Jeg aksepterer <a href=\"/generelle-vilkar\" target=\"_blank\">vilkårene</a>. Jeg har også sett/er kjent med <a href=\"/angrerett\" target=\"_blank\">opplysninger om angrerett og angrerettskjema</a>.",
+      "accept": "Jeg aksepterer <a href=\"https://www.sagaenergi.no/wp-content/uploads/SPOTPRIS.pdf\" target=\"_blank\">vilkårene</a>. Jeg har også sett/er kjent med <a href=\"/angrerett\" target=\"_blank\">opplysninger om angrerett og angrerettskjema</a>.",
       "expedited": "",
       "offer-and-newsletter": "",
       "text": "",

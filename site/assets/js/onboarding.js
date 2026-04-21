@@ -399,6 +399,7 @@ function AddNewDeliveryV2(e) {
         country: null,
         mpid: null,
         meterNumber: null,
+        consumption: null,
         changeOfSupplyType: changeOfSup,
         moveDate: moveDate,
         isSelected: true,
@@ -474,7 +475,7 @@ function SyncUserDataV2() {
     return jsonContent;
 }
 
-function SyncUserDataEditObject(index, mpid, meterNumber) {
+function SyncUserDataEditObject(index, mpid, meterNumber, consumption) {
     if (!index) {
         return null;
     }
@@ -487,6 +488,7 @@ function SyncUserDataEditObject(index, mpid, meterNumber) {
     let jsonContent = JSON.parse(retrievedObject);
     jsonContent.deliveries[index].mpid = mpid;
     jsonContent.deliveries[index].meterNumber = meterNumber;
+    jsonContent.deliveries[index].consumption = consumption;
     sessionStorage.setItem("onboardingObj", JSON.stringify(jsonContent));
 }
 
